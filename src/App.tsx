@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ServicesHub from "./pages/ServicesHub";
 import TestingHub from "./pages/TestingHub";
-import DynamicPage from "./pages/DynamicPage";
 import SoftwareTesting from "./pages/SoftwareTesting";
 import UserTraining from "./pages/UserTraining";
 import DevTeamSupport from "./pages/DevTeamSupport";
@@ -24,6 +23,8 @@ import CapitalMarkets from "./pages/CapitalMarkets";
 import InsuranceTesting from "./pages/InsuranceTesting";
 import CoreBanking from "./pages/CoreBanking";
 import DataWarehouse from "./pages/DataWarehouse";
+import SelfServiceBanking from "./pages/SelfServiceBanking";
+import WealthManagement from "./pages/WealthManagement";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -43,7 +44,6 @@ export default function App() {
           <Route path="/services/support-users" element={<UserTraining />} />
           <Route path="/services/support-dev-teams" element={<DevTeamSupport />} />
           <Route path="/services/domain-support" element={<DomainSupport />} />
-          <Route path="/services/:subpage" element={<DynamicPage category="services" />} />
           
           {/* Testing Areas Hub */}
           <Route path="/testing" element={<TestingHub />} />
@@ -58,7 +58,8 @@ export default function App() {
           <Route path="/testing/insurance" element={<InsuranceTesting />} />
           <Route path="/testing/core-banking" element={<CoreBanking />} />
           <Route path="/testing/data-warehouse" element={<DataWarehouse />} />
-          <Route path="/testing/:subpage" element={<DynamicPage category="testing" />} />
+          <Route path="/testing/self-service-banking" element={<SelfServiceBanking />} />
+          <Route path="/testing/wealth-management" element={<WealthManagement />} />
           
           {/* Legal & Utility */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
@@ -73,4 +74,5 @@ export default function App() {
     </Router>
   );
 }
+
 

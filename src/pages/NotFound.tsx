@@ -30,7 +30,7 @@ export default function NotFound() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-6">
-            <Link to="/" className="inline-flex items-center gap-3 cobalt-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
+            <Link to="/" className="inline-flex items-center gap-3 orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform">
               <ArrowLeft className="w-5 h-5" /> Back to Home
             </Link>
             <Link to="/contact" className="inline-flex items-center gap-3 bg-slate-100 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-200 transition-colors">
@@ -42,3 +42,4 @@ export default function NotFound() {
     </div>
   );
 }
+

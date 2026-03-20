@@ -32,27 +32,6 @@ import {
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
-const testingDomains = [
-  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: <Building className="w-5 h-5" />, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
-  { name: "Trade Finance", icon: <FileText className="w-5 h-5" />, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: <Home className="w-5 h-5" />, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: <ShieldCheck className="w-5 h-5" />, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
-];
 
 export default function IslamicBankingTesting() {
   const location = useLocation();
@@ -96,9 +75,9 @@ export default function IslamicBankingTesting() {
                   End-to-end quality assurance for Islamic financial ecosystems. We validate the intricate logic of Murabaha financing, Ijarah leasing, and Shariah governance frameworks with surgical precision.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
-                    Request Lab Access
-                  </button>
+                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                    Request Consultation
+                  </Link>
                   <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
                     Technical Specs
                   </button>
@@ -216,7 +195,7 @@ export default function IslamicBankingTesting() {
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center mb-24">
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Methodology</h2>
-              <h3 className="text-4xl md:text-5xl font-black tracking-tight">The Pristine Validation Workflow</h3>
+              <h3 className="text-4xl md:text-5xl font-black tracking-tight">The V Qube Validation Workflow</h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -266,8 +245,8 @@ export default function IslamicBankingTesting() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="cobalt-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
+          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Secure Your Shariah Framework</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Deploy our dedicated Islamic Banking testing laboratory for your next implementation or audit cycle.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
@@ -284,3 +263,4 @@ export default function IslamicBankingTesting() {
     </div>
   );
 }
+

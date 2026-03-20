@@ -85,7 +85,7 @@ export default function Navbar() {
           </div>
 
           <Link to="/about" className="font-semibold text-sm text-slate-600 hover:text-primary transition-colors">ABOUT US</Link>
-          <Link to="/contact" className="cobalt-gradient text-white px-6 py-2.5 rounded-lg font-bold text-sm shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+          <Link to="/contact" className="orange-gradient text-white px-6 py-2.5 rounded-lg font-bold text-sm shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
             CONSULTATION
           </Link>
         </div>
@@ -125,7 +125,7 @@ export default function Navbar() {
               </div>
 
               <Link to="/about" className="font-bold text-lg text-slate-900">ABOUT US</Link>
-              <Link to="/contact" className="cobalt-gradient text-white px-6 py-4 rounded-xl font-bold text-center shadow-xl shadow-primary/20">
+              <Link to="/contact" className="orange-gradient text-white px-6 py-4 rounded-xl font-bold text-center shadow-xl shadow-primary/20">
                 GET A CONSULTATION
               </Link>
             </div>
@@ -135,3 +135,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

@@ -35,27 +35,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const sidebarItems = [
-  { name: "Core Banking", icon: Building2, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: Landmark, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: Building2, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: Banknote, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: Wallet, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: Building, path: "/testing/corporate-banking", active: true },
-  { name: "Investment Banking", icon: TrendingUp, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: TrendingUp, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: Shield, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: Activity, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: Coins, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: CreditCard, path: "/testing/payments" },
-  { name: "Trade Finance", icon: FileText, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: Home, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: ShieldCheck, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: BarChart3, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: MapPin, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: Share2, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: Cpu, path: "/testing/bespoke-apps" },
-];
 
 export default function CorporateBanking() {
   return (
@@ -77,10 +56,10 @@ export default function CorporateBanking() {
               <span className="text-primary">Quality Assurance</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10 font-medium">
-              Pristine validation for high-stakes institutional finance. From multi-currency liquidity to complex trade finance ecosystems.
+              Strategic validation for high-stakes institutional finance. From multi-currency liquidity to complex trade finance ecosystems.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="cobalt-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
+              <button className="orange-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
                 Request Audit Framework
                 <ArrowRight className="w-5 h-5" />
               </button>
@@ -154,7 +133,7 @@ export default function CorporateBanking() {
                 </div>
                 <h3 className="text-2xl font-black mb-4 tracking-tight text-slate-900">Trade Finance Ecosystems</h3>
                 <p className="text-slate-600 leading-relaxed font-medium">
-                  Testing Letters of Credit, Guarantees, and Supply Chain Financing modules. Our pristine lab validates complex document workflows and digital signatures.
+                  Testing Letters of Credit, Guarantees, and Supply Chain Financing modules. Our specialized lab validates complex document workflows and digital signatures.
                 </p>
               </div>
               <div className="w-full md:w-1/3 aspect-square bg-slate-50 rounded-2xl overflow-hidden border border-slate-100">
@@ -169,12 +148,12 @@ export default function CorporateBanking() {
           </motion.div>
         </section>
 
-        {/* Vertical Data List (The Pristine Lab Approach) */}
+        {/* Vertical Data List (The V Qube Lab Approach) */}
         <section className="mb-24">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
             <div>
-              <h2 className="text-4xl font-black tracking-tighter text-slate-900 mb-4">Precision Testing Pillars</h2>
-              <p className="text-slate-600 max-w-xl font-medium">Our technical validation methodology is built on the rigorous standards of the Digital Vault philosophy.</p>
+              <h2 className="text-4xl font-black tracking-tighter text-slate-900 mb-4">V Qube Testing Pillars</h2>
+              <p className="text-slate-600 max-w-xl font-medium">Our technical validation methodology is built on the rigorous standards of the V Qube philosophy.</p>
             </div>
             <div className="flex gap-4">
               <button className="p-4 rounded-full border border-slate-200 hover:bg-white hover:shadow-md transition-all">
@@ -259,3 +238,4 @@ export default function CorporateBanking() {
     </div>
   );
 }
+

@@ -37,27 +37,6 @@ import {
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
-const testingDomains = [
-  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: <Building className="w-5 h-5" />, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
-  { name: "Trade Finance", icon: <FileText className="w-5 h-5" />, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: <Home className="w-5 h-5" />, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: <ShieldCheck className="w-5 h-5" />, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
-];
 
 export default function BespokeAppsTesting() {
   const location = useLocation();
@@ -102,12 +81,12 @@ export default function BespokeAppsTesting() {
                   Custom-engineered testing frameworks for unique BFSI ecosystems. We validate the complex logic of fintech startups and the rigid integration requirements of enterprise banking.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
                     Start Lab Audit
-                  </button>
-                  <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                  </Link>
+                  <Link to="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
                     Technical Specs
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             </div>
@@ -140,7 +119,7 @@ export default function BespokeAppsTesting() {
                 </div>
               </div>
 
-              <div className="bg-primary p-12 rounded-[3rem] text-white cobalt-gradient flex flex-col justify-between shadow-2xl shadow-primary/20 relative overflow-hidden group">
+              <div className="bg-primary p-12 rounded-[3rem] text-white orange-gradient flex flex-col justify-between shadow-2xl shadow-primary/20 relative overflow-hidden group">
                 <div className="absolute inset-0 bg-grid-white/5 opacity-20"></div>
                 <Zap className="w-12 h-12 mb-8 group-hover:scale-110 transition-transform duration-500" fill="currentColor" />
                 <div>
@@ -182,9 +161,9 @@ export default function BespokeAppsTesting() {
                 <p className="text-slate-600 text-lg leading-relaxed mb-10 font-medium">
                   In the modern banking era, no application is an island. We specialize in testing the invisible bridges—APIs, microservices, and webhooks—that connect your bespoke app to the global financial grid.
                 </p>
-                <button className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-primary transition-all shadow-xl">
+                <Link to="/contact" className="px-10 py-5 bg-slate-900 text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-primary transition-all shadow-xl">
                   Explore Integration Matrix
-                </button>
+                </Link>
               </div>
               <div className="flex-1 relative">
                 <div className="absolute inset-0 bg-primary/10 rounded-[3rem] blur-3xl animate-pulse"></div>
@@ -235,3 +214,4 @@ export default function BespokeAppsTesting() {
     </div>
   );
 }
+

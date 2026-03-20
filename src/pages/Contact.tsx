@@ -1,96 +1,239 @@
+import React, { useState } from "react";
 import { motion } from "motion/react";
-import { Mail, Headset, Send, MapPin, Globe } from "lucide-react";
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
+  ShieldCheck, 
+  Rocket, 
+  CheckCircle2, 
+  ChevronRight,
+  Globe,
+  Building2,
+  Lock,
+  MessageSquare
+} from "lucide-react";
 
 export default function Contact() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    const data = Object.fromEntries(formData.entries());
+    
+    const subject = `Technical Inquiry: ${data.service} for ${data.domain}`;
+    const body = `
+Initialize Inquiry Request
+-------------------------
+Name: ${data.name}
+Organization: ${data.organization}
+Work Email: ${data.email}
+Contact Protocol: ${data.phone}
+Service Vector: ${data.service}
+Target Domain: ${data.domain}
+
+Technical Brief:
+${data.description}
+-------------------------
+End of Request
+    `.trim();
+
+    window.location.href = `mailto:consult@vqube.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    setIsSubmitted(true);
+    setTimeout(() => setIsSubmitted(false), 5000);
+  };
+
   return (
-    <div className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-24 items-start">
-          <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="space-y-12"
-          >
-            <div className="space-y-6">
-              <h1 className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">
-                Let's Build <span className="text-primary">Quality</span> Together
+    <div className="bg-surface font-body text-on-surface antialiased tech-grid min-h-screen pt-32 pb-20 selection:bg-primary-fixed selection:text-on-primary-fixed">
+      <div className="max-w-7xl mx-auto px-8 lg:px-12">
+        {/* Hero & Contact Split Section */}
+        <div className="flex flex-col lg:flex-row gap-20 items-start">
+          {/* Content Side */}
+          <div className="lg:w-1/2 lg:sticky lg:top-32">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black tracking-[0.2em] uppercase mb-8 border border-primary/10">
+                <ShieldCheck className="w-3 h-3" />
+                Global Availability 24/7
+              </div>
+              <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[0.9]">
+                Connect with the <br/>
+                <span className="text-primary italic">BFSI QA Architects.</span>
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
-                Ready to elevate your software's reliability? Our experts are standing by to discuss your project.
+              <p className="text-xl text-on-surface-variant leading-relaxed max-w-lg mb-12 font-medium">
+                Enter the digital vault for specialized quality assurance consultation. Our technical environment is engineered for the highest compliance standards in financial services.
               </p>
-            </div>
 
-            <div className="space-y-8">
-              <div className="flex gap-6 items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 group hover:border-primary transition-all">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                  <Mail className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-900 mb-1">Email Us</h4>
-                  <p className="text-slate-500">consult@vqube.com</p>
-                </div>
+              {/* Trust Quote */}
+              <div className="relative pl-8 mb-16 border-l-4 border-primary">
+                <p className="text-xl italic font-bold text-slate-900 leading-relaxed">
+                  "Precision is the only currency we accept in the vault."
+                </p>
+                <span className="block mt-4 text-[10px] uppercase tracking-[0.3em] font-black text-slate-400">— Chief Auditor, V Qube Team</span>
               </div>
 
-              <div className="flex gap-6 items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 group hover:border-primary transition-all">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                  <Headset className="w-6 h-6" />
+              {/* Information Panel (Bento-lite) */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
+                  <MapPin className="text-primary w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
+                  <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">Singapore Node</h4>
+                  <p className="text-slate-900 font-bold text-sm leading-relaxed">One Financial District,<br/>Suite 400, Singapore</p>
                 </div>
-                <div>
-                  <h4 className="font-bold text-slate-900 mb-1">Call Us</h4>
-                  <p className="text-slate-500">+1 (800) V-QUBE-QA</p>
+                <a href="mailto:consult@vqube.com" className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group block">
+                  <Mail className="text-primary w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
+                  <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">Secure Channel</h4>
+                  <p className="text-slate-900 font-bold text-sm">consult@vqube.com</p>
+                </a>
+                <a href="tel:+1800878233" className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group block">
+                  <Phone className="text-primary w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
+                  <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">Direct Link</h4>
+                  <p className="text-slate-900 font-bold text-sm">+1 800 V-QUBE</p>
+                </a>
+                <div className="p-8 rounded-[2rem] bg-primary text-white shadow-2xl shadow-primary/30 flex flex-col justify-between">
+                  <div>
+                    <Lock className="text-white w-8 h-8 mb-6" />
+                    <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 opacity-60">Service SLA</h4>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-5 h-5 text-blue-200" />
+                    <p className="text-sm font-black italic">24-hour response promise</p>
+                  </div>
                 </div>
               </div>
+            </motion.div>
+          </div>
 
-              <div className="flex gap-6 items-center p-6 bg-slate-50 rounded-2xl border border-slate-100 group hover:border-primary transition-all">
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                  <MapPin className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="font-bold text-slate-900 mb-1">Visit Us</h4>
-                  <p className="text-slate-500">123 Financial District, Suite 500, NY</p>
-                </div>
+          {/* Form Side */}
+          <div className="lg:w-1/2 w-full">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="p-8 lg:p-16 rounded-[4rem] bg-white shadow-2xl border border-slate-100 relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-[100px] rounded-full -z-10"></div>
+              <div className="mb-12">
+                <h2 className="text-4xl font-black tracking-tighter text-on-surface mb-4">Request Technical Briefing</h2>
+                <p className="text-slate-500 font-medium text-lg">Initialize an encrypted consultation request below.</p>
               </div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="bg-white p-10 md:p-16 rounded-[3rem] shadow-2xl border border-slate-100 relative overflow-hidden"
-          >
-            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-3xl rounded-full -z-10"></div>
-            <h2 className="text-3xl font-bold text-slate-900 mb-10 tracking-tight">Request a Consultation</h2>
-            <form className="space-y-8">
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-3">
-                  <label className="text-xs font-black text-slate-400 tracking-widest uppercase">Full Name</label>
-                  <input type="text" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-primary transition-all" placeholder="John Doe" />
-                </div>
-                <div className="space-y-3">
-                  <label className="text-xs font-black text-slate-400 tracking-widest uppercase">Email Address</label>
-                  <input type="email" className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-primary transition-all" placeholder="john@company.com" />
-                </div>
-              </div>
-              <div className="space-y-3">
-                <label className="text-xs font-black text-slate-400 tracking-widest uppercase">Service Interest</label>
-                <select className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-primary transition-all">
-                  <option>Software Testing</option>
-                  <option>Domain Support</option>
-                  <option>Support Development Teams</option>
-                  <option>Training & Rollout</option>
-                </select>
-              </div>
-              <div className="space-y-3">
-                <label className="text-xs font-black text-slate-400 tracking-widest uppercase">Message</label>
-                <textarea className="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-primary transition-all min-h-[150px]" placeholder="Tell us about your project..."></textarea>
-              </div>
-              <button className="w-full cobalt-gradient text-white py-5 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-                Send Message <Send className="w-5 h-5" />
-              </button>
-            </form>
-          </motion.div>
+              
+              {isSubmitted ? (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="bg-emerald-50 border border-emerald-100 p-12 rounded-[3rem] text-center"
+                >
+                  <div className="w-20 h-20 bg-emerald-500 text-white rounded-full flex items-center justify-center mx-auto mb-8 shadow-xl shadow-emerald-200">
+                    <CheckCircle2 className="w-10 h-10" />
+                  </div>
+                  <h3 className="text-3xl font-black text-emerald-900 mb-4">Inquiry Initialized</h3>
+                  <p className="text-emerald-700 font-medium leading-relaxed">
+                    Encryption sequence complete. Our BFSI architects will contact you within 24 hours via your secure work email.
+                  </p>
+                </motion.div>
+              ) : (
+                <form className="space-y-8" onSubmit={handleSubmit}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Identity Name</label>
+                      <input 
+                        type="text" 
+                        name="name"
+                        required
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        placeholder="e.g. Alexander Chen" 
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Organization</label>
+                      <input 
+                        type="text" 
+                        name="organization"
+                        required
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        placeholder="Global Finance Ltd." 
+                      />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Work Email</label>
+                      <input 
+                        type="email" 
+                        name="email"
+                        required
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        placeholder="name@company.com" 
+                      />
+                    </div>
+                    <div className="space-y-3">
+                      <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Contact Protocol</label>
+                      <input 
+                        type="tel" 
+                        name="phone"
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        placeholder="+1 (555) 000-0000" 
+                      />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Service Vector</label>
+                      <select name="service" className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer">
+                        <option>Compliance Audit</option>
+                        <option>QA Automation Lab</option>
+                        <option>Security Simulation</option>
+                        <option>DevOps Integration</option>
+                      </select>
+                    </div>
+                    <div className="space-y-3">
+                      <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Target Domain</label>
+                      <select name="domain" className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer">
+                        <option>Banking & Retail</option>
+                        <option>Insurance Systems</option>
+                        <option>Capital Markets</option>
+                        <option>Fintech Core</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="space-y-3">
+                    <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Technical Brief Description</label>
+                    <textarea 
+                      name="description"
+                      required
+                      className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300 resize-none" 
+                      placeholder="Detail your specific simulation requirements..." 
+                      rows={4}
+                    ></textarea>
+                  </div>
+                  <button className="w-full py-6 px-10 rounded-2xl orange-gradient text-white font-black text-lg shadow-2xl shadow-primary/30 hover:shadow-primary/50 active:scale-[0.98] transition-all flex items-center justify-center gap-4 group" type="submit">
+                    Initialize Inquiry
+                    <Rocket className="w-6 h-6 group-hover:translate-y-[-4px] group-hover:translate-x-[4px] transition-transform" />
+                  </button>
+                </form>
+              )}
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.8 }}
+              className="mt-12 flex justify-center"
+            >
+              <img 
+                className="w-full h-48 object-cover rounded-[3rem] opacity-40 mix-blend-multiply grayscale border border-slate-100" 
+                alt="Digital security patterns" 
+                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200"
+              />
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+

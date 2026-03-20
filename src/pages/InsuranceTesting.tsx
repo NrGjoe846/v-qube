@@ -27,27 +27,6 @@ import {
   Share2
 } from "lucide-react";
 
-const testingDomains = [
-  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance", active: true },
-  { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
-  { name: "Trade Finance", icon: <FileText className="w-5 h-5" />, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: <Home className="w-5 h-5" />, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: <ShieldCheck className="w-5 h-5" />, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
-];
 
 export default function InsuranceTesting() {
   const location = useLocation();
@@ -70,7 +49,7 @@ export default function InsuranceTesting() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-surface-container-low mx-4 mt-20 rounded-[3rem] border border-slate-200 shadow-sm mb-12">
           <div className="absolute inset-0 z-0">
-             <div className="absolute inset-0 bg-grid-teal opacity-5 rotate-12 scale-150"></div>
+             <div className="absolute inset-0 bg-grid-orange opacity-5 rotate-12 scale-150"></div>
              <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent"></div>
           </div>
 
@@ -85,17 +64,17 @@ export default function InsuranceTesting() {
                   Specialized Testing
                 </span>
                 <h1 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-8">
-                  Pristine <br/>Insurance <span className="text-primary italic">Testing.</span>
+                  Specialized <br/>Insurance <span className="text-primary italic">Testing.</span>
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-2xl font-medium mb-12">
                   Deploying surgical precision across the insurance value chain. From policy legacy migrations to real-time actuarial validation, we ensure your digital vault remains unbreachable.
                 </p>
                 <div className="flex gap-4">
-                  <button className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
                     Audit My Stack
-                  </button>
+                  </Link>
                   <button className="px-8 py-4 bg-white text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-50 transition-all">
-                    View Lab Report
+                    View Framework Report
                   </button>
                 </div>
               </motion.div>
@@ -183,7 +162,7 @@ export default function InsuranceTesting() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="md:col-span-4 cobalt-gradient text-white p-10 rounded-[3rem] shadow-2xl shadow-primary/20 flex flex-col justify-between relative overflow-hidden group"
+                className="md:col-span-4 orange-gradient text-white p-10 rounded-[3rem] shadow-2xl shadow-primary/20 flex flex-col justify-between relative overflow-hidden group"
               >
                 <div className="absolute inset-0 bg-grid-white/5 opacity-20 group-hover:scale-110 transition-transform duration-1000"></div>
                 <div className="relative z-10">
@@ -275,8 +254,8 @@ export default function InsuranceTesting() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="cobalt-gradient p-16 md:p-24 rounded-[4rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-[0px_32px_128px_rgba(0,64,223,0.3)] mx-auto max-w-7xl">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
+          <div className="orange-gradient p-16 md:p-24 rounded-[4rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-[0px_32px_128px_rgba(0,64,223,0.3)] mx-auto max-w-7xl">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <div className="relative z-10 max-w-3xl">
               <h3 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Architect a Precision Framework.</h3>
               <p className="text-xl text-white/80 mb-12 font-medium">Our domain experts are ready to audit your insurance stack and deploy a surgical testing engine.</p>
@@ -295,3 +274,4 @@ export default function InsuranceTesting() {
     </div>
   );
 }
+

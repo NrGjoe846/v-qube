@@ -19,12 +19,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const serviceLinks = [
-  { name: "Software Testing", icon: <ShieldCheck className="w-5 h-5" />, path: "/services/software-testing" },
-  { name: "Domain Support", icon: <Database className="w-5 h-5" />, path: "/services/domain-support", active: true },
-  { name: "Dev Team Support", icon: <Users className="w-5 h-5" />, path: "/services/support-dev-teams" },
-  { name: "Training & Rollout", icon: <Rocket className="w-5 h-5" />, path: "/services/support-users" },
-];
 
 export default function DomainSupport() {
   return (
@@ -32,22 +26,16 @@ export default function DomainSupport() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-          {/* Hero Background */}
-          <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUzsU3gzlY3lkQFUblXeFYphEfJ5OxNLheOCUG8t9no2JT1lPg-wAaVkgtdzfkBn2bDHD6rnV2jbt51-84HeLb0wQKtvSc7t-m6ayVEkeQD-Ocacs8dQt1GENfqPuq5Oixbu6gP0GhMZ5YkZkrFWMZI4f5spfin1pWDTR2EnmrWOPINvwELCHcLc8_0E-dOrFZzkB0-dnWqaV4UQMl4C5cAZeSXIzW87MtghPuFJTmvtk2buEZrAeVXj4Hu5eE7mX3Fm1oKcgbPYRk" 
-              alt="Modern high-tech data center"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/80 to-transparent"></div>
-          </div>
-          
-          <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24">
-            <div className="max-w-2xl">
+        <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <nav className="flex items-center gap-2 mb-8">
-                <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
+                <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary transition-colors">Services</Link>
                 <ChevronRight className="w-3 h-3 text-slate-300" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">IT Domain Support</span>
               </nav>
@@ -57,25 +45,44 @@ export default function DomainSupport() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Enterprise Infrastructure
                 </span>
-                <h1 className="text-5xl lg:text-7xl font-black text-white tracking-tighter leading-[1.1] mb-8">
-                  IT Domain Support for <span className="text-primary">Financial Institutions</span>
+                <h1 className="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter leading-[1.1] mb-8">
+                  IT Domain Support for <span className="text-primary">Financial Institutions.</span>
                 </h1>
-                <p className="text-lg lg:text-xl text-slate-300 leading-relaxed mb-10 font-medium">
+                <p className="text-lg lg:text-xl text-slate-600 leading-relaxed mb-10 font-medium">
                   Secure, compliant, and highly available domain infrastructure tailored for the rigorous demands of BFSI operations. Precision testing meets mission-critical administration.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all">
                     Request Assessment
-                  </button>
-                  <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                  </Link>
+                  <button className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
                     View Compliance Framework
                   </button>
                 </div>
               </motion.div>
-            </div>
+            </motion.div>
+
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10 relative z-10">
+                <div className="rounded-[2rem] overflow-hidden aspect-square">
+                  <img 
+                    className="w-full h-full object-cover" 
+                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80&w=1920" 
+                    alt="High-tech data center"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+              <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -z-10"></div>
+            </motion.div>
           </div>
         </section>
 
@@ -178,7 +185,7 @@ export default function DomainSupport() {
                 </div>
                 <img 
                   className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrvoenP753wdzCa0D_0suyKPkAMQasmdmfhGm41NyFNCJp59ju3AToMfxcm0Lgxh2CWDFkF4dsB6oZY41Jqojaag3B2DB6APcSzYsQqoNfJPvS2wGQUAYrWThD06DAC5A2HBAMfq9ZE9zwjiK8eY2k4pGcCo9KGtG5mTdsLAjO7IxmFk-XOVpnDsoyh5sxLw5O0sR01lbgdcavg4XRaz7-EwrH6oli_aLg0LVcS_fQ6Thhgenc7V0vwQW59fsMuVHmKVdW9fWCXB3U" 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200" 
                   alt="Data visualization"
                   referrerPolicy="no-referrer"
                 />
@@ -194,7 +201,7 @@ export default function DomainSupport() {
               >
                 <div className="hidden sm:block w-1/3 aspect-square rounded-3xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEe4HXZq39REXgPYJemrHkcCC4Ft1inSEohHe-uNzdmgJbheKh4yzsTRqNRBIW5lEk9CYwsOlySJOvuVf5gK0b6tdHy3xlxN_EObxnrdbBJOTNcOqgpE-0DlJGtaReYKQNiOC4Mtdl_XCD0rc5pXLDVbEvYtefzAY7nCZ3_iLMM-QWE7iUg4tkGxVbLLPmikkZS4AlG22wSYAhU4Jd2REoSCUdIq4gZJP915RuFreYEKMkLHut1TrNoXBA6Cb-msfGtkJXfLQJrOIV" 
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" 
                     alt="Digital globe" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -286,8 +293,8 @@ export default function DomainSupport() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="cobalt-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
+          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Domain?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the leading financial institutions that trust V Qube for mission-critical infrastructure administration.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
@@ -304,3 +311,4 @@ export default function DomainSupport() {
     </div>
   );
 }
+

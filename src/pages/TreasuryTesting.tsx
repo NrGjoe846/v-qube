@@ -40,27 +40,6 @@ import {
   Currency
 } from "lucide-react";
 
-const testingDomains = [
-  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: <Building className="w-5 h-5" />, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
-  { name: "Trade Finance", icon: <FileText className="w-5 h-5" />, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: <Home className="w-5 h-5" />, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: <ShieldCheck className="w-5 h-5" />, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
-];
 
 export default function TreasuryTesting() {
   const location = useLocation();
@@ -96,7 +75,7 @@ export default function TreasuryTesting() {
                 transition={{ duration: 0.6 }}
               >
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
-                  <TrendingUp className="w-3 h-3 mr-2" /> Pristine Treasury Assurance
+                  <TrendingUp className="w-3 h-3 mr-2" /> Strategic Treasury Assurance
                 </span>
                 <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
                   Precision testing for <span className="text-primary italic">high-velocity</span> liquidity.
@@ -105,12 +84,12 @@ export default function TreasuryTesting() {
                   V Qube Enterprises provides industrial-grade validation for treasury management systems, focusing on real-time FX risk, automated liquidity buffers, and global SWIFT standard adoption.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
                     Explore Modules
-                  </button>
-                  <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                  </Link>
+                  <Link to="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
                     Technical Specs
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             </div>
@@ -146,7 +125,7 @@ export default function TreasuryTesting() {
               </div>
 
               {/* ISO 20022 Card */}
-              <div className="md:col-span-4 cobalt-gradient p-10 rounded-[3rem] flex flex-col justify-end text-white relative overflow-hidden shadow-2xl shadow-primary/20 group">
+              <div className="md:col-span-4 orange-gradient p-10 rounded-[3rem] flex flex-col justify-end text-white relative overflow-hidden shadow-2xl shadow-primary/20 group">
                 <div className="absolute top-8 right-8 opacity-20 transform scale-150 group-hover:scale-175 transition-transform duration-700">
                   <Globe className="w-[120px] h-[120px]" />
                 </div>
@@ -287,3 +266,4 @@ export default function TreasuryTesting() {
     </div>
   );
 }
+

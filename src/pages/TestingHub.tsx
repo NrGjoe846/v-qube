@@ -33,12 +33,6 @@ import {
   TrendingUp
 } from "lucide-react";
 
-const sidebarLinks = [
-  { name: "Software Testing", icon: <ShieldCheck className="w-5 h-5" />, path: "/services/software-testing" },
-  { name: "Domain Support", icon: <Database className="w-5 h-5" />, path: "/services/domain-support" },
-  { name: "Dev Team Support", icon: <Users className="w-5 h-5" />, path: "/services/support-dev-teams" },
-  { name: "Training & Rollout", icon: <Rocket className="w-5 h-5" />, path: "/services/support-users" },
-];
 
 const testingAreas = [
   { name: "Core Banking", path: "/testing/core-banking", icon: Building2, desc: "Mission-critical operational nucleus and centralized ledger validation." },
@@ -51,16 +45,9 @@ const testingAreas = [
   { name: "Corporate Banking", path: "/testing/corporate-banking", icon: Building, desc: "Trade finance and commercial lending system audits." },
   { name: "Investment Banking", path: "/testing/investment-banking", icon: TrendingUp, desc: "M&A advisory, underwriting logic, and market data integration." },
   { name: "Capital Markets", path: "/testing/capital-markets", icon: TrendingUp, desc: "Institutional-grade trading infrastructure and market data validation." },
+  { name: "Self-Service Banking", path: "/testing/self-service-banking", icon: Smartphone, desc: "Specialized validation for ATM, Mobile, and Internet banking channels." },
   { name: "Wealth Management", path: "/testing/wealth-management", icon: Activity, desc: "Portfolio management and robo-advisory testing." },
-  { name: "Asset Management", path: "/testing/asset-management", icon: Coins, desc: "Big data integrity and ETL pipeline validation." },
-  { name: "Cards & Payments", path: "/testing/payments", icon: CreditCard, desc: "End-to-end testing of core financial ledger systems." },
-  { name: "Trade Finance", path: "/testing/trade-finance", icon: FileText, desc: "Trade finance and commercial lending system audits." },
-  { name: "Mortgage Finance", path: "/testing/mortgage-finance", icon: Home, desc: "Mortgage and personal loan lifecycle automation." },
-  { name: "Compliance & AML", path: "/testing/risk-compliance", icon: ShieldCheck, desc: "Shariah-compliant financial product verification." },
-  { name: "Risk Management", path: "/testing/risk-management", icon: BarChart3, desc: "Custom-built fintech solution assurance." },
-  { name: "Agent Banking", path: "/testing/agent-banking", icon: MapPin, desc: "ATM, Kiosk, and automated teller system validation." },
-  { name: "Digital Ecosystems", path: "/testing/digital-ecosystems", icon: Share2, desc: "Algorithmic trading and market data integrity." },
-  { name: "Data Warehouse", path: "/testing/data-warehouse", icon: Database, desc: "Pristine integrity for your enterprise intelligence and ETL validation." },
+  { name: "Data Warehouse", path: "/testing/data-warehouse", icon: Database, desc: "Strategic integrity for your enterprise intelligence and ETL validation." },
 ];
 
 export default function TestingHub() {
@@ -175,8 +162,8 @@ export default function TestingHub() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="cobalt-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
+          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Need a Custom QA Strategy?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Our domain experts are ready to architect a precision-testing framework tailored to your unique requirements.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
@@ -193,3 +180,4 @@ export default function TestingHub() {
     </div>
   );
 }
+

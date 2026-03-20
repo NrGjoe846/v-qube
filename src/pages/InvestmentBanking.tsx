@@ -38,27 +38,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const sidebarItems = [
-  { name: "Core Banking", icon: Building2, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: Landmark, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: Building2, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: Banknote, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: Wallet, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: Building, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: TrendingUp, path: "/testing/investment-banking", active: true },
-  { name: "Capital Markets", icon: TrendingUp, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: Shield, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: Activity, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: Coins, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: CreditCard, path: "/testing/payments" },
-  { name: "Trade Finance", icon: FileText, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: Home, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: ShieldCheck, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: BarChart3, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: MapPin, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: Share2, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: Cpu, path: "/testing/bespoke-apps" },
-];
 
 export default function InvestmentBanking() {
   return (
@@ -83,7 +62,7 @@ export default function InvestmentBanking() {
               Precision-engineered testing frameworks for M&A advisory, underwriting logic, and high-frequency market data integration.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="cobalt-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
+              <button className="orange-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
                 Explore Methodology
                 <ArrowRight className="w-5 h-5" />
               </button>
@@ -188,7 +167,7 @@ export default function InvestmentBanking() {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-24">
           <div className="space-y-12">
             <div>
-              <h2 className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-4">The Pristine Approach</h2>
+              <h2 className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-4">The V Qube Approach</h2>
               <h3 className="text-4xl font-black tracking-tight mb-6 text-slate-900">A Laboratory for High-Finance Resilience.</h3>
               <p className="text-lg text-slate-600 leading-relaxed font-medium">
                 Our BFSI testing lab replicates production environments with forensic accuracy. We don't just test code; we validate financial integrity and regulatory alignment.
@@ -279,3 +258,4 @@ export default function InvestmentBanking() {
     </div>
   );
 }
+

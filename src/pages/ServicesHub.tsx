@@ -66,7 +66,25 @@ export default function ServicesHub() {
             </motion.div>
           ))}
         </div>
+
+        {/* Final CTA */}
+        <section className="mt-32">
+          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
+            <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Scale Your Quality?</h3>
+            <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the world's leading financial institutions in deploying flawless software at intercept-ready speed.</p>
+            <div className="flex flex-col sm:flex-row gap-6 z-10">
+              <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
+                Initiate Consultation
+              </Link>
+              <Link to="/contact" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
+                Request Technical Briefing
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
 }
+

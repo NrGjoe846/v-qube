@@ -43,27 +43,6 @@ import {
   UserPlus
 } from "lucide-react";
 
-const testingDomains = [
-  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: <Building className="w-5 h-5" />, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
-  { name: "Trade Finance", icon: <FileText className="w-5 h-5" />, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: <Home className="w-5 h-5" />, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: <ShieldCheck className="w-5 h-5" />, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
-];
 
 export default function RetailLoanTesting() {
   const location = useLocation();
@@ -86,7 +65,7 @@ export default function RetailLoanTesting() {
               transition={{ delay: 0.2 }}
               className="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-[0.1em] mb-4"
             >
-              Laboratory Module 04-B
+              QA Framework Module 04-B
             </motion.span>
             <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-on-surface mb-6 leading-tight">
               Retail Loan <br />
@@ -137,9 +116,9 @@ export default function RetailLoanTesting() {
                   Micro-validation for unsecured credit, handling rapid disbursal logic and delinquency triggers.
                 </p>
               </div>
-              <button className="mt-8 bg-white/10 hover:bg-white/20 py-3 rounded-xl text-sm font-bold transition-all border border-white/20">
+              <Link to="/contact" className="mt-8 bg-white/10 hover:bg-white/20 py-3 rounded-xl text-sm font-bold transition-all border border-white/20 text-center">
                 Analyze Logic
-              </button>
+              </Link>
             </motion.div>
 
             {/* Vehicle Loans */}
@@ -209,7 +188,7 @@ export default function RetailLoanTesting() {
                     <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-bold">01</div>
                     <div>
                       <h4 className="font-bold mb-2 text-lg">Ingestion Layer</h4>
-                      <p className="text-on-surface-variant text-sm leading-relaxed">Mapping disparate loan formats into the Pristine Laboratory unified data schema.</p>
+                      <p className="text-on-surface-variant text-sm leading-relaxed">Mapping disparate loan formats into the V Qube Lab unified data schema.</p>
                     </div>
                   </div>
                   <div className="flex gap-6">
@@ -261,3 +240,4 @@ export default function RetailLoanTesting() {
     </div>
   );
 }
+

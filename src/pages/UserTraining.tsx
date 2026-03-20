@@ -31,12 +31,6 @@ const staggerContainer = {
   }
 };
 
-const sidebarLinks = [
-  { name: "Software Testing", icon: <ShieldCheck className="w-5 h-5" />, path: "/services/software-testing" },
-  { name: "Domain Support", icon: <Database className="w-5 h-5" />, path: "/services/domain-support" },
-  { name: "Dev Team Support", icon: <Users className="w-5 h-5" />, path: "/services/support-dev-teams" },
-  { name: "Training & Rollout", icon: <Rocket className="w-5 h-5" />, path: "/services/support-users", active: true },
-];
 
 export default function UserTraining() {
   return (
@@ -45,7 +39,7 @@ export default function UserTraining() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
-          <div className="absolute inset-0 bg-grid-teal opacity-40"></div>
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
           <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -64,7 +58,7 @@ export default function UserTraining() {
                 Bridge the gap between technical deployment and operational excellence. Our precision-engineered rollout strategies ensure seamless adoption across BFSI ecosystems.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="cobalt-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
+                <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
                   Request Rollout Plan
                 </Link>
                 <button className="bg-surface-container-high text-on-secondary-container px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-colors">
@@ -218,7 +212,7 @@ export default function UserTraining() {
               viewport={{ once: true }}
               className="w-full lg:w-1/2 order-1 lg:order-2"
             >
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-12 tracking-tighter">The "Pristine Training" Methodology</h2>
+              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-12 tracking-tighter">The "Strategic Training" Methodology</h2>
               <div className="space-y-10">
                 {[
                   { title: "Needs Analysis", desc: "We map existing workflows against new system capabilities to identify critical knowledge gaps.", icon: <Target className="w-6 h-6" /> },
@@ -272,13 +266,13 @@ export default function UserTraining() {
       <section className="py-32 bg-white relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-6 md:px-16 relative z-10 text-center">
           <div className="bg-primary rounded-[3rem] p-16 md:p-24 shadow-2xl shadow-primary/30 text-white relative overflow-hidden">
-            <div className="absolute inset-0 bg-grid-teal opacity-10"></div>
+            <div className="absolute inset-0 bg-grid-orange opacity-10"></div>
             <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight">Ready for a Flawless Rollout?</h2>
             <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
               Ensure your users are empowered from Day 1. Partner with V Qube for end-to-end training and support services.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all">
+              <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all text-center">
                 Talk to a Rollout Specialist
               </Link>
               <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/20 transition-all">
@@ -293,3 +287,4 @@ export default function UserTraining() {
     </div>
   );
 }
+

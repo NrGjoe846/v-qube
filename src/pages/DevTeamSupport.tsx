@@ -23,12 +23,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const serviceLinks = [
-  { name: "Software Testing", icon: <ShieldCheck className="w-5 h-5" />, path: "/services/software-testing" },
-  { name: "Domain Support", icon: <Database className="w-5 h-5" />, path: "/services/domain-support" },
-  { name: "Dev Team Support", icon: <Users className="w-5 h-5" />, path: "/services/support-dev-teams", active: true },
-  { name: "Training & Rollout", icon: <Rocket className="w-5 h-5" />, path: "/services/support-users" },
-];
 
 export default function DevTeamSupport() {
   return (
@@ -36,48 +30,63 @@ export default function DevTeamSupport() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920" 
-              alt="Development Team Support"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
-          </div>
-
-          <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24">
-            <div className="max-w-3xl">
+        <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <nav className="flex items-center gap-2 mb-8">
-                <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
+                <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary transition-colors">Services</Link>
                 <ChevronRight className="w-3 h-3 text-slate-300" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">Dev Team Support</span>
               </nav>
+              
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Engineering Excellence
                 </span>
-                <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
+                <h1 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-8">
                   Dev Team <span className="text-primary">QA Support.</span>
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed max-w-2xl font-medium mb-12">
+                <p className="text-xl text-slate-600 leading-relaxed max-w-2xl font-medium mb-12">
                   Surgical QA integration that empowers engineers to ship rock-solid BFSI software at peak velocity. We bridge the gap between code and compliance.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all">
                     Request Integration Plan
-                  </button>
-                  <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                  </Link>
+                  <button className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
                     QA Methodology
                   </button>
                 </div>
               </motion.div>
-            </div>
+            </motion.div>
+
+            <motion.div
+              className="relative"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10 relative z-10">
+                <div className="rounded-[2rem] overflow-hidden aspect-square">
+                  <img 
+                    className="w-full h-full object-cover" 
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920" 
+                    alt="Development Team Support"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+              </div>
+              <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 blur-[100px] rounded-full -z-10"></div>
+            </motion.div>
           </div>
         </section>
 
@@ -320,8 +329,8 @@ export default function DevTeamSupport() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="cobalt-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
+          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Pipeline?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join over 40+ financial institutions leveraging V Qube's specialized QA support services.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
@@ -338,3 +347,4 @@ export default function DevTeamSupport() {
     </div>
   );
 }
+

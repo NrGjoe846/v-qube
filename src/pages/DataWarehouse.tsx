@@ -50,13 +50,13 @@ export default function DataWarehouse() {
                 Data Warehouse <br/><span className="text-primary italic">& ETL Validation.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium">
-                Pristine integrity for your enterprise intelligence. We validate the complex pipelines that transform raw data into high-stakes business decisions.
+                Strategic integrity for your enterprise intelligence. We validate the complex pipelines that transform raw data into high-stakes business decisions.
               </p>
               <div className="flex gap-4">
-                <button className="bg-primary text-white px-8 py-4 rounded-xl font-black flex items-center gap-3 hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-95 group">
+                <Link to="/contact" className="bg-primary text-white px-8 py-4 rounded-xl font-black flex items-center gap-3 hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-95 group">
                   Explore ETL Framework
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -286,14 +286,14 @@ export default function DataWarehouse() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="cobalt-gradient p-16 md:p-24 rounded-[4rem] text-center text-white relative overflow-hidden shadow-2xl mx-auto max-w-7xl">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
+          <div className="orange-gradient p-16 md:p-24 rounded-[4rem] text-center text-white relative overflow-hidden shadow-2xl mx-auto max-w-7xl">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Ready to Secure Your Data Assets?</h2>
-              <p className="text-xl text-white/80 mb-12 font-medium">Partner with V Qube Enterprises to build a pristine, validated data warehouse for your financial institution.</p>
-              <button className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl hover:-translate-y-1">
+              <p className="text-xl text-white/80 mb-12 font-medium">Partner with V Qube Enterprises to build a robust, validated data warehouse for your financial institution.</p>
+              <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl hover:-translate-y-1 inline-block">
                 Consult a Data Specialist
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -301,3 +301,4 @@ export default function DataWarehouse() {
     </div>
   );
 }
+

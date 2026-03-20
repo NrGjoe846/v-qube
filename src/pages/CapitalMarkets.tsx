@@ -24,27 +24,6 @@ import {
   ShieldCheck
 } from "lucide-react";
 
-const sidebarItems = [
-  { name: "Core Banking", icon: Building2, path: "/testing/core-banking" },
-  { name: "Retail Banking", icon: Landmark, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: Building2, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: Banknote, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: Wallet, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: Building2, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: TrendingUp, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: TrendingUp, path: "/testing/capital-markets", active: true },
-  { name: "Insurance Testing", icon: Shield, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: Activity, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: Building2, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: CreditCard, path: "/testing/payments" },
-  { name: "Trade Finance", icon: FileText, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: Home, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: ShieldCheck, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: BarChart3, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: MapPin, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: Share2, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: Cpu, path: "/testing/bespoke-apps" },
-];
 
 export default function CapitalMarkets() {
   const location = useLocation();
@@ -64,7 +43,7 @@ export default function CapitalMarkets() {
               Capital Markets Precision
             </span>
             <h1 className="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-on-surface mb-8">
-              The Pristine<br/><span className="text-primary italic">Trading Vault</span>
+              The Strategic<br/><span className="text-primary italic">Trading Vault</span>
             </h1>
             <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-medium">
               High-integrity validation for institutional-grade trading infrastructure. We ensure zero-latency accuracy for market data feeds and flawless post-trade settlement architecture.
@@ -116,7 +95,7 @@ export default function CapitalMarkets() {
             {/* Card 2: Market Data */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="md:col-span-4 bg-primary text-white rounded-3xl p-10 cobalt-gradient flex flex-col justify-between shadow-xl shadow-primary/20"
+              className="md:col-span-4 bg-primary text-white rounded-3xl p-10 orange-gradient flex flex-col justify-between shadow-xl shadow-primary/20"
             >
               <div>
                 <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
@@ -165,10 +144,10 @@ export default function CapitalMarkets() {
                 <p className="text-on-surface-variant text-sm leading-relaxed mb-6 font-medium">
                   MiFID II, EMIR, and Dodd-Frank reporting validation integrated into the CI/CD pipeline.
                 </p>
-                <button className="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                <Link to="/contact" className="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                   View Compliance Framework
                   <ArrowRight className="w-5 h-5" />
-                </button>
+                </Link>
               </div>
               <div className="hidden sm:flex w-32 h-32 bg-secondary-fixed rounded-2xl items-center justify-center shrink-0">
                 <Gavel className="w-12 h-12 text-on-secondary-fixed" />
@@ -204,3 +183,4 @@ export default function CapitalMarkets() {
     </div>
   );
 }
+

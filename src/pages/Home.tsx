@@ -46,7 +46,7 @@ export default function Home() {
     <>
       {/* Hero Section */}
         <section className="relative min-h-[80vh] flex items-center justify-center py-20 bg-surface-container-lowest">
-          <div className="absolute inset-0 bg-grid-teal opacity-60"></div>
+          <div className="absolute inset-0 bg-grid-orange opacity-60"></div>
           <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-primary/5 blur-[120px] rounded-full"></div>
           <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-secondary/5 blur-[100px] rounded-full"></div>
           
@@ -64,12 +64,12 @@ export default function Home() {
                 V Qube Enterprises delivers specialized testing for Banking, Financial Services & Insurance — safeguarding every transaction, every compliance mandate, and every customer touchpoint.
               </p>
               <div className="flex flex-wrap gap-4">
-              <Link to="/testing/retail-banking" className="cobalt-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
+              <Link to="/testing/retail-banking" className="orange-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-lg shadow-xl shadow-primary/25 hover:translate-y-[-2px] transition-all">
                   Explore Testing Areas
                 </Link>
-                <button className="bg-surface-container-high text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-colors">
+                <Link to="/contact" className="bg-surface-container-high text-on-secondary-container px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-colors">
                   Talk to an Expert
-                </button>
+                </Link>
               </div>
             </motion.div>
 
@@ -122,7 +122,7 @@ export default function Home() {
           <div className="max-w-[1440px] mx-auto px-6 md:px-16">
             <div className="mb-20">
               <h2 className="font-headline text-4xl font-extrabold text-on-surface mb-4">BFSI Testing — The Significance</h2>
-              <div className="w-24 h-1.5 cobalt-gradient rounded-full"></div>
+              <div className="w-24 h-1.5 orange-gradient rounded-full"></div>
             </div>
             <motion.div 
               className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
@@ -183,21 +183,21 @@ export default function Home() {
                 </div>
               </Link>
               {/* Wealth Management */}
-              <div className="bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between group cursor-pointer shadow-xl shadow-primary/20">
+              <Link to="/testing/wealth-management" className="bg-primary text-on-primary rounded-xl p-8 flex flex-col justify-between group cursor-pointer shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform">
                 <LayoutDashboard className="w-8 h-8" />
                 <div>
                   <h4 className="text-xl font-bold">Wealth Management</h4>
                   <p className="text-xs text-on-primary/80 mt-2">Portfolio management and algorithmic trading QA.</p>
                 </div>
-              </div>
+              </Link>
               {/* Insurance */}
-              <div className="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-between hover:bg-white hover:shadow-md transition-all cursor-pointer">
-                <Shield className="text-secondary w-8 h-8" />
+              <Link to="/testing/insurance" className="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-between hover:bg-white hover:shadow-md transition-all cursor-pointer group">
+                <Shield className="text-secondary w-8 h-8 group-hover:scale-110 transition-transform" />
                 <div>
                   <h4 className="text-xl font-bold text-on-surface">Insurance Tech</h4>
                   <p className="text-xs text-on-surface-variant mt-2">Claims processing and policy lifecycle automation.</p>
                 </div>
-              </div>
+              </Link>
               {/* Retail Loans */}
               <Link to="/testing/retail-loans" className="bg-white rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-between group cursor-pointer">
                 <Smartphone className="text-primary w-8 h-8" />
@@ -207,21 +207,21 @@ export default function Home() {
                 </div>
               </Link>
               {/* Payments */}
-              <div className="md:col-span-2 bg-surface-container-highest rounded-xl p-8 relative overflow-hidden flex items-center justify-between group cursor-pointer">
+              <Link to="/testing" className="md:col-span-2 bg-surface-container-highest rounded-xl p-8 relative overflow-hidden flex items-center justify-between group cursor-pointer hover:bg-surface-container-high transition-colors">
                 <div className="max-w-[60%]">
                   <h4 className="text-2xl font-bold text-on-surface">Global Payments</h4>
                   <p className="text-sm text-on-surface-variant mt-2">SWIFT, SEPA, and Real-Time Payment network validation across borders.</p>
                 </div>
                 <CreditCard className="w-16 h-16 text-on-surface/10 group-hover:scale-125 transition-transform duration-500" />
-              </div>
+              </Link>
               {/* Regulatory */}
-              <div className="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-between group cursor-pointer shadow-sm">
+              <Link to="/testing" className="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 flex flex-col justify-between group cursor-pointer shadow-sm hover:shadow-md transition-all">
                 <ShieldCheck className="text-error w-8 h-8" />
                 <div>
                   <h4 className="text-xl font-bold text-on-surface">Regulatory Compliance</h4>
                   <p className="text-xs text-on-surface-variant mt-2">DORA, GDPR, and localized regulatory audit prep.</p>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>
@@ -286,7 +286,7 @@ export default function Home() {
                     <label className="text-sm font-bold uppercase tracking-widest text-on-surface-variant">How can we help?</label>
                     <textarea className="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="Briefly describe your testing needs..." rows={4}></textarea>
                   </div>
-                  <button className="w-full cobalt-gradient text-on-primary py-4 rounded-lg font-bold text-lg shadow-lg hover:translate-y-[-2px] transition-all" type="submit">
+                  <button className="w-full orange-gradient text-on-primary py-4 rounded-lg font-bold text-lg shadow-lg hover:translate-y-[-2px] transition-all" type="submit">
                     Request a Strategy Session
                   </button>
                 </form>
@@ -297,3 +297,4 @@ export default function Home() {
     </>
   );
 }
+
