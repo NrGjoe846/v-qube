@@ -44,13 +44,15 @@ import {
 } from "lucide-react";
 
 const testingDomains = [
+  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking" },
   { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
   { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
   { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
   { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Takaful Insurance", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
   { name: "Corporate Banking", icon: <Building className="w-5 h-5" />, path: "/testing/corporate-banking" },
+  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
+  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
+  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
   { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
   { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
   { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
@@ -60,6 +62,7 @@ const testingDomains = [
   { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
   { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
   { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
+  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
 ];
 
 export default function RetailLoanTesting() {

@@ -11,6 +11,7 @@ const services = [
 ];
 
 const testingAreas = [
+  { name: "Core Banking", path: "/testing/core-banking" },
   { name: "Retail Banking", path: "/testing/retail-banking" },
   { name: "Self-Service Banking", path: "/testing/self-service-banking" },
   { name: "Treasury", path: "/testing/treasury" },

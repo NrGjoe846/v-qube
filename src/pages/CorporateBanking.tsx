@@ -23,24 +23,38 @@ import {
   Gavel as GavelIcon,
   Coins,
   Layers,
-  Building
+  Building,
+  Landmark,
+  Banknote,
+  FileText,
+  Home,
+  BarChart3,
+  MapPin,
+  Share2,
+  Cpu
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const sidebarItems = [
-  { name: "Banking", icon: Building2, path: "/testing/retail-banking" },
-  { name: "Insurance", icon: Shield, path: "/testing/insurance" },
-  { name: "Capital Markets", icon: TrendingUp, path: "/testing/capital-markets" },
-  { name: "Payments", icon: CreditCard, path: "/testing/payments" },
-  { name: "Lending", icon: Wallet, path: "/testing/retail-loans" },
-  { name: "Wealth Management", icon: Activity, path: "/testing/wealth-management" },
-  { name: "Treasury", icon: Network, path: "/testing/treasury" },
-  { name: "Trade Finance", icon: ArrowLeftRight, path: "/testing/trade-finance" },
-  { name: "Retail Banking", icon: User, path: "/testing/retail-banking" },
+  { name: "Core Banking", icon: Building2, path: "/testing/core-banking" },
+  { name: "Retail Banking", icon: Landmark, path: "/testing/retail-banking" },
+  { name: "Islamic Banking", icon: Building2, path: "/testing/islamic-banking" },
+  { name: "Treasury", icon: Banknote, path: "/testing/treasury" },
+  { name: "Retail Loans", icon: Wallet, path: "/testing/retail-loans" },
   { name: "Corporate Banking", icon: Building, path: "/testing/corporate-banking", active: true },
-  { name: "Risk & Compliance", icon: GavelIcon, path: "/testing/risk-compliance" },
-  { name: "Digital Assets", icon: Coins, path: "/testing/digital-assets" },
-  { name: "ERP Testing", icon: Layers, path: "/testing/erp-testing" },
+  { name: "Investment Banking", icon: TrendingUp, path: "/testing/investment-banking" },
+  { name: "Capital Markets", icon: TrendingUp, path: "/testing/capital-markets" },
+  { name: "Insurance Testing", icon: Shield, path: "/testing/insurance" },
+  { name: "Wealth Management", icon: Activity, path: "/testing/wealth-management" },
+  { name: "Asset Management", icon: Coins, path: "/testing/asset-management" },
+  { name: "Cards & Payments", icon: CreditCard, path: "/testing/payments" },
+  { name: "Trade Finance", icon: FileText, path: "/testing/trade-finance" },
+  { name: "Mortgage Finance", icon: Home, path: "/testing/mortgage-finance" },
+  { name: "Compliance & AML", icon: ShieldCheck, path: "/testing/risk-compliance" },
+  { name: "Risk Management", icon: BarChart3, path: "/testing/risk-management" },
+  { name: "Agent Banking", icon: MapPin, path: "/testing/agent-banking" },
+  { name: "Digital Ecosystems", icon: Share2, path: "/testing/digital-ecosystems" },
+  { name: "Bespoke Apps", icon: Cpu, path: "/testing/bespoke-apps" },
 ];
 
 export default function CorporateBanking() {

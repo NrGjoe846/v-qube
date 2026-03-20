@@ -41,14 +41,16 @@ const sidebarLinks = [
 ];
 
 const testingAreas = [
+  { name: "Core Banking", path: "/testing/core-banking", icon: Building2, desc: "Mission-critical operational nucleus and centralized ledger validation." },
   { name: "Retail Banking", path: "/testing/retail-banking", icon: Landmark, desc: "Omni-channel mobile and web experience testing." },
   { name: "Islamic Banking", path: "/testing/islamic-banking", icon: Building2, desc: "Shariah-compliant Murabaha, Ijarah, and Takaful verification." },
   { name: "Bespoke Apps", path: "/testing/bespoke-apps", icon: Cpu, desc: "Custom-engineered testing frameworks for unique BFSI ecosystems." },
   { name: "Treasury", path: "/testing/treasury", icon: Banknote, desc: "FX risk, automated liquidity buffers, and SWIFT ISO 20022 adoption." },
   { name: "Retail Loans", path: "/testing/retail-loans", icon: Wallet, desc: "Systematic auditing of personal, home, and vehicle loan lifecycles." },
-  { name: "Takaful Insurance", path: "/testing/insurance", icon: Shield, desc: "Claims processing and policy lifecycle QA." },
+  { name: "Insurance Testing", path: "/testing/insurance", icon: Shield, desc: "Policy administration, claims management, and actuarial validation." },
   { name: "Corporate Banking", path: "/testing/corporate-banking", icon: Building, desc: "Trade finance and commercial lending system audits." },
   { name: "Investment Banking", path: "/testing/investment-banking", icon: TrendingUp, desc: "M&A advisory, underwriting logic, and market data integration." },
+  { name: "Capital Markets", path: "/testing/capital-markets", icon: TrendingUp, desc: "Institutional-grade trading infrastructure and market data validation." },
   { name: "Wealth Management", path: "/testing/wealth-management", icon: Activity, desc: "Portfolio management and robo-advisory testing." },
   { name: "Asset Management", path: "/testing/asset-management", icon: Coins, desc: "Big data integrity and ETL pipeline validation." },
   { name: "Cards & Payments", path: "/testing/payments", icon: CreditCard, desc: "End-to-end testing of core financial ledger systems." },
