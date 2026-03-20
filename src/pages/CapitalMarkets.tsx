@@ -51,32 +51,8 @@ export default function CapitalMarkets() {
 
   return (
     <div className="flex min-h-screen bg-surface">
-      {/* SideNavBar */}
-      <aside className="hidden lg:flex h-screen w-72 fixed left-0 top-0 pt-20 bg-slate-50 dark:bg-slate-950 flex-col gap-2 p-6 overflow-y-auto border-r border-slate-200 dark:border-slate-800 z-40">
-        <div className="mb-6 px-2">
-          <h3 className="font-manrope text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Testing Domains</h3>
-          <p className="text-blue-600 font-bold text-sm">Pristine Lab Standards</p>
-        </div>
-        <nav className="space-y-1">
-          {sidebarItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className={`flex items-center gap-3 p-3 transition-all duration-300 cursor-pointer rounded-lg group ${
-                item.active 
-                  ? "bg-white dark:bg-slate-800 text-blue-700 dark:text-blue-300 font-bold shadow-sm" 
-                  : "text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 hover:pl-4"
-              }`}
-            >
-              <item.icon className={`w-5 h-5 ${item.active ? "text-blue-700" : "text-slate-400 group-hover:text-blue-600"}`} />
-              <span className="font-manrope text-[11px] font-bold uppercase tracking-widest">{item.name}</span>
-            </Link>
-          ))}
-        </nav>
-      </aside>
-
       {/* Main Content Area */}
-      <main className="flex-1 lg:ml-72 p-8 md:p-16 lg:p-20">
+      <main className="flex-1 p-8 md:p-16 lg:p-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

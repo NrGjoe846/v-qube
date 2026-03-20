@@ -23,6 +23,7 @@ import InvestmentBanking from "./pages/InvestmentBanking";
 import CapitalMarkets from "./pages/CapitalMarkets";
 import InsuranceTesting from "./pages/InsuranceTesting";
 import CoreBanking from "./pages/CoreBanking";
+import DataWarehouse from "./pages/DataWarehouse";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="/testing/capital-markets" element={<CapitalMarkets />} />
           <Route path="/testing/insurance" element={<InsuranceTesting />} />
           <Route path="/testing/core-banking" element={<CoreBanking />} />
+          <Route path="/testing/data-warehouse" element={<DataWarehouse />} />
           <Route path="/testing/:subpage" element={<DynamicPage category="testing" />} />
           
           {/* Legal & Utility */}

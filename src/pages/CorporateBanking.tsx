@@ -60,32 +60,8 @@ const sidebarItems = [
 export default function CorporateBanking() {
   return (
     <div className="flex min-h-screen bg-surface">
-      {/* SideNavBar Implementation */}
-      <aside className="hidden lg:flex h-screen w-72 fixed left-0 top-0 pt-20 bg-slate-50 border-r border-slate-200 flex-col gap-2 p-6 overflow-y-auto z-40">
-        <div className="mb-6 px-2">
-          <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-1">Testing Domains</h3>
-          <p className="text-lg font-black text-slate-900 tracking-tight">Pristine Lab Standards</p>
-        </div>
-        <nav className="flex flex-col gap-1">
-          {sidebarItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-300 group ${
-                item.active 
-                  ? "bg-white text-primary shadow-sm ring-1 ring-slate-200 font-bold" 
-                  : "text-slate-500 hover:bg-white hover:text-primary hover:shadow-sm"
-              }`}
-            >
-              <item.icon className={`w-5 h-5 ${item.active ? "text-primary" : "text-slate-400 group-hover:text-primary"}`} />
-              <span className="text-[11px] font-bold uppercase tracking-widest">{item.name}</span>
-            </Link>
-          ))}
-        </nav>
-      </aside>
-
       {/* Main Content Area */}
-      <main className="flex-1 lg:ml-72 p-8 md:p-16 lg:p-20">
+      <main className="flex-1 p-8 md:p-16 lg:p-20">
         {/* Hero Section */}
         <section className="mb-20">
           <motion.div 

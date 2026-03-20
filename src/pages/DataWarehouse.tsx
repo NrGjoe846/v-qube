@@ -1,56 +1,23 @@
 import { motion } from "motion/react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { 
-  Shield, 
+  Database, 
   Zap, 
-  Wallet, 
-  Cpu, 
-  FileText, 
+  ShieldCheck, 
+  Layers, 
   ArrowRight, 
   ChevronRight, 
-  PlusCircle,
-  Landmark,
-  Building2,
-  TrendingUp,
-  CreditCard,
-  Gavel,
-  Layers,
+  BarChart3, 
+  RefreshCw, 
+  Search, 
   CheckCircle2,
-  Banknote,
+  FileText,
   Activity,
-  Coins,
-  Home,
-  ShieldCheck,
-  BarChart3,
-  MapPin,
-  Share2
+  Server,
+  Workflow
 } from "lucide-react";
 
-const testingDomains = [
-  { name: "Core Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/core-banking", active: true },
-  { name: "Retail Banking", icon: <Landmark className="w-5 h-5" />, path: "/testing/retail-banking" },
-  { name: "Islamic Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/islamic-banking" },
-  { name: "Treasury", icon: <Banknote className="w-5 h-5" />, path: "/testing/treasury" },
-  { name: "Retail Loans", icon: <Wallet className="w-5 h-5" />, path: "/testing/retail-loans" },
-  { name: "Corporate Banking", icon: <Building2 className="w-5 h-5" />, path: "/testing/corporate-banking" },
-  { name: "Investment Banking", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/investment-banking" },
-  { name: "Capital Markets", icon: <TrendingUp className="w-5 h-5" />, path: "/testing/capital-markets" },
-  { name: "Insurance Testing", icon: <Shield className="w-5 h-5" />, path: "/testing/insurance" },
-  { name: "Wealth Management", icon: <Activity className="w-5 h-5" />, path: "/testing/wealth-management" },
-  { name: "Asset Management", icon: <Coins className="w-5 h-5" />, path: "/testing/asset-management" },
-  { name: "Cards & Payments", icon: <CreditCard className="w-5 h-5" />, path: "/testing/payments" },
-  { name: "Trade Finance", icon: <FileText className="w-5 h-5" />, path: "/testing/trade-finance" },
-  { name: "Mortgage Finance", icon: <Home className="w-5 h-5" />, path: "/testing/mortgage-finance" },
-  { name: "Compliance & AML", icon: <ShieldCheck className="w-5 h-5" />, path: "/testing/risk-compliance" },
-  { name: "Risk Management", icon: <BarChart3 className="w-5 h-5" />, path: "/testing/risk-management" },
-  { name: "Agent Banking", icon: <MapPin className="w-5 h-5" />, path: "/testing/agent-banking" },
-  { name: "Digital Ecosystems", icon: <Share2 className="w-5 h-5" />, path: "/testing/digital-ecosystems" },
-  { name: "Bespoke Apps", icon: <Cpu className="w-5 h-5" />, path: "/testing/bespoke-apps" },
-];
-
-export default function CoreBanking() {
-  const location = useLocation();
-
+export default function DataWarehouse() {
   return (
     <div className="flex min-h-screen bg-surface font-body text-on-surface antialiased">
       {/* Main Content */}
@@ -62,7 +29,7 @@ export default function CoreBanking() {
             <ChevronRight className="w-3 h-3 text-slate-300" />
             <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Domains</Link>
             <ChevronRight className="w-3 h-3 text-slate-300" />
-            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Core Banking</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Data Warehouse</span>
           </nav>
         </div>
 
@@ -80,14 +47,14 @@ export default function CoreBanking() {
               className="max-w-3xl"
             >
               <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[1]">
-                Core Banking <br/><span className="text-primary italic">Testing Services.</span>
+                Data Warehouse <br/><span className="text-primary italic">& ETL Validation.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium">
-                Ensuring absolute precision, security, and performance for the heartbeat of your financial institution through specialized BFSI quality engineering.
+                Pristine integrity for your enterprise intelligence. We validate the complex pipelines that transform raw data into high-stakes business decisions.
               </p>
               <div className="flex gap-4">
                 <button className="bg-primary text-white px-8 py-4 rounded-xl font-black flex items-center gap-3 hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-95 group">
-                  Explore Methodology
+                  Explore ETL Framework
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </button>
               </div>
@@ -108,7 +75,7 @@ export default function CoreBanking() {
                 >
                   <img 
                     className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" 
-                    alt="Core banking server center" 
+                    alt="Data center infrastructure" 
                     src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80&w=1200"
                   />
                   <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
@@ -120,23 +87,23 @@ export default function CoreBanking() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                 >
-                  <h2 className="text-4xl font-black tracking-tight text-on-surface mb-8">What is Core Banking?</h2>
+                  <h2 className="text-4xl font-black tracking-tight text-on-surface mb-8">What is Data Warehouse Testing?</h2>
                   <div className="space-y-6 text-lg text-on-surface-variant leading-relaxed font-medium">
                     <p>
-                      Core banking is the operational nucleus of a financial institution, managing the most critical transactions and data. It connects branches, digital channels, and payment systems into a single synchronized ledger.
+                      Data Warehouse testing ensures that the information stored in your central repository is accurate, complete, and consistent. It validates the ETL (Extract, Transform, Load) processes that move data from source systems to the warehouse.
                     </p>
                     <p>
-                      In the "Pristine Laboratory" of modern finance, even a millisecond of lag or a minor data mismatch can lead to systemic risks. V Qube's testing protocol treats every transaction as a mission-critical event.
+                      In the modern BFSI sector, data is the most valuable asset. Our testing methodology ensures that your regulatory reports, financial analytics, and strategic insights are built on a foundation of absolute truth.
                     </p>
                   </div>
                   <div className="mt-12 grid grid-cols-2 gap-8">
                     <div className="bg-surface-container-low p-8 rounded-[2.5rem] border-l-8 border-primary shadow-sm hover:shadow-md transition-shadow">
-                      <div className="text-4xl font-black text-primary mb-2 tracking-tighter">99.9%</div>
-                      <div className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Uptime Target</div>
+                      <div className="text-4xl font-black text-primary mb-2 tracking-tighter">Zero</div>
+                      <div className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Data Loss Tolerance</div>
                     </div>
                     <div className="bg-surface-container-low p-8 rounded-[2.5rem] border-l-8 border-secondary shadow-sm hover:shadow-md transition-shadow">
-                      <div className="text-4xl font-black text-secondary mb-2 tracking-tighter">Real-time</div>
-                      <div className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Sync Accuracy</div>
+                      <div className="text-4xl font-black text-secondary mb-2 tracking-tighter">100%</div>
+                      <div className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Schema Alignment</div>
                     </div>
                   </div>
                 </motion.div>
@@ -150,11 +117,11 @@ export default function CoreBanking() {
           <div className="absolute inset-0 opacity-5 bg-grid-primary"></div>
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="mb-20 text-center max-w-2xl mx-auto">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-on-surface mb-6">Strategic Testing Features</h2>
-              <p className="text-on-surface-variant font-medium text-lg">Precision-engineered tools and frameworks designed for the complexity of global banking architectures.</p>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tight text-on-surface mb-6">Strategic ETL Features</h2>
+              <p className="text-on-surface-variant font-medium text-lg">Rigorous validation protocols for high-volume data movement and transformation.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8">
-              {/* Large Feature */}
+              {/* Data Integrity */}
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -163,19 +130,19 @@ export default function CoreBanking() {
               >
                 <div>
                   <div className="w-16 h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-8 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 border border-primary/10 font-black">
-                    <Shield className="w-8 h-8" />
+                    <ShieldCheck className="w-8 h-8" />
                   </div>
-                  <h3 className="text-3xl font-black mb-6 tracking-tight">End-to-End Security Validation</h3>
-                  <p className="text-on-surface-variant leading-relaxed mb-10 text-lg font-medium">We perform deep-layer penetration testing and protocol validation across the entire core infrastructure to prevent unauthorized access and data breaches.</p>
+                  <h3 className="text-3xl font-black mb-6 tracking-tight">Source-to-Target Verification</h3>
+                  <p className="text-on-surface-variant leading-relaxed mb-10 text-lg font-medium">We perform automated row counts and data profiling to ensure that every record extracted from source systems is correctly represented in the target warehouse after transformation.</p>
                 </div>
                 <div className="flex flex-wrap gap-3 pt-8 border-t border-slate-100">
-                  {["Encryption Check", "Auth Protocols", "Zero Trust"].map((tag) => (
+                  {["Row Consistency", "Field Mapping", "Data Profiling"].map((tag) => (
                     <span key={tag} className="px-5 py-2 bg-slate-50 border border-slate-100 rounded-full text-[10px] font-black text-primary uppercase tracking-widest">{tag}</span>
                   ))}
                 </div>
               </motion.div>
 
-              {/* High-Velocity Throughput */}
+              {/* High-Performance ETL */}
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -186,12 +153,12 @@ export default function CoreBanking() {
                 <div className="absolute inset-0 bg-grid-white/10 opacity-20 group-hover:scale-110 transition-transform duration-1000"></div>
                 <div className="relative z-10">
                   <Zap className="w-12 h-12 mb-8" />
-                  <h3 className="text-3xl font-black mb-6 tracking-tight">High-Velocity Throughput</h3>
-                  <p className="opacity-90 leading-relaxed font-medium">Simulating peak-hour transaction volumes to ensure the core remains responsive during flash market events.</p>
+                  <h3 className="text-3xl font-black mb-6 tracking-tight">Performance Benchmarking</h3>
+                  <p className="opacity-90 leading-relaxed font-medium">Testing ETL load times against massive datasets to ensure your data windows meet business SLAs and reporting deadlines.</p>
                 </div>
               </motion.div>
 
-              {/* Ledger Integrity */}
+              {/* Metadata Validation */}
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -199,12 +166,12 @@ export default function CoreBanking() {
                 transition={{ delay: 0.2 }}
                 className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-outline-variant/10 hover:shadow-xl transition-all group"
               >
-                <Wallet className="w-12 h-12 text-secondary mb-8 group-hover:scale-110 transition-transform" />
-                <h3 className="text-2xl font-black mb-4 tracking-tight">Ledger Integrity</h3>
-                <p className="text-on-surface-variant leading-relaxed font-medium">Automated reconciliation testing ensuring every cent is accounted for across distributed branches.</p>
+                <Layers className="w-12 h-12 text-secondary mb-8 group-hover:scale-110 transition-transform" />
+                <h3 className="text-2xl font-black mb-4 tracking-tight">Metadata Validation</h3>
+                <p className="text-on-surface-variant leading-relaxed font-medium">Ensuring data dictionary consistency and schema versioning across multiple environments.</p>
               </motion.div>
 
-              {/* API Interoperability */}
+              {/* Automated Regression */}
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -212,12 +179,12 @@ export default function CoreBanking() {
                 transition={{ delay: 0.3 }}
                 className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-outline-variant/10 hover:shadow-xl transition-all group"
               >
-                <Cpu className="w-12 h-12 text-blue-400 mb-8 group-hover:scale-110 transition-transform" />
-                <h3 className="text-2xl font-black mb-4 tracking-tight">API Interoperability</h3>
-                <p className="text-on-surface-variant leading-relaxed font-medium">Validating third-party integrations and open banking endpoints for seamless external connectivity.</p>
+                <RefreshCw className="w-12 h-12 text-blue-400 mb-8 group-hover:scale-110 transition-transform" />
+                <h3 className="text-2xl font-black mb-4 tracking-tight">Automated Regression</h3>
+                <p className="text-on-surface-variant leading-relaxed font-medium">Continuous testing of data pipelines during system upgrades or source system changes.</p>
               </motion.div>
 
-              {/* Audit Compliance */}
+              {/* Data Security */}
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -225,9 +192,9 @@ export default function CoreBanking() {
                 transition={{ delay: 0.4 }}
                 className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-outline-variant/10 hover:shadow-xl transition-all group"
               >
-                <FileText className="w-12 h-12 text-primary mb-8 group-hover:scale-110 transition-transform" />
-                <h3 className="text-2xl font-black mb-4 tracking-tight">Audit Compliance</h3>
-                <p className="text-on-surface-variant leading-relaxed font-medium">Generating exhaustive documentation required by regulatory bodies like RBI, FINRA, or GDPR.</p>
+                <Search className="w-12 h-12 text-primary mb-8 group-hover:scale-110 transition-transform" />
+                <h3 className="text-2xl font-black mb-4 tracking-tight">Data Masking Check</h3>
+                <p className="text-on-surface-variant leading-relaxed font-medium">Verifying that PII and sensitive financial data are correctly masked or encrypted within the warehouse.</p>
               </motion.div>
             </div>
           </div>
@@ -240,17 +207,17 @@ export default function CoreBanking() {
               <div className="lg:w-1/3">
                 <div className="sticky top-32">
                   <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-on-surface mb-8 leading-[1]">Specialized Focus Areas.</h2>
-                  <p className="text-xl text-on-surface-variant mb-12 font-medium">Our testing methodology is partitioned into five critical pillars to ensure 360-degree coverage.</p>
+                  <p className="text-xl text-on-surface-variant mb-12 font-medium">Our DWH testing strategy is partitioned into five critical pillars to ensure 360-degree data assurance.</p>
                   <div className="h-2 w-24 bg-primary rounded-full"></div>
                 </div>
               </div>
               <div className="lg:w-2/3 space-y-8">
                 {[
-                  { id: "01", color: "primary", title: "Functional Testing", desc: "Validating core banking modules including Savings, Current Accounts, Loans, Deposits, and Fixed Deposits for business logic accuracy." },
-                  { id: "02", color: "secondary", title: "Integration Testing", desc: "Ensuring seamless data flow between Core Banking, Mobile Apps, ATM Controllers, and SWIFT payment gateways." },
-                  { id: "03", color: "blue-400", title: "Performance Engineering", desc: "Stress testing the central server to handle millions of concurrent transactions during month-end or festive peaks." },
-                  { id: "04", color: "red-500", title: "Security & VAPT", desc: "Vulnerability Assessment and Penetration Testing specifically tuned for financial data protection and fraud prevention." },
-                  { id: "05", color: "slate-900", title: "User Acceptance (UAT)", desc: "Testing from the banker's perspective to ensure the interface facilitates fast, error-free operations at the teller desk." }
+                  { id: "01", color: "primary", title: "Data Completeness", desc: "Ensuring all expected data from source systems is loaded into the target and identifying any orphan records or missing segments." },
+                  { id: "02", color: "secondary", title: "Data Transformation", desc: "Validating complex business logic and calculations applied during the ETL process, such as currency conversion or risk score calculation." },
+                  { id: "03", color: "blue-400", title: "Data Quality", desc: "Checking for null values, duplicates, and invalid data formats that could contaminate analytical reports." },
+                  { id: "04", color: "red-500", title: "Regression & Scalability", desc: "Verifying that the warehouse performance remains consistent as data volume grows from gigabytes to petabytes." },
+                  { id: "05", color: "slate-900", title: "Incremental Load Testing", desc: "Testing the integrity of daily or hourly delta loads without affecting the existing historical data." }
                 ].map((area, index) => (
                   <motion.div 
                     key={area.id}
@@ -265,7 +232,7 @@ export default function CoreBanking() {
                         <span className={`text-5xl font-black text-slate-100 group-hover:text-${area.color}/10 transition-colors`}>{area.id}</span>
                         <h3 className="text-3xl font-black tracking-tight">{area.title}</h3>
                       </div>
-                      <PlusCircle className={`w-8 h-8 text-${area.color} group-hover:rotate-90 transition-transform`} />
+                      <Workflow className={`w-8 h-8 text-${area.color} group-hover:rotate-180 transition-transform`} />
                     </div>
                     <div className="mt-8 pl-20 text-on-surface-variant text-lg font-medium leading-relaxed">
                       {area.desc}
@@ -282,30 +249,30 @@ export default function CoreBanking() {
           <div className="absolute inset-0 opacity-10 bg-grid-white"></div>
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="mb-20 text-center md:text-left">
-              <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4">Detailed Testing Matrix</h2>
-              <p className="text-slate-400 text-xl font-medium">Comprehensive breakdown of tests performed across core modules.</p>
+              <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4">DWH Testing Matrix</h2>
+              <p className="text-slate-400 text-xl font-medium">Core validation phases for enterprise data systems.</p>
             </div>
             <div className="overflow-x-auto bg-white/5 rounded-[3rem] border border-white/10 backdrop-blur-xl">
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
-                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Testing Type</th>
-                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Objectives</th>
-                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Deliverable</th>
-                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Criticality</th>
+                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Testing Phase</th>
+                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Key Focus</th>
+                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Automation Strategy</th>
+                    <th className="px-10 py-8 text-[10px] font-black uppercase tracking-[0.3em] text-primary">Status</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/5">
                   {[
-                    { type: "Regression Testing", obj: "Validating existing features after core upgrades.", deliverable: "Stability Certificate", status: "Mission Critical" },
-                    { type: "Data Migration", obj: "Integrity checks when moving legacy data.", deliverable: "Mapping Audit Report", status: "High Precision" },
-                    { type: "DR / Failover", obj: "Ensuring Disaster Recovery takes over.", deliverable: "RTO/RPO Validation", status: "Resilience" },
-                    { type: "Globalization", obj: "Multi-currency and local compliance.", deliverable: "Localized Compliance", status: "Scalability" }
+                    { phase: "Schema Validation", focus: "Table structure, keys, data types.", strategy: "Metadata Comparison", status: "Critical" },
+                    { phase: "Load Verification", focus: "Source vs Target row counts.", strategy: "SQL Scripting", status: "Critical" },
+                    { phase: "Transformation", focus: "Business logic and formulas.", strategy: "Unit Testing / Python", status: "High Priority" },
+                    { phase: "BI Reporting", focus: "Report accuracy vs DWH data.", strategy: "Visual Regression", status: "High Priority" }
                   ].map((row, i) => (
                     <tr key={i} className="hover:bg-white/5 transition-colors">
-                      <td className="px-10 py-8 font-black text-xl">{row.type}</td>
-                      <td className="px-10 py-8 text-slate-400 font-medium">{row.obj}</td>
-                      <td className="px-10 py-8 text-sm font-bold">{row.deliverable}</td>
+                      <td className="px-10 py-8 font-black text-xl">{row.phase}</td>
+                      <td className="px-10 py-8 text-slate-400 font-medium">{row.focus}</td>
+                      <td className="px-10 py-8 text-sm font-bold">{row.strategy}</td>
                       <td className="px-10 py-8">
                         <span className="px-4 py-1.5 bg-primary/20 text-primary text-[10px] font-black uppercase rounded-full tracking-widest border border-primary/20">{row.status}</span>
                       </td>
@@ -322,10 +289,10 @@ export default function CoreBanking() {
           <div className="cobalt-gradient p-16 md:p-24 rounded-[4rem] text-center text-white relative overflow-hidden shadow-2xl mx-auto max-w-7xl">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-teal"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Ready to Start Core Banking Testing?</h2>
-              <p className="text-xl text-white/80 mb-12 font-medium">Partner with V Qube Enterprises to secure your financial future with world-class quality engineering.</p>
+              <h2 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Ready to Secure Your Data Assets?</h2>
+              <p className="text-xl text-white/80 mb-12 font-medium">Partner with V Qube Enterprises to build a pristine, validated data warehouse for your financial institution.</p>
               <button className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl hover:-translate-y-1">
-                Contact V Qube
+                Consult a Data Specialist
               </button>
             </div>
           </div>

@@ -45,6 +45,7 @@ const sitemapData = [
       { name: "Risk Management Testing", path: "/testing/risk-management" },
       { name: "Agent Banking Testing", path: "/testing/agent-banking" },
       { name: "Digital Ecosystems Testing", path: "/testing/digital-ecosystems" },
+      { name: "Data Warehouse Testing", path: "/testing/data-warehouse" },
       { name: "Bespoke Applications Testing", path: "/testing/bespoke-apps" },
     ]
   }

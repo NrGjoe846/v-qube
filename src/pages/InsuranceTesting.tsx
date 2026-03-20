@@ -54,47 +54,10 @@ export default function InsuranceTesting() {
 
   return (
     <div className="flex min-h-screen bg-surface font-body text-on-surface antialiased">
-      {/* Sidebar - Hidden on mobile, visible on LG */}
-      <aside className="hidden lg:flex flex-col w-72 fixed left-0 top-20 bottom-0 bg-slate-50 border-r border-slate-200 overflow-y-auto z-30">
-        <div className="p-8">
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Financial Domains</h3>
-          <p className="text-primary font-bold text-sm">Pristine Lab Standards</p>
-        </div>
-        <nav className="flex flex-col px-4 pb-8">
-          <Link
-            to="/testing"
-            className="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group mb-4"
-          >
-            <Layers className="w-5 h-5 text-slate-400 group-hover:text-primary" />
-            <span className="text-[10px] uppercase font-black tracking-widest">Testing Hub</span>
-          </Link>
-          <div className="h-px bg-slate-200 mb-4 mx-4" />
-          {testingDomains.map((domain) => {
-            const isActive = domain.active;
-            return (
-              <Link
-                key={domain.name}
-                to={domain.path}
-                className={`flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 group ${
-                  isActive 
-                    ? "bg-white text-primary shadow-md font-bold" 
-                    : "text-slate-500 hover:bg-slate-100 hover:pl-6"
-                }`}
-              >
-                <span className={isActive ? "text-primary" : "text-slate-400 group-hover:text-primary"}>
-                  {domain.icon}
-                </span>
-                <span className="text-[10px] uppercase font-black tracking-widest">{domain.name}</span>
-              </Link>
-            );
-          })}
-        </nav>
-      </aside>
-
       {/* Main Content */}
-      <main className="flex-1 lg:ml-72">
+      <main className="flex-1">
         {/* Dynamic Nav Breadcrumb */}
-        <div className="absolute top-28 left-8 lg:left-80 z-20">
+        <div className="absolute top-28 left-8 lg:left-16 z-20">
           <nav className="flex items-center gap-2">
             <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
             <ChevronRight className="w-3 h-3 text-slate-300" />

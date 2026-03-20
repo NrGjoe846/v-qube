@@ -42,42 +42,8 @@ const sidebarLinks = [
 export default function SoftwareTesting() {
   return (
     <div className="flex min-h-screen bg-surface">
-      {/* Sidebar */}
-      <aside className="hidden lg:flex flex-col w-72 fixed left-0 top-20 bottom-0 bg-slate-50 border-r border-slate-200 overflow-y-auto z-30">
-        <div className="p-8">
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Service Portfolio</h3>
-          <p className="text-primary font-bold text-sm">Pristine Lab Standards</p>
-        </div>
-        <nav className="flex flex-col px-4 pb-8">
-          <Link
-            to="/services"
-            className="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group mb-4"
-          >
-            <Layers className="w-5 h-5 text-slate-400 group-hover:text-primary" />
-            <span className="text-[10px] uppercase font-black tracking-widest">All Services</span>
-          </Link>
-          <div className="h-px bg-slate-200 mb-4 mx-4" />
-          {sidebarLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className={`flex items-center gap-4 px-4 py-3 rounded-xl transition-all duration-300 group ${
-                link.active 
-                  ? "bg-white text-primary shadow-md font-bold" 
-                  : "text-slate-500 hover:bg-slate-100 hover:pl-6"
-              }`}
-            >
-              <span className={link.active ? "text-primary" : "text-slate-400 group-hover:text-primary"}>
-                {link.icon}
-              </span>
-              <span className="text-[10px] uppercase font-black tracking-widest">{link.name}</span>
-            </Link>
-          ))}
-        </nav>
-      </aside>
-
       {/* Main Content */}
-      <main className="flex-1 lg:ml-72">
+      <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
           <div className="absolute inset-0 bg-grid-teal opacity-40"></div>

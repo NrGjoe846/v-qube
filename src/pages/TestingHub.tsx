@@ -60,43 +60,14 @@ const testingAreas = [
   { name: "Risk Management", path: "/testing/risk-management", icon: BarChart3, desc: "Custom-built fintech solution assurance." },
   { name: "Agent Banking", path: "/testing/agent-banking", icon: MapPin, desc: "ATM, Kiosk, and automated teller system validation." },
   { name: "Digital Ecosystems", path: "/testing/digital-ecosystems", icon: Share2, desc: "Algorithmic trading and market data integrity." },
+  { name: "Data Warehouse", path: "/testing/data-warehouse", icon: Database, desc: "Pristine integrity for your enterprise intelligence and ETL validation." },
 ];
 
 export default function TestingHub() {
   return (
     <div className="flex min-h-screen bg-surface">
-      {/* Sidebar - Hidden on mobile, visible on LG */}
-      <aside className="hidden lg:flex flex-col w-72 fixed left-0 top-20 bottom-0 bg-slate-50 border-r border-slate-200 overflow-y-auto z-30">
-        <div className="p-8">
-          <h3 className="text-xs font-black text-slate-400 uppercase tracking-widest mb-2">Navigation</h3>
-          <p className="text-primary font-bold text-sm">Testing Domains</p>
-        </div>
-        <nav className="flex flex-col px-4 pb-8">
-          <Link
-            to="/services"
-            className="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group mb-4"
-          >
-            <Layers className="w-5 h-5 text-slate-400 group-hover:text-primary" />
-            <span className="text-[10px] uppercase font-black tracking-widest">All Services</span>
-          </Link>
-          <div className="h-px bg-slate-200 mb-4 mx-4" />
-          {sidebarLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.path}
-              className="flex items-center gap-4 px-4 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group"
-            >
-              <span className="text-slate-400 group-hover:text-primary">
-                {link.icon}
-              </span>
-              <span className="text-[10px] uppercase font-black tracking-widest">{link.name}</span>
-            </Link>
-          ))}
-        </nav>
-      </aside>
-
       {/* Main Content */}
-      <main className="flex-1 lg:ml-72">
+      <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
