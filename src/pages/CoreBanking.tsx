@@ -53,9 +53,9 @@ export default function CoreBanking() {
           </div>
           <div className="max-w-7xl mx-auto px-8 relative z-10">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="max-w-3xl"
             >
               <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[1]">
@@ -80,9 +80,10 @@ export default function CoreBanking() {
             <div className="grid lg:grid-cols-12 gap-16 items-center">
               <div className="lg:col-span-5">
                 <motion.div 
-                  initial={{ opacity: 0, scale: 0.9 }}
+                  initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
+                  transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                   className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white"
                 >
                   <img 
@@ -95,9 +96,10 @@ export default function CoreBanking() {
               </div>
               <div className="lg:col-span-7">
                 <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
+                  transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
                 >
                   <h2 className="text-4xl font-black tracking-tight text-on-surface mb-8">What is Core Banking?</h2>
                   <div className="space-y-6 text-lg text-on-surface-variant leading-relaxed font-medium">
@@ -138,6 +140,7 @@ export default function CoreBanking() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="md:col-span-2 bg-white p-12 rounded-[3.5rem] shadow-sm border border-outline-variant/10 flex flex-col justify-between group hover:shadow-2xl transition-all"
               >
                 <div>

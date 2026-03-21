@@ -34,9 +34,9 @@ export default function DevTeamSupport() {
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
           <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
               <nav className="flex items-center gap-2 mb-8">
                 <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary transition-colors">Services</Link>
@@ -47,7 +47,7 @@ export default function DevTeamSupport() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
               >
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Engineering Excellence
@@ -71,9 +71,9 @@ export default function DevTeamSupport() {
 
             <motion.div
               className="relative"
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             >
               <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10 relative z-10">
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
@@ -95,9 +95,10 @@ export default function DevTeamSupport() {
           <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-20 items-center">
             <motion.div 
               className="lg:col-span-7"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Strategic Alignment</h2>
               <h3 className="text-4xl font-black text-slate-900 mb-8 tracking-tight">Bridging the Gap Between Code & Compliance</h3>
@@ -122,9 +123,10 @@ export default function DevTeamSupport() {
             </motion.div>
             <motion.div 
               className="lg:col-span-5"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
             >
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-square group border border-slate-100">
                 <img 
@@ -158,9 +160,10 @@ export default function DevTeamSupport() {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               {/* Unit Test Reviews */}
               <motion.div 
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className="md:col-span-8 bg-white p-12 rounded-[2.5rem] shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all group"
               >
                 <div>

@@ -46,13 +46,28 @@ export default function ServicesHub() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <motion.div 
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.15
+              }
+            }
+          }}
+          initial="hidden"
+          animate="show"
+          className="grid md:grid-cols-2 gap-8"
+        >
           {services.map((service, i) => (
             <motion.div
               key={service.path}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }}
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
               className="group relative p-10 bg-white rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20 transition-all"
             >
               <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
@@ -65,7 +80,7 @@ export default function ServicesHub() {
               </Link>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Final CTA */}
         <section className="mt-32">

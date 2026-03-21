@@ -28,9 +28,12 @@ import {
 } from "lucide-react";
 
 const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
+  initial: { opacity: 0, y: 30 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+  }
 };
 
 const staggerContainer = {
@@ -53,9 +56,9 @@ export default function Home() {
           <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-16 grid lg:grid-cols-12 gap-16 items-center">
             <motion.div 
               className="lg:col-span-7"
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
               <h1 className="font-headline text-5xl md:text-6xl font-extrabold tracking-tight text-on-surface leading-[1.1] mb-8">
                 Where Financial Software Meets <span className="text-primary">Flawless Quality</span>
@@ -75,9 +78,9 @@ export default function Home() {
 
             <motion.div 
               className="lg:col-span-5 flex flex-col gap-6"
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             >
               <div className="bg-white p-8 rounded-xl shadow-[0_12px_32px_rgba(25,28,30,0.04)] border border-outline-variant/15 relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[100px] -mr-8 -mt-8 group-hover:bg-primary/10 transition-colors"></div>

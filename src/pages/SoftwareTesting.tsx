@@ -19,9 +19,12 @@ import {
 import { Link } from "react-router-dom";
 
 const fadeIn = {
-  initial: { opacity: 0, y: 20 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6 }
+  initial: { opacity: 0, y: 30 },
+  animate: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+  }
 };
 
 const staggerContainer = {
@@ -43,9 +46,9 @@ export default function SoftwareTesting() {
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
           <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
               <nav className="flex items-center gap-2 mb-8">
                 <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
@@ -70,9 +73,9 @@ export default function SoftwareTesting() {
 
             <motion.div
               className="relative"
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
             >
               <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10 relative z-10">
                 <div className="rounded-[2rem] overflow-hidden aspect-[4/3]">
@@ -128,7 +131,13 @@ export default function SoftwareTesting() {
       {/* Core Testing Services - Bento Grid Style */}
       <section className="py-32 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-16">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8"
+          >
             <div className="max-w-2xl">
               <h2 className="font-headline text-4xl md:text-5xl font-black tracking-tighter text-slate-900 mb-6">
                 Comprehensive Banking QA Suite
@@ -137,7 +146,7 @@ export default function SoftwareTesting() {
                 We provide a full-spectrum testing laboratory designed specifically for the complexities of modern fintech and legacy core banking systems.
               </p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             {/* Functional Testing */}
@@ -229,7 +238,7 @@ export default function SoftwareTesting() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="md:col-span-7 bg-white rounded-[2.5rem] p-12 flex flex-col justify-between border border-slate-100 shadow-xl shadow-slate-200/50"
             >
               <div className="flex flex-col lg:flex-row gap-12 items-start">

@@ -123,20 +123,40 @@ export default function TestingHub() {
         {/* Grid Section */}
         <section id="domains" className="px-8 md:px-16 py-24 lg:py-32 bg-slate-50">
           <div className="max-w-7xl mx-auto">
-            <div className="mb-20">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="mb-20"
+            >
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Specialized Laboratories</h2>
               <h3 className="text-4xl font-black text-slate-900 mb-6 tracking-tight">Assurance Ecosystem</h3>
               <p className="text-slate-600 text-lg max-w-2xl leading-relaxed">Our testing hub is organized into specialized domain laboratories, each equipped with bespoke tools and expert personnel.</p>
-            </div>
+            </motion.div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <motion.div 
+              variants={{
+                hidden: { opacity: 0 },
+                show: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.1
+                  }
+                }
+              }}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
               {testingAreas.map((area, i) => (
                 <motion.div
                   key={area.path}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05 }}
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0 }
+                  }}
                   className="group p-10 bg-white rounded-[2.5rem] border border-slate-200 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20 transition-all flex flex-col justify-between min-h-[340px]"
                 >
                   <div>
@@ -156,7 +176,7 @@ export default function TestingHub() {
                   </Link>
                 </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
 
