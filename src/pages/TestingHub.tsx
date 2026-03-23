@@ -52,151 +52,162 @@ const testingAreas = [
 
 export default function TestingHub() {
   return (
-    <div className="flex min-h-screen bg-surface">
-      {/* Main Content */}
-      <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src="/src/assets/images/unsplash-1551288049-bebda4e38f71.jpg" 
-              alt="Testing Laboratory"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
-          </div>
+    <div className="bg-surface antialiased">
+      {/* Hero Section */}
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-surface-container-lowest">
+        <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+        <div className="absolute inset-0 z-0">
+          <img 
+            className="w-full h-full object-cover mix-blend-overlay grayscale opacity-30" 
+            src="/src/assets/images/unsplash-1551288049-bebda4e38f71.jpg" 
+            alt="Testing Laboratory"
+          />
+          <motion.div 
+            animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
+            transition={{ duration: 20, repeat: Infinity }}
+            className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-primary rounded-full blur-[180px]"
+          ></motion.div>
+        </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24">
-            <div className="max-w-3xl">
-              <nav className="flex items-center gap-2 mb-8">
-                <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Home</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
-                <span className="text-[10px] font-black uppercase tracking-widest text-primary">Testing Hub</span>
-              </nav>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
-                  Global QA Standards
-                </span>
-                <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
-                  Testing <span className="text-primary">Domains.</span>
-                </h1>
-                <p className="text-xl text-slate-300 leading-relaxed max-w-2xl font-medium mb-12">
-                  Surgical precision across the entire financial services ecosystem. Explore our specialized testing laboratories designed for mission-critical assurance.
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <a href="#domains" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
-                    Browse Domains
-                  </a>
-                  <Link to="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
-                    Consult an Expert
-                  </Link>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Stats Strip */}
-        <section className="bg-white border-b border-slate-100 py-16 px-8 md:px-16">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-              {[
-                { val: "14+", label: "Testing Domains" },
-                { val: "5000+", label: "Test Scenarios" },
-                { val: "99.99%", label: "Accuracy Rate" },
-                { val: "24/7", label: "Expert Support" }
-              ].map((stat, i) => (
-                <div key={i} className="text-center md:text-left">
-                  <div className="text-4xl font-black text-primary mb-2 tracking-tighter">{stat.val}</div>
-                  <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Grid Section */}
-        <section id="domains" className="px-8 md:px-16 py-24 lg:py-32 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="mb-20"
+        <div className="container-max relative z-10 w-full pt-20">
+          <div className="max-w-4xl">
+            <nav className="flex items-center gap-2 mb-10">
+              <Link to="/" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Home</Link>
+              <ChevronRight className="w-3 h-3 text-on-surface/20" />
+              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">Testing Hub</span>
+            </nav>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
-              <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Specialized Laboratories</h2>
-              <h3 className="text-4xl font-black text-slate-900 mb-6 tracking-tight">Assurance Ecosystem</h3>
-              <p className="text-slate-600 text-lg max-w-2xl leading-relaxed">Our testing hub is organized into specialized domain laboratories, each equipped with bespoke tools and expert personnel.</p>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase mb-10">
+                Global QA Standards
+              </div>
+              <h1 className="text-6xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10">
+                Testing <br/><span className="text-gradient">Domains.</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-16">
+                Surgical precision across the entire financial services ecosystem. Explore our specialized testing laboratories designed for mission-critical assurance.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <a href="#domains" className="px-14 py-6 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                  Browse Domains
+                </a>
+                <Link to="/contact" className="px-14 py-6 glass-button rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
+                  Consult an Expert
+                </Link>
+              </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
 
-            <motion.div 
-              variants={{
-                hidden: { opacity: 0 },
-                show: {
-                  opacity: 1,
-                  transition: {
-                    staggerChildren: 0.1
-                  }
+      {/* Stats Strip */}
+      <section className="bg-surface-container-lowest border-y border-outline-variant/10 py-20">
+        <div className="container-max">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
+            {[
+              { val: "14+", label: "Testing Domains" },
+              { val: "5000+", label: "Test Scenarios" },
+              { val: "99.99%", label: "Accuracy Rate" },
+              { val: "24/7", label: "Expert Support" }
+            ].map((stat, i) => (
+              <div key={i} className="text-center md:text-left group">
+                <div className="text-5xl font-black text-primary mb-3 tracking-tighter group-hover:scale-110 transition-transform origin-left">{stat.val}</div>
+                <div className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface-variant/40">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Grid Section */}
+      <section id="domains" className="section-padding bg-surface">
+        <div className="container-max">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="mb-24"
+          >
+            <div className="w-16 h-1.5 orange-gradient rounded-full mb-8"></div>
+            <h2 className="text-5xl md:text-7xl font-black text-on-surface mb-8 tracking-tight leading-[1]">Specialized <br/>Laboratories.</h2>
+            <p className="text-on-surface-variant text-xl max-w-2xl leading-relaxed font-medium opacity-60">Our testing hub is organized into specialized domain laboratories, each equipped with bespoke tools and expert personnel.</p>
+          </motion.div>
+
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1
                 }
-              }}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {testingAreas.map((area, i) => (
-                <motion.div
-                  key={area.path}
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    show: { opacity: 1, y: 0 }
-                  }}
-                  className="group p-10 bg-white rounded-[2.5rem] border border-slate-200 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20 transition-all flex flex-col justify-between min-h-[340px]"
-                >
-                  <div>
-                    <div className="w-16 h-16 rounded-2xl bg-primary/5 flex items-center justify-center text-primary mb-8 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-500 border border-primary/10">
-                      <area.icon className="w-8 h-8" />
-                    </div>
-                    <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">{area.name}</h3>
-                    <p className="text-slate-500 text-sm leading-relaxed mb-8 font-medium">
-                      {area.desc}
-                    </p>
+              }
+            }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
+            {testingAreas.map((area, i) => (
+              <motion.div
+                key={area.path}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                }}
+                whileHover={{ y: -10 }}
+                className="group p-12 bg-white rounded-[4rem] border border-outline-variant/10 shadow-2xl shadow-primary/5 hover:shadow-primary/10 transition-all duration-500 glass-card flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-20 h-20 rounded-3xl bg-primary/10 flex items-center justify-center text-primary mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-lg shadow-primary/5">
+                    <area.icon className="w-10 h-10" />
                   </div>
-                  <Link 
-                    to={area.path} 
-                    className="inline-flex items-center gap-3 font-black text-[10px] uppercase tracking-widest text-primary group-hover:gap-5 transition-all"
-                  >
-                    Explore Domain <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </motion.div>
-              ))}
+                  <h3 className="text-3xl font-black text-on-surface mb-6 tracking-tight group-hover:text-primary transition-colors">{area.name}</h3>
+                  <p className="text-on-surface-variant text-lg leading-relaxed mb-12 font-medium opacity-70 group-hover:opacity-100 transition-opacity">
+                    {area.desc}
+                  </p>
+                </div>
+                <Link 
+                  to={area.path} 
+                  className="inline-flex items-center gap-4 font-black text-xs uppercase tracking-widest text-primary group-hover:gap-6 transition-all"
+                >
+                  Enter Laboratory <ArrowRight className="w-5 h-5" />
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="section-padding bg-surface">
+        <div className="container-max">
+          <div className="orange-gradient p-16 md:p-32 rounded-[5rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative z-10 max-w-4xl"
+            >
+              <h3 className="text-5xl md:text-8xl font-black mb-12 z-10 tracking-tight leading-[1]">Need a Custom <br/>QA Strategy?</h3>
+              <p className="text-xl md:text-2xl text-white/80 max-w-2xl mb-16 z-10 font-medium leading-relaxed">Our domain experts are ready to architect a precision-testing framework tailored to your unique requirements.</p>
+              <div className="flex flex-col sm:flex-row gap-8 z-10">
+                <Link to="/contact" className="bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/10">
+                  Request Consultation
+                </Link>
+                <Link to="/services" className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
+                  View All Services
+                </Link>
+              </div>
             </motion.div>
           </div>
-        </section>
-
-        {/* Final CTA */}
-        <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
-            <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Need a Custom QA Strategy?</h3>
-            <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Our domain experts are ready to architect a precision-testing framework tailored to your unique requirements.</p>
-            <div className="flex flex-col sm:flex-row gap-6 z-10">
-              <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
-                Request a Consultation
-              </Link>
-              <Link to="/services" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
-                View All Services
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </div>
   );
 }

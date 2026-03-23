@@ -58,6 +58,12 @@
   body {
     @apply bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed;
   }
+  h1, h2, h3, h4 {
+    @apply font-headline tracking-tight;
+  }
+  section {
+    @apply relative overflow-hidden;
+  }
 }
 
 @layer utilities {
@@ -67,6 +73,18 @@
   }
   .orange-gradient {
     background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+  }
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(249,115,22,0.05)];
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600;
+  }
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+  .container-max {
+    @apply max-w-7xl mx-auto px-6 md:px-16;
   }
 }
 

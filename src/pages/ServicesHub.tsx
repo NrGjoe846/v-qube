@@ -31,74 +31,94 @@ const services = [
 
 export default function ServicesHub() {
   return (
-    <div className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-24"
-        >
-          <h1 className="text-5xl md:text-7xl font-black text-slate-900 mb-8 tracking-tighter">
-            Our <span className="text-primary">Services</span>
-          </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            We provide end-to-end quality assurance and domain support tailored specifically for the financial sector.
-          </p>
-        </motion.div>
+    <div className="bg-surface antialiased">
+      {/* Hero Header */}
+      <section className="relative pt-40 pb-20 bg-surface-container-lowest overflow-hidden">
+        <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+        <div className="container-max relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="text-center max-w-4xl mx-auto"
+          >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase mb-8">
+              Strategic Excellence
+            </div>
+            <h1 className="text-6xl md:text-9xl font-black text-on-surface mb-10 tracking-tight leading-[1]">
+              Our <span className="text-gradient">Services.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-on-surface-variant font-medium max-w-2xl mx-auto leading-relaxed opacity-70">
+              We provide end-to-end quality assurance and domain support tailored specifically for the financial sector.
+            </p>
+          </motion.div>
+        </div>
+      </section>
 
-        <motion.div 
-          variants={{
-            hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.15
+      <section className="section-padding bg-surface">
+        <div className="container-max">
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0 },
+              show: {
+                opacity: 1,
+                transition: {
+                  staggerChildren: 0.1
+                }
               }
-            }
-          }}
-          initial="hidden"
-          animate="show"
-          className="grid md:grid-cols-2 gap-8"
-        >
-          {services.map((service, i) => (
-            <motion.div
-              key={service.path}
-              variants={{
-                hidden: { opacity: 0, y: 30 },
-                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-              }}
-              whileHover={{ y: -10, transition: { duration: 0.3 } }}
-              className="group relative p-10 bg-white rounded-[2.5rem] border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20 transition-all"
-            >
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8 group-hover:scale-110 transition-transform">
-                <service.icon className="w-8 h-8" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight">{service.title}</h3>
-              <p className="text-slate-500 leading-relaxed mb-8">{service.desc}</p>
-              <Link to={service.path} className="inline-flex items-center gap-2 font-bold text-primary hover:gap-4 transition-all">
-                Learn More <ArrowRight className="w-5 h-5" />
-              </Link>
-            </motion.div>
-          ))}
-        </motion.div>
+            }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 gap-10"
+          >
+            {services.map((service, i) => (
+              <motion.div
+                key={service.path}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                }}
+                whileHover={{ y: -10 }}
+                className="group relative p-12 bg-white rounded-[4rem] border border-outline-variant/10 shadow-2xl shadow-primary/5 hover:shadow-primary/10 transition-all duration-500 glass-card"
+              >
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <service.icon className="w-8 h-8" />
+                </div>
+                <h3 className="text-4xl font-black text-on-surface mb-6 tracking-tight group-hover:text-primary transition-colors">{service.title}</h3>
+                <p className="text-on-surface-variant text-lg leading-relaxed mb-10 font-medium opacity-70 group-hover:opacity-100 transition-opacity">{service.desc}</p>
+                <Link to={service.path} className="inline-flex items-center gap-4 font-black text-primary hover:gap-6 transition-all uppercase text-xs tracking-widest">
+                  Explore Domain <ArrowRight className="w-5 h-5" />
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
 
-        {/* Final CTA */}
-        <section className="mt-32">
-          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
-            <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Scale Your Quality?</h3>
-            <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the world's leading financial institutions in deploying flawless software at intercept-ready speed.</p>
-            <div className="flex flex-col sm:flex-row gap-6 z-10">
-              <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
-                Initiate Consultation
-              </Link>
-              <Link to="/contact" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
-                Request Technical Briefing
-              </Link>
+          {/* Final CTA */}
+          <div className="mt-40">
+            <div className="orange-gradient p-16 md:p-32 rounded-[5rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
+              <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative z-10 max-w-4xl"
+              >
+                <h3 className="text-5xl md:text-8xl font-black mb-12 tracking-tight leading-[1]">Ready to Scale <br/>Your Quality?</h3>
+                <p className="text-xl md:text-2xl text-white/80 max-w-2xl mb-16 font-medium leading-relaxed">Join the world's leading financial institutions in deploying flawless software at intercept-ready speed.</p>
+                <div className="flex flex-col sm:flex-row gap-8 justify-center">
+                  <Link to="/contact" className="bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/10">
+                    Initiate Consultation
+                  </Link>
+                  <Link to="/contact" className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
+                    Request Strategy
+                  </Link>
+                </div>
+              </motion.div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 }
