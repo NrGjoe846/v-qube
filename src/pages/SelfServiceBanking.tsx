@@ -109,7 +109,7 @@ export default function SelfServiceBanking() {
                   <img 
                     className="w-full h-full object-cover grayscale opacity-80" 
                     alt="Modern ATM interface" 
-                    src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&q=80&w=800"
+                    src="/src/assets/images/unsplash-1556742502-ec7c0e9f34b1.jpg"
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                   {/* Floating Metric Card */}

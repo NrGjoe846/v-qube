@@ -32,19 +32,19 @@ const leaders = [
     name: "James T. Qube", 
     role: "Managing Director", 
     desc: "25 years of experience in strategic financial transformation and large-scale infrastructure deployment.",
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800"
+    img: "/src/assets/images/unsplash-1560250097-0b93528c311a.jpg"
   },
   { 
     name: "Dr. Elena Rostova", 
     role: "Head of QA", 
     desc: "Pioneer in automated compliance verification and mathematical proof-of-security frameworks.",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+    img: "/src/assets/images/unsplash-1573496359142-b8d87734a5a2.jpg"
   },
   { 
     name: "Marcus Vane", 
     role: "CTO", 
     desc: "Architect of the Vault-Propel framework, specializing in AI-accelerated regression suites.",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800"
+    img: "/src/assets/images/unsplash-1472099645785-5658abf4ff4e.jpg"
   }
 ];
 
@@ -58,7 +58,7 @@ export default function About() {
           <img 
             alt="Architectural background" 
             className="w-full h-full object-cover mix-blend-overlay grayscale" 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1920"
+            src="/src/assets/images/unsplash-1486406146926-c627a92ad1ab.jpg"
           />
         </div>
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 relative z-10 w-full">
@@ -173,7 +173,7 @@ export default function About() {
                 <img 
                   alt="Innovation" 
                   className="w-full h-full object-cover" 
-                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                  src="/src/assets/images/unsplash-1550751827-4bd374c3f58b.jpg"
                 />
               </div>
             </motion.div>

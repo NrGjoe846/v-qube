@@ -140,7 +140,7 @@ export default function CorporateBanking() {
                 <img 
                   alt="Financial document analysis" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
-                  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+                  src="/src/assets/images/unsplash-1450101499163-c8848c66ca85.jpg"
                   referrerPolicy="no-referrer"
                 />
               </div>

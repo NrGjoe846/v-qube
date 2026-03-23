@@ -174,7 +174,7 @@ export default function Home() {
               <Link to="/testing/retail-banking" className="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 relative overflow-hidden flex flex-col justify-end group cursor-pointer border border-white/40 shadow-sm">
                 <img 
                   className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-110 transition-transform duration-700" 
-                  src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&q=80&w=1000" 
+                  src="/src/assets/images/unsplash-1501167786227-4cba60f6d58f.jpg" 
                   alt="Modern clean banking"
                   referrerPolicy="no-referrer"
                 />

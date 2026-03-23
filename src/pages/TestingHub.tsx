@@ -60,7 +60,7 @@ export default function TestingHub() {
           <div className="absolute inset-0 z-0">
             <img 
               className="w-full h-full object-cover" 
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1920" 
+              src="/src/assets/images/unsplash-1551288049-bebda4e38f71.jpg" 
               alt="Testing Laboratory"
               referrerPolicy="no-referrer"
             />

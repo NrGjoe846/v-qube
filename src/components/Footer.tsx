@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 import { 
   Mail, 
   Headset, 
@@ -31,8 +32,9 @@ export default function Footer() {
       
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 relative z-10">
         <div className="lg:col-span-3 space-y-8">
-          <Link to="/" className="text-3xl font-black tracking-tighter text-white flex items-center gap-1">
-            <span className="text-primary italic font-black">V</span> QUBE
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logo} alt="V-Qube Logo" className="h-12 w-auto" />
+            <span className="text-2xl font-black tracking-tighter text-white">V QUBE</span>
           </Link>
           <p className="text-slate-400 leading-relaxed text-sm font-medium">
             Next-generation quality engineering for the world's most critical financial infrastructures.
@@ -131,4 +133,3 @@ export default function Footer() {
     </footer>
   );
 }
-

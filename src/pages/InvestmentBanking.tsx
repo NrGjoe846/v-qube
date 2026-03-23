@@ -155,7 +155,7 @@ export default function InvestmentBanking() {
                 <img 
                   alt="Financial data visualization" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
-                  src="https://images.unsplash.com/photo-1611974717484-22855fce4bd8?auto=format&fit=crop&q=80&w=800"
+                  src="/src/assets/images/unsplash-1611974717484-22855fce4bd8.jpg"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -223,7 +223,7 @@ export default function InvestmentBanking() {
               <div className="mt-12 text-center">
                 <img 
                   className="w-full h-48 object-cover rounded-xl mb-6 grayscale brightness-110" 
-                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80&w=800" 
+                  src="/src/assets/images/unsplash-1590283603385-17ffb3a7f29f.jpg" 
                   alt="Financial metrics"
                   referrerPolicy="no-referrer"
                 />

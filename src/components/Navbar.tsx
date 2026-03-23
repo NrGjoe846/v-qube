@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import logo from "../assets/logo.png";
 
 const services = [
   { name: "Software Testing", path: "/services/software-testing" },
@@ -70,13 +71,9 @@ export default function Navbar() {
       scrolled ? "bg-white/80 backdrop-blur-xl shadow-lg py-3" : "bg-transparent py-5"
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-black tracking-tighter text-slate-900 flex items-center gap-1 group">
-          <motion.span 
-            className="text-primary"
-            animate={{ rotate: scrolled ? 360 : 0 }}
-            transition={{ type: "spring", stiffness: 200 }}
-          >V</motion.span> 
-          <span className="group-hover:text-primary transition-colors duration-300">Qube Enterprises</span>
+        <Link to="/" className="flex items-center gap-2 group">
+          <img src={logo} alt="V-Qube Logo" className="h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
+          <span className="text-xl font-black tracking-tighter text-slate-900 group-hover:text-primary transition-colors duration-300">V Qube Enterprises</span>
         </Link>
 
         {/* Desktop Nav */}

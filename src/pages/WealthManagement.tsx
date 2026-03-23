@@ -170,7 +170,7 @@ export default function WealthManagement() {
                 <img 
                   alt="High density financial data visualization" 
                   className="w-full h-[500px] object-cover rounded-[2.5rem] grayscale group-hover:grayscale-0 transition-all duration-1000" 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
+                  src="/src/assets/images/unsplash-1551288049-bebda4e38f71.jpg"
                 />
               </div>
             </motion.div>

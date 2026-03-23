@@ -44,7 +44,7 @@ export default function IslamicBankingTesting() {
           <div className="absolute inset-0 z-0">
             <img 
               className="w-full h-full object-cover" 
-              src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80&w=1920" 
+              src="/src/assets/images/unsplash-1542810634-71277d95dcbb.jpg" 
               alt="Islamic Architecture Precision"
               referrerPolicy="no-referrer"
             />
@@ -178,7 +178,7 @@ export default function IslamicBankingTesting() {
                     <img 
                       alt="Governance Precision" 
                       className="w-full h-full object-cover" 
-                      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" 
+                      src="/src/assets/images/unsplash-1554224155-6726b3ff858f.jpg" 
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>

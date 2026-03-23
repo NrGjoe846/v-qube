@@ -80,7 +80,7 @@ export default function UserTraining() {
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" 
+                    src="/src/assets/images/unsplash-1524178232363-1fb2b075b655.jpg" 
                     alt="Training Workshop"
                     referrerPolicy="no-referrer"
                   />
@@ -201,7 +201,7 @@ export default function UserTraining() {
                 <div className="absolute inset-0 bg-primary/5 -rotate-3 rounded-[3rem]"></div>
                 <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-slate-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" 
+                    src="/src/assets/images/unsplash-1460925895917-afdab827c52f.jpg" 
                     alt="Analytics Dashboard" 
                     className="w-full"
                     referrerPolicy="no-referrer"

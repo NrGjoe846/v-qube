@@ -90,7 +90,7 @@ export default function InsuranceTesting() {
                 <img 
                   alt="Modern financial workspace" 
                   className="w-full h-auto rounded-[2.5rem] shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700 border-4 border-white" 
-                  src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&q=80&w=1200"
+                  src="/src/assets/images/unsplash-1556742502-ec7c0e9f34b1.jpg"
                 />
               </motion.div>
             </div>
@@ -195,7 +195,7 @@ export default function InsuranceTesting() {
                     <img 
                       alt="Sync Visualization" 
                       className="w-full h-full object-cover grayscale opacity-60" 
-                      src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=400"
+                      src="/src/assets/images/unsplash-1512941937669-90a1b58e7e9c.jpg"
                     />
                   </div>
                 </div>

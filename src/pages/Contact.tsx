@@ -227,7 +227,7 @@ End of Request
               <img 
                 className="w-full h-48 object-cover rounded-[3rem] opacity-40 mix-blend-multiply grayscale border border-slate-100" 
                 alt="Digital security patterns" 
-                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200"
+                src="/src/assets/images/unsplash-1550751827-4bd374c3f58b.jpg"
               />
             </motion.div>
           </div>

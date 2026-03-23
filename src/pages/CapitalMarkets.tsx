@@ -84,7 +84,7 @@ export default function CapitalMarkets() {
                 <div className="bg-surface-container-low dark:bg-slate-800/50 rounded-2xl p-4 overflow-hidden border border-slate-100 dark:border-white/5">
                   <img 
                     className="w-full h-40 object-cover rounded-xl shadow-sm opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" 
-                    src="https://images.unsplash.com/photo-1611974717484-22855fce4bd8?auto=format&fit=crop&q=80&w=800" 
+                    src="/src/assets/images/unsplash-1611974717484-22855fce4bd8.jpg" 
                     alt="Trading dashboard visualization"
                     referrerPolicy="no-referrer"
                   />
