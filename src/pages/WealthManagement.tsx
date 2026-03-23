@@ -13,7 +13,7 @@ export default function WealthManagement() {
       badge: "Wealth Precision",
       title: "Wealth Management <br/><span className=\"text-gradient\">Precision Testing.</span>",
       description: "Advanced validation for HNW portfolios, multi-asset risk profiling, and real-time investment tracking systems. Our laboratory environment ensures zero-error performance.",
-      image: "/src/assets/images/unsplash-1551288049-bebda4e38f71.jpg"
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80"
     },
     competencies: [
       {

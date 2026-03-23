@@ -75,7 +75,7 @@ export default function DomainSupport() {
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="/src/assets/images/unsplash-1558494949-ef010cbdcc51.jpg" 
+                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80" 
                     alt="High-tech data center"
                     referrerPolicy="no-referrer"
                   />
@@ -192,7 +192,7 @@ export default function DomainSupport() {
                 </div>
                 <img 
                   className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none" 
-                  src="/src/assets/images/unsplash-1551288049-bebda4e38f71.jpg" 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
                   alt="Data visualization"
                   referrerPolicy="no-referrer"
                 />
@@ -208,7 +208,7 @@ export default function DomainSupport() {
               >
                 <div className="hidden sm:block w-1/3 aspect-square rounded-3xl overflow-hidden shadow-lg">
                   <img 
-                    src="/src/assets/images/unsplash-1451187580459-43490279c0fa.jpg" 
+                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80" 
                     alt="Digital globe" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"

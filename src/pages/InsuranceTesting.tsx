@@ -12,7 +12,7 @@ export default function InsuranceTesting() {
       badge: "Specialized Testing",
       title: "Insurance <br/><span className=\"text-gradient\">Quality Assurance.</span>",
       description: "Deploying surgical precision across the insurance value chain. From policy legacy migrations to real-time actuarial validation.",
-      image: "/src/assets/images/unsplash-1556742502-ec7c0e9f34b1.jpg"
+      image: "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&q=80"
     },
     competencies: [
       {

@@ -76,7 +76,7 @@ export default function DataWarehouse() {
                   <img 
                     className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" 
                     alt="Data center infrastructure" 
-                    src="/src/assets/images/unsplash-1558494949-ef010cbdcc48.jpg"
+                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80"
                   />
                   <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
                 </motion.div>

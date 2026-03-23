@@ -81,7 +81,7 @@ export default function SoftwareTesting() {
                 <div className="rounded-[2rem] overflow-hidden aspect-[4/3]">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="/src/assets/images/unsplash-1563986768609-322da13575f3.jpg" 
+                    src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80" 
                     alt="Banking interface testing"
                     referrerPolicy="no-referrer"
                   />

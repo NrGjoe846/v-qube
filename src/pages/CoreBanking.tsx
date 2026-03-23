@@ -98,7 +98,7 @@ export default function CoreBanking() {
                   <img 
                     className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-[2s]" 
                     alt="Core banking server center" 
-                    src="/src/assets/images/unsplash-1558494949-ef010cbdcc48.jpg"
+                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent mix-blend-overlay"></div>
                 </motion.div>
