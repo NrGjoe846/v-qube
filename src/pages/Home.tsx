@@ -225,7 +225,7 @@ export default function Home() {
               <Link to="/testing/retail-banking" className="md:col-span-2 bg-surface-container-lowest rounded-3xl p-10 relative overflow-hidden flex flex-col justify-end group cursor-pointer border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500">
                 <img 
                   className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-110 transition-transform duration-[2s] pointer-events-none" 
-                  src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?auto=format&fit=crop&q=80" 
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" 
                   alt="Modern clean banking"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent"></div>
@@ -367,4 +367,5 @@ export default function Home() {
     </>
   );
 }
+
 

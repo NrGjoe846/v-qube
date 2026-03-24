@@ -169,7 +169,7 @@ export default function BespokeAppsTesting() {
                 <div className="absolute inset-0 bg-primary/10 rounded-[3rem] blur-3xl animate-pulse"></div>
                 <img 
                   className="relative z-10 w-full rounded-[3rem] shadow-2xl rotate-3 hover:rotate-0 transition-all duration-700 border-4 border-white" 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
+                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
                   alt="Data visualization"
                   referrerPolicy="no-referrer"
                 />
@@ -183,8 +183,8 @@ export default function BespokeAppsTesting() {
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-16 items-center">
               <div className="flex-1 grid grid-cols-2 gap-4">
-                <img className="rounded-3xl shadow-lg" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?auto=format&fit=crop&q=80" alt="Server Room" referrerPolicy="no-referrer" />
-                <img className="rounded-3xl shadow-lg mt-8" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80" alt="Dashboard" referrerPolicy="no-referrer" />
+                <img className="rounded-3xl shadow-lg" src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80" alt="Server Room" referrerPolicy="no-referrer" />
+                <img className="rounded-3xl shadow-lg mt-8" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80" alt="Dashboard" referrerPolicy="no-referrer" />
               </div>
               <div className="flex-1">
                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-6 block">Laboratory Protocols</span>
@@ -214,4 +214,5 @@ export default function BespokeAppsTesting() {
     </div>
   );
 }
+
 

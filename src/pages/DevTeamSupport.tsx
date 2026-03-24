@@ -260,7 +260,7 @@ export default function DevTeamSupport() {
                 className="hidden lg:block lg:col-span-6 rounded-[2.5rem] overflow-hidden shadow-inner bg-slate-200 relative border border-slate-100"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80" 
+                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
                   alt="Advanced Analytics" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -350,4 +350,5 @@ export default function DevTeamSupport() {
     </div>
   );
 }
+
 
