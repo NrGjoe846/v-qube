@@ -62,12 +62,12 @@ export default function SoftwareTesting() {
                 Zero-compromise quality assurance for high-stakes financial ecosystems. We deliver precision-engineered testing that ensures security, scalability, and seamless user experiences.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
-                  Consult with Experts
+                <Link to="/contact?type=audit" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
+                  Start Free Audit
                 </Link>
-                <button className="bg-surface-container-high text-on-secondary-container px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-colors">
+                <Link to="/contact?type=case-study" className="bg-surface-container-high text-on-secondary-container px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-highest transition-colors">
                   View Case Studies
-                </button>
+                </Link>
               </div>
             </motion.div>
 
@@ -247,10 +247,10 @@ export default function SoftwareTesting() {
                   <p className="text-on-surface-variant text-sm leading-relaxed mb-8">
                     Shift-left testing with integrated CI/CD pipelines. We leverage AI-driven test maintenance to reduce script breakage and increase coverage.
                   </p>
-                  <button className="text-primary font-black text-sm flex items-center gap-2 group">
+                  <Link to="/testing" className="text-primary font-black text-sm flex items-center gap-2 group">
                     Explore Frameworks 
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                  </button>
+                  </Link>
                 </div>
                 <div className="w-full lg:w-48 aspect-square bg-slate-50 rounded-3xl overflow-hidden relative border border-slate-100">
                   <div className="absolute inset-0 flex items-center justify-center">
@@ -276,12 +276,12 @@ export default function SoftwareTesting() {
                 Join 50+ financial institutions that trust V Qube for their mission-critical testing. Schedule a technical audit with our BFSI specialists today.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">
-                <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all text-center">
+                <Link to="/contact?type=audit" className="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all text-center">
                   Book a Technical Audit
                 </Link>
-                <button className="border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
-                  Download Service Deck
-                </button>
+                <Link to="/contact?type=deck" className="border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all text-center">
+                  Request Service Deck
+                </Link>
               </div>
             </div>
             <div className="absolute top-1/2 right-[-10%] -translate-y-1/2 w-[500px] h-[500px] bg-white/5 blur-[100px] rounded-full"></div>

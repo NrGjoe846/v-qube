@@ -84,11 +84,11 @@ export default function TreasuryTesting() {
                   V Qube Enterprises provides industrial-grade validation for treasury management systems, focusing on real-time FX risk, automated liquidity buffers, and global SWIFT standard adoption.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <a href="#modules" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
                     Explore Modules
-                  </Link>
-                  <Link to="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
-                    Technical Specs
+                  </a>
+                  <Link to="/contact?type=specs" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                    View Technical Specs
                   </Link>
                 </div>
               </motion.div>
@@ -133,10 +133,10 @@ export default function TreasuryTesting() {
                 <p className="text-blue-100 text-sm leading-relaxed mb-8 font-medium">
                   Transition assurance for structural messaging updates and cross-border payment rails.
                 </p>
-                <a className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest group/link" href="#">
+                <Link to="/contact?type=protocol" className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest group/link">
                   Protocol Spec 
                   <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
-                </a>
+                </Link>
               </div>
 
               {/* Liquidity Management */}
@@ -203,7 +203,7 @@ export default function TreasuryTesting() {
               <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {[
                   { title: "Shadow Ledgers", desc: "We run parallel shadow ledgers during testing to capture minute discrepancies in settlement rounding and interest calculation." },
-                  { title: "Messaging Integrity", desc: "Stress testing message queues for massive spikes in SWIFT gpi transactions to prevent bottlenecking." },
+                  { title: "Messaging Integrity", desc: "Stress testing message queues for massive spikes in SWIFT GPI transactions to prevent bottlenecking." },
                   { title: "Automated Hedging", desc: "Validation of smart-hedging algorithms and trigger points based on live external market feeds." },
                   { title: "API Connectivity", desc: "End-to-end assurance for Open Banking APIs and direct host-to-host bank connections." }
                 ].map((item, i) => (
@@ -232,12 +232,12 @@ export default function TreasuryTesting() {
                     Validated for multi-currency settlement systems with 99.99% data integrity. We ensure your treasury systems are ready for the next generation of global financial messaging.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <button className="px-8 py-4 bg-primary text-white rounded-xl font-black hover:bg-blue-600 transition-all">
+                    <Link to="/contact?type=iso20022" className="px-8 py-4 bg-primary text-white rounded-xl font-black hover:bg-blue-600 transition-all">
                       View Protocol Spec
-                    </button>
-                    <button className="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                    </Link>
+                    <Link to="/contact?type=migration" className="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
                       Migration Guide
-                    </button>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex-1 grid grid-cols-2 gap-4">

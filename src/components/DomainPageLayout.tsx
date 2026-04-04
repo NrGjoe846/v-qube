@@ -85,12 +85,12 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
                 {hero.description}
               </p>
               <div className="flex flex-wrap gap-6">
-                <Link to="/contact" className="px-14 py-6 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+                <Link to="/contact?type=audit" className="px-14 py-6 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
                   Request Audit Framework
                 </Link>
-                <button className="px-14 py-6 glass-button rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
+                <Link to="/contact?type=case-study" className="px-14 py-6 glass-button rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
                   View Case Studies
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -194,13 +194,13 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               <h2 className="text-5xl md:text-[7rem] font-black mb-12 tracking-tight leading-[1]" dangerouslySetInnerHTML={{ __html: cta.title }}></h2>
               <p className="text-xl md:text-2xl text-white/80 mb-16 font-medium leading-relaxed">{cta.description}</p>
               <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                <Link to="/contact" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
+                <Link to="/contact?type=consultation" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
                   Initiate Consultation
                   <ArrowRight className="w-6 h-6" />
                 </Link>
-                <button className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
+                <Link to="/contact?type=docs" className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
                   Documentation
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>

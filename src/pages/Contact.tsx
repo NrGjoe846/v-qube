@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
+import { useSearchParams } from "react-router-dom";
 import { 
   Mail, 
   Phone, 
@@ -16,6 +17,30 @@ import {
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [searchParams] = useSearchParams();
+  const [selectedService, setSelectedService] = useState("Compliance Audit");
+
+  // Map URL type params to service options
+  useEffect(() => {
+    const type = searchParams.get("type");
+    const typeMap: Record<string, string> = {
+      audit: "Compliance Audit",
+      consultation: "QA Automation Lab",
+      "case-study": "Compliance Audit",
+      deck: "QA Automation Lab",
+      framework: "Compliance Audit",
+      brief: "QA Automation Lab",
+      assessment: "Compliance Audit",
+      specs: "DevOps Integration",
+      protocol: "DevOps Integration",
+      iso20022: "DevOps Integration",
+      migration: "DevOps Integration",
+      docs: "QA Automation Lab",
+    };
+    if (type && typeMap[type]) {
+      setSelectedService(typeMap[type]);
+    }
+  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -184,7 +209,12 @@ End of Request
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-3">
                       <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Service Vector</label>
-                      <select name="service" className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer">
+                      <select 
+                        name="service" 
+                        value={selectedService}
+                        onChange={(e) => setSelectedService(e.target.value)}
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer"
+                      >
                         <option>Compliance Audit</option>
                         <option>QA Automation Lab</option>
                         <option>Security Simulation</option>

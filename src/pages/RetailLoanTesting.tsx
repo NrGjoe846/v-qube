@@ -57,6 +57,14 @@ export default function RetailLoanTesting() {
           transition={{ duration: 0.6 }}
           className="max-w-6xl mx-auto"
         >
+          {/* Breadcrumb Navigation */}
+          <nav className="flex items-center gap-2 mb-10">
+            <Link to="/" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Home</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Testing Hub</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface/20" />
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">Retail Loans</span>
+          </nav>
           {/* Header Section */}
           <header className="mb-16">
             <motion.span 
@@ -236,6 +244,32 @@ export default function RetailLoanTesting() {
             </div>
           </section>
         </motion.div>
+
+        {/* CTA Section */}
+        <div className="max-w-6xl mx-auto mt-20">
+          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative z-10 max-w-3xl"
+            >
+              <h3 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter">Ready to Validate Your Loan Lifecycle?</h3>
+              <p className="text-xl text-white/80 max-w-2xl mb-12 font-medium leading-relaxed">
+                Partner with V Qube's specialist loan testing team to ensure zero-error amortization, regulatory compliance, and seamless customer journeys.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Link to="/contact?type=audit" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
+                  Request Free Audit
+                </Link>
+                <Link to="/testing" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
+                  Explore All Domains
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
       </main>
     </div>
   );

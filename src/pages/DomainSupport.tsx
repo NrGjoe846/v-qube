@@ -55,12 +55,12 @@ export default function DomainSupport() {
                   Secure, compliant, and highly available domain infrastructure tailored for the rigorous demands of BFSI operations. Precision testing meets mission-critical administration.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/contact" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all">
+                  <Link to="/contact?type=assessment" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all">
                     Request Assessment
                   </Link>
-                  <button className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
+                  <Link to="/contact?type=framework" className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
                     View Compliance Framework
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             </motion.div>
@@ -305,12 +305,12 @@ export default function DomainSupport() {
             <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Domain?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the leading financial institutions that trust V Qube for mission-critical infrastructure administration.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
-              <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
+              <Link to="/contact?type=consultation" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
                 Schedule a Consultation
               </Link>
-              <button className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
-                Download Service Brief
-              </button>
+              <Link to="/contact?type=brief" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
+                Request Service Brief
+              </Link>
             </div>
           </div>
         </section>

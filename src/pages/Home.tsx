@@ -92,11 +92,11 @@ export default function Home() {
               V Qube Enterprises provides precision-engineered testing for Banking, Financial Services & Insurance — ensuring every transaction is secure and every customer experience is seamless.
             </p>
             <div className="flex flex-wrap gap-6">
-              <Link to="/testing/retail-banking" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 hover:shadow-primary/50 transition-all active:scale-95">
-                Explore Domains
+              <Link to="/testing" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 hover:shadow-primary/50 transition-all active:scale-95">
+                Explore All Domains
               </Link>
-              <Link to="/contact" className="bg-white text-on-surface border border-outline-variant/30 px-10 py-5 rounded-2xl font-black text-lg hover:bg-surface-container-low transition-all shadow-xl shadow-slate-200/50 active:scale-95">
-                Consult an Expert
+              <Link to="/contact?type=consultation" className="bg-white text-on-surface border border-outline-variant/30 px-10 py-5 rounded-2xl font-black text-lg hover:bg-surface-container-low transition-all shadow-xl shadow-slate-200/50 active:scale-95">
+                Talk to an Expert
               </Link>
             </div>
             
@@ -268,7 +268,7 @@ export default function Home() {
                 </div>
               </Link>
               {/* Payments */}
-              <Link to="/testing" className="md:col-span-2 bg-surface-container-highest rounded-3xl p-10 relative overflow-hidden flex items-center justify-between group cursor-pointer hover:bg-white hover:shadow-2xl transition-all duration-500 border border-outline-variant/10">
+              <Link to="/testing/core-banking" className="md:col-span-2 bg-surface-container-highest rounded-3xl p-10 relative overflow-hidden flex items-center justify-between group cursor-pointer hover:bg-white hover:shadow-2xl transition-all duration-500 border border-outline-variant/10">
                 <div className="max-w-[70%] relative z-10">
                   <h4 className="text-3xl font-black text-on-surface">Global Payments</h4>
                   <p className="text-sm text-on-surface-variant mt-4 font-medium opacity-70">SWIFT, SEPA, and Real-Time Payment network validation across borders.</p>
@@ -276,7 +276,7 @@ export default function Home() {
                 <CreditCard className="w-24 h-24 text-primary/5 group-hover:text-primary/10 group-hover:scale-125 transition-all duration-700" />
               </Link>
               {/* Regulatory */}
-              <Link to="/testing" className="glass-card rounded-3xl p-10 flex flex-col justify-between group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500">
+              <Link to="/testing/insurance" className="glass-card rounded-3xl p-10 flex flex-col justify-between group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500">
                 <div className="w-12 h-12 bg-error/10 text-error rounded-2xl flex items-center justify-center group-hover:bg-error group-hover:text-white transition-all duration-500">
                   <ShieldCheck className="w-6 h-6" />
                 </div>
