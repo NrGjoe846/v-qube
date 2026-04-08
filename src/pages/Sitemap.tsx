@@ -56,7 +56,7 @@ const sitemapData = [
 export default function Sitemap() {
   return (
     <div className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="container-max w-full">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

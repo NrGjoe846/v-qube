@@ -53,14 +53,14 @@ export default function TreasuryTesting() {
           <div className="absolute inset-0 z-0">
             <img 
               className="w-full h-full object-cover" 
-              src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
+              src="/assets/images/trading_metrics.png" 
               alt="Treasury Management"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
           </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24">
+          <div className="container-max w-full relative z-10 py-24">
             <div className="max-w-3xl">
               <nav className="flex items-center gap-2 mb-8">
                 <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Home</Link>
@@ -98,7 +98,7 @@ export default function TreasuryTesting() {
 
         {/* Bento Grid - Core Competencies */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
               {/* FX Engine Card */}
               <div className="md:col-span-8 bg-slate-50 p-10 rounded-[3rem] shadow-sm hover:shadow-md transition-all group flex flex-col justify-between border border-slate-100">
@@ -153,7 +153,7 @@ export default function TreasuryTesting() {
                 <div className="hidden sm:block flex-shrink-0 w-40 h-40 rounded-3xl bg-white shadow-sm overflow-hidden border border-slate-100">
                   <img 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                    src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80" 
+                    src="/assets/images/network_connectivity.png" 
                     alt="High-tech security" 
                     referrerPolicy="no-referrer"
                   />
@@ -178,7 +178,7 @@ export default function TreasuryTesting() {
 
         {/* Technical Detail Section */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="flex flex-col lg:flex-row gap-20">
               <div className="lg:w-1/3">
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter leading-none mb-8">
@@ -219,7 +219,7 @@ export default function TreasuryTesting() {
 
         {/* Global Standards Section */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="bg-slate-900 rounded-[4rem] p-12 lg:p-24 text-white relative overflow-hidden">
               <div className="absolute inset-0 bg-grid-white/5 opacity-20"></div>
               <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">

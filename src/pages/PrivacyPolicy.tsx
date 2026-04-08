@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export default function PrivacyPolicy() {
   return (
     <div className="py-20">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="container-max w-full px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

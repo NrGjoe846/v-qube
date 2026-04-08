@@ -51,12 +51,13 @@ export default function RetailLoanTesting() {
     <div className="flex min-h-screen bg-surface">
       {/* Main Content */}
       <main className="flex-1 p-8 lg:p-20 pt-32">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-6xl mx-auto"
-        >
+        <div className="container-max w-full mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="w-full"
+          >
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 mb-10">
             <Link to="/" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Home</Link>
@@ -243,10 +244,11 @@ export default function RetailLoanTesting() {
               </div>
             </div>
           </section>
-        </motion.div>
+          </motion.div>
+        </div>
 
         {/* CTA Section */}
-        <div className="max-w-6xl mx-auto mt-20">
+        <div className="container-max w-full mx-auto mt-20">
           <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <motion.div

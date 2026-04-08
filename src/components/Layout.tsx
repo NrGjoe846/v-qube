@@ -16,9 +16,9 @@ export default function Layout({ children }: LayoutProps) {
   }, [pathname]);
 
   return (
-    <div className="min-h-screen bg-surface selection:bg-primary-fixed selection:text-on-primary-fixed font-body">
+    <div className="flex flex-col min-h-screen bg-surface selection:bg-primary-fixed selection:text-on-primary-fixed font-body">
       <Navbar />
-      <main className="pt-24 overflow-x-hidden">
+      <main className="flex-1 pt-24 overflow-x-hidden flex flex-col">
         <AnimatePresence mode="wait">
           <motion.div
             key={pathname}

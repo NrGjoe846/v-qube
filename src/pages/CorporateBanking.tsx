@@ -12,7 +12,7 @@ export default function CorporateBanking() {
       badge: "Domain Excellence",
       title: "Corporate Banking <br/><span className=\"text-gradient\">Quality Assurance.</span>",
       description: "Strategic validation for high-stakes institutional finance. From multi-currency liquidity to complex trade finance ecosystems.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+      image: "/assets/images/office_skyscrapers.png"
     },
     competencies: [
       {

@@ -45,11 +45,11 @@ export default function InvestmentBanking() {
       {/* Main Content Area */}
       <main className="flex-1 p-8 md:p-16 lg:p-20">
         {/* Hero Section */}
-        <section className="mb-20">
+        <section className="container-max w-full mb-20">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="max-w-4xl"
+            className="w-full"
           >
             <span className="inline-block px-4 py-1.5 mb-6 text-[10px] font-bold tracking-[0.2em] uppercase bg-primary/10 text-primary rounded-full">
               Investment Banking Suite
@@ -74,7 +74,7 @@ export default function InvestmentBanking() {
         </section>
 
         {/* Bento Grid - Core Competencies */}
-        <section className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+        <section className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -155,7 +155,7 @@ export default function InvestmentBanking() {
                 <img 
                   alt="Financial data visualization" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
-                  src="https://images.unsplash.com/photo-1611974717484-22855fce4bd8?auto=format&fit=crop&q=80"
+                  src="/assets/images/trading_dashboard.png"
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -164,7 +164,7 @@ export default function InvestmentBanking() {
         </section>
 
         {/* Methodology Section */}
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-24">
+        <section className="container-max w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-24">
           <div className="space-y-12">
             <div>
               <h2 className="text-xs font-black uppercase tracking-[0.2em] text-primary mb-4">The V Qube Approach</h2>
@@ -223,7 +223,7 @@ export default function InvestmentBanking() {
               <div className="mt-12 text-center">
                 <img 
                   className="w-full h-48 object-cover rounded-xl mb-6 grayscale brightness-110" 
-                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
+                  src="/assets/images/trading_metrics.png" 
                   alt="Financial metrics"
                   referrerPolicy="no-referrer"
                 />
@@ -234,7 +234,7 @@ export default function InvestmentBanking() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-slate-900 text-white rounded-[3rem] p-12 md:p-24 relative overflow-hidden">
+        <section className="container-max w-full bg-slate-900 text-white rounded-[3rem] p-12 md:p-24 relative overflow-hidden">
           <div className="relative z-10 max-w-2xl">
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">
               Secure your investment banking infrastructure today.

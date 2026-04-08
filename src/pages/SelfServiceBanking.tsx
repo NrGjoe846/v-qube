@@ -71,7 +71,7 @@ export default function SelfServiceBanking() {
 
         {/* Hero Section */}
         <section className="relative pt-32 pb-32 overflow-hidden bg-surface-bright">
-          <div className="max-w-7xl mx-auto px-8 relative z-10">
+          <div className="container-max w-full relative z-10">
             <div className="grid lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7">
                 <motion.div
@@ -109,7 +109,7 @@ export default function SelfServiceBanking() {
                   <img 
                     className="w-full h-full object-cover grayscale opacity-80" 
                     alt="Modern ATM interface" 
-                    src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&q=80"
+                    src="/assets/images/banking_service.png"
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
                   {/* Floating Metric Card */}
@@ -125,7 +125,7 @@ export default function SelfServiceBanking() {
 
         {/* Educational Section */}
         <section className="py-32 bg-surface-container-low">
-          <div className="max-w-7xl mx-auto px-8">
+          <div className="container-max w-full">
             <div className="flex flex-col md:flex-row gap-16 items-start">
               <div className="md:w-1/3 sticky top-32">
                 <h2 className="text-4xl font-black tracking-tight mb-8">Digital Evolution in BFSI</h2>
@@ -156,7 +156,7 @@ export default function SelfServiceBanking() {
 
         {/* Specialized Testing Areas - Bento Grid */}
         <section className="py-32 bg-white">
-          <div className="max-w-7xl mx-auto px-8">
+          <div className="container-max w-full">
             <div className="mb-20 text-center max-w-3xl mx-auto">
               <h2 className="text-5xl font-black tracking-tighter mb-6">Omni-Channel Excellence</h2>
               <p className="text-on-surface-variant text-xl font-medium">Specialized testing domains designed for the unique hardware and software requirements of global financial services.</p>
@@ -256,7 +256,7 @@ export default function SelfServiceBanking() {
 
         {/* Metrics Section */}
         <section className="py-32 bg-surface">
-          <div className="max-w-7xl mx-auto px-8">
+          <div className="container-max w-full">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 items-center">
               {[
                 { val: "500M+", label: "Transactions Verified" },
@@ -274,7 +274,7 @@ export default function SelfServiceBanking() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="py-24 max-w-7xl mx-auto px-8 mb-24">
+        <section className="py-24 container-max w-full mb-24">
           <div className="orange-gradient rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-[0px_32px_128px_rgba(0,64,223,0.3)] mx-auto">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <div className="relative z-10 max-w-3xl mx-auto">

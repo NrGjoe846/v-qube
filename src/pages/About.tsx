@@ -32,19 +32,19 @@ const leaders = [
     name: "James T. Qube", 
     role: "Managing Director", 
     desc: "25 years of experience in strategic financial transformation and large-scale infrastructure deployment.",
-    img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80"
+    img: "/assets/images/team_member_1.png"
   },
   { 
     name: "Dr. Elena Rostova", 
     role: "Head of QA", 
     desc: "Pioneer in automated compliance verification and mathematical proof-of-security frameworks.",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80"
+    img: "/assets/images/tech_workspace.png"
   },
   { 
     name: "Marcus Vane", 
     role: "CTO", 
     desc: "Architect of the Vault-Propel framework, specializing in AI-accelerated regression suites.",
-    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80"
+    img: "/assets/images/office_skyscrapers.png"
   }
 ];
 
@@ -63,7 +63,7 @@ export default function About() {
           <img 
             alt="Architectural background" 
             className="w-full h-full object-cover mix-blend-overlay grayscale" 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+            src="/assets/images/office_skyscrapers.png"
           />
         </div>
         <div className="container-max relative z-10 w-full pt-20">
@@ -110,7 +110,7 @@ export default function About() {
 
       {/* Legacy Timeline */}
       <section className="py-32 bg-slate-50 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
+        <div className="container-max w-full">
           <div className="mb-24">
             <label className="text-[10px] sm:text-xs font-black tracking-[0.3em] uppercase text-primary mb-4 block">Our Journey</label>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter">Legacy of Innovation</h2>
@@ -186,7 +186,7 @@ export default function About() {
                 <img 
                   alt="Innovation" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-[3s]" 
-                  src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"
+                  src="/assets/images/cybersecurity.png"
                 />
               </div>
             </motion.div>

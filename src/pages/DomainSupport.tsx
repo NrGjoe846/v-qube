@@ -28,7 +28,7 @@ export default function DomainSupport() {
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
-          <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div className="container-max w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -75,7 +75,7 @@ export default function DomainSupport() {
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80" 
+                    src="/assets/images/network_connectivity.png" 
                     alt="High-tech data center"
                     referrerPolicy="no-referrer"
                   />
@@ -88,7 +88,7 @@ export default function DomainSupport() {
 
         {/* Trust Metrics */}
         <section className="bg-white border-b border-slate-100 py-16 px-8 md:px-16">
-          <div className="max-w-6xl mx-auto">
+          <div className="container-max w-full mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
               {[
                 { val: "99.999%", label: "Uptime SLA" },
@@ -107,7 +107,7 @@ export default function DomainSupport() {
 
         {/* Core Services Bento Grid */}
         <section className="py-24 lg:py-32 bg-slate-50 px-8 md:px-16">
-          <div className="max-w-6xl mx-auto">
+          <div className="container-max w-full mx-auto">
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -192,7 +192,7 @@ export default function DomainSupport() {
                 </div>
                 <img 
                   className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none" 
-                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
+                  src="/assets/images/trading_metrics.png" 
                   alt="Data visualization"
                   referrerPolicy="no-referrer"
                 />
@@ -208,7 +208,7 @@ export default function DomainSupport() {
               >
                 <div className="hidden sm:block w-1/3 aspect-square rounded-3xl overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80" 
+                    src="/assets/images/global_network.png" 
                     alt="Digital globe" 
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
@@ -227,7 +227,7 @@ export default function DomainSupport() {
 
         {/* Technical Deep-Dive */}
         <section className="px-8 md:px-16 py-24 bg-slate-50">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+          <div className="container-max w-full mx-auto grid lg:grid-cols-2 gap-24 items-center">
             <div>
               <h2 className="text-4xl font-black text-slate-900 mb-12 tracking-tighter">The Infrastructure Vault</h2>
               <div className="space-y-10">

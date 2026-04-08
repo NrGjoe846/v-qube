@@ -72,7 +72,7 @@ End of Request
 
   return (
     <div className="bg-surface font-body text-on-surface antialiased tech-grid min-h-screen pt-32 pb-20 selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <div className="max-w-7xl mx-auto px-8 lg:px-12">
+      <div className="container-max w-full">
         {/* Hero & Contact Split Section */}
         <div className="flex flex-col lg:flex-row gap-20 items-start">
           {/* Content Side */}
@@ -257,7 +257,7 @@ End of Request
               <img 
                 className="w-full h-48 object-cover rounded-[3rem] opacity-40 mix-blend-multiply grayscale border border-slate-100" 
                 alt="Digital security patterns" 
-                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80"
+                src="/assets/images/cybersecurity.png"
               />
             </motion.div>
           </div>

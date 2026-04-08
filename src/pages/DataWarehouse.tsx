@@ -39,7 +39,7 @@ export default function DataWarehouse() {
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4"></div>
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
           </div>
-          <div className="max-w-7xl mx-auto px-8 relative z-10">
+          <div className="container-max w-full relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function DataWarehouse() {
 
         {/* Educational Section */}
         <section className="px-8 md:px-16 py-24 bg-surface">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="grid lg:grid-cols-12 gap-16 items-center">
               <div className="lg:col-span-5">
                 <motion.div 
@@ -76,7 +76,7 @@ export default function DataWarehouse() {
                   <img 
                     className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" 
                     alt="Data center infrastructure" 
-                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc48?auto=format&fit=crop&q=80"
+                    src="/assets/images/data_center.png"
                   />
                   <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
                 </motion.div>
@@ -115,7 +115,7 @@ export default function DataWarehouse() {
         {/* Strategic Testing Features - Bento Grid */}
         <section className="px-8 md:px-16 py-32 bg-surface-container-low mx-4 rounded-[4rem] border border-slate-200 shadow-sm relative overflow-hidden">
           <div className="absolute inset-0 opacity-5 bg-grid-primary"></div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="container-max w-full relative z-10">
             <div className="mb-20 text-center max-w-2xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-black tracking-tight text-on-surface mb-6">Strategic ETL Features</h2>
               <p className="text-on-surface-variant font-medium text-lg">Rigorous validation protocols for high-volume data movement and transformation.</p>
@@ -202,7 +202,7 @@ export default function DataWarehouse() {
 
         {/* Specialized Focus Areas */}
         <section className="px-8 md:px-16 py-32 bg-surface overflow-hidden">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="flex flex-col lg:flex-row gap-20">
               <div className="lg:w-1/3">
                 <div className="sticky top-32">
@@ -247,7 +247,7 @@ export default function DataWarehouse() {
         {/* Testing Matrix Table */}
         <section className="px-4 md:px-16 py-32 bg-slate-900 text-white mx-4 rounded-[4rem] relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 bg-grid-white"></div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="container-max w-full relative z-10">
             <div className="mb-20 text-center md:text-left">
               <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-4">DWH Testing Matrix</h2>
               <p className="text-slate-400 text-xl font-medium">Core validation phases for enterprise data systems.</p>
@@ -286,7 +286,7 @@ export default function DataWarehouse() {
 
         {/* Final CTA */}
         <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="orange-gradient p-16 md:p-24 rounded-[4rem] text-center text-white relative overflow-hidden shadow-2xl mx-auto max-w-7xl">
+          <div className="orange-gradient p-16 md:p-24 rounded-[4rem] text-center text-white relative overflow-hidden shadow-2xl mx-auto container-max w-full">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Ready to Secure Your Data Assets?</h2>

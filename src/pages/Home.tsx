@@ -70,7 +70,7 @@ export default function Home() {
           className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-secondary rounded-full blur-[120px] pointer-events-none"
         ></motion.div>
         
-        <div className="relative z-20 max-w-[1440px] mx-auto px-6 md:px-16 grid lg:grid-cols-12 gap-16 items-center">
+        <div className="container-max relative z-20 grid lg:grid-cols-12 gap-16 items-center w-full">
           <motion.div 
             className="lg:col-span-7"
             initial={{ opacity: 0, x: -50 }}
@@ -225,7 +225,7 @@ export default function Home() {
               <Link to="/testing/retail-banking" className="md:col-span-2 bg-surface-container-lowest rounded-3xl p-10 relative overflow-hidden flex flex-col justify-end group cursor-pointer border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500">
                 <img 
                   className="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-110 transition-transform duration-[2s] pointer-events-none" 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80" 
+                  src="/assets/images/office_skyscrapers.png" 
                   alt="Modern clean banking"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-white/40 to-transparent"></div>

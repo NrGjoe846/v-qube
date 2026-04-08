@@ -50,14 +50,14 @@ export default function BespokeAppsTesting() {
           <div className="absolute inset-0 z-0">
             <img 
               className="w-full h-full object-cover" 
-              src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80" 
+              src="/assets/images/cybersecurity.png" 
               alt="Cybersecurity and Code"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
           </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24">
+          <div className="container-max w-full relative z-10 py-24">
             <div className="max-w-3xl">
               <nav className="flex items-center gap-2 mb-8">
                 <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Home</Link>
@@ -95,7 +95,7 @@ export default function BespokeAppsTesting() {
 
         {/* Feature Grid */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
               <div className="lg:col-span-2 bg-slate-50 p-12 rounded-[3rem] border border-slate-100 relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl group-hover:bg-primary/10 transition-all duration-700"></div>
@@ -153,7 +153,7 @@ export default function BespokeAppsTesting() {
 
         {/* Integration Section */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-slate-50">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="bg-white p-12 lg:p-24 rounded-[4rem] border border-slate-200 shadow-sm flex flex-col lg:flex-row items-center gap-16 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-primary via-blue-400 to-primary"></div>
               <div className="flex-1">
@@ -169,7 +169,7 @@ export default function BespokeAppsTesting() {
                 <div className="absolute inset-0 bg-primary/10 rounded-[3rem] blur-3xl animate-pulse"></div>
                 <img 
                   className="relative z-10 w-full rounded-[3rem] shadow-2xl rotate-3 hover:rotate-0 transition-all duration-700 border-4 border-white" 
-                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
+                  src="/assets/images/trading_metrics.png" 
                   alt="Data visualization"
                   referrerPolicy="no-referrer"
                 />
@@ -180,11 +180,11 @@ export default function BespokeAppsTesting() {
 
         {/* Lab Standards Section */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-white">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="flex flex-col lg:flex-row gap-16 items-center">
               <div className="flex-1 grid grid-cols-2 gap-4">
-                <img className="rounded-3xl shadow-lg" src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&q=80" alt="Server Room" referrerPolicy="no-referrer" />
-                <img className="rounded-3xl shadow-lg mt-8" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80" alt="Dashboard" referrerPolicy="no-referrer" />
+                <img className="rounded-3xl shadow-lg" src="/assets/images/network_connectivity.png" alt="Server Room" referrerPolicy="no-referrer" />
+                <img className="rounded-3xl shadow-lg mt-8" src="/assets/images/code_software.png" alt="Dashboard" referrerPolicy="no-referrer" />
               </div>
               <div className="flex-1">
                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-6 block">Laboratory Protocols</span>

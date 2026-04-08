@@ -38,7 +38,7 @@ export default function CapitalMarkets() {
           transition={{ duration: 0.6 }}
         >
           {/* Hero Section */}
-          <section className="max-w-5xl mb-24">
+          <section className="container-max w-full mb-24">
             <span className="inline-block bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase mb-6 shadow-sm">
               Capital Markets Precision
             </span>
@@ -84,7 +84,7 @@ export default function CapitalMarkets() {
                 <div className="bg-surface-container-low dark:bg-slate-800/50 rounded-2xl p-4 overflow-hidden border border-slate-100 dark:border-white/5">
                   <img 
                     className="w-full h-40 object-cover rounded-xl shadow-sm opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" 
-                    src="https://images.unsplash.com/photo-1611974717484-22855fce4bd8?auto=format&fit=crop&q=80" 
+                    src="/assets/images/trading_dashboard.png" 
                     alt="Trading dashboard visualization"
                     referrerPolicy="no-referrer"
                   />

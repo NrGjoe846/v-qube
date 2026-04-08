@@ -59,7 +59,7 @@ export default function TestingHub() {
         <div className="absolute inset-0 z-0">
           <img 
             className="w-full h-full object-cover mix-blend-overlay grayscale opacity-30" 
-            src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
+            src="/assets/images/trading_metrics.png" 
             alt="Testing Laboratory"
           />
           <motion.div 

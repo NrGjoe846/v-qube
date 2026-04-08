@@ -70,7 +70,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       scrolled ? "bg-white/80 backdrop-blur-xl shadow-lg py-3" : "bg-transparent py-5"
     }`}>
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="container-max flex justify-between items-center w-full">
         <Link to="/" className="flex items-center gap-2 group">
           <img src={logo} alt="V-Qube Logo" className="h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
           <span className="text-xl font-black tracking-tighter text-slate-900 group-hover:text-primary transition-colors duration-300">V Qube Enterprises</span>

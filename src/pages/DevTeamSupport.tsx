@@ -32,7 +32,7 @@ export default function DevTeamSupport() {
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
-          <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div className="container-max w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -79,7 +79,7 @@ export default function DevTeamSupport() {
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
+                    src="/assets/images/tech_workspace.png" 
                     alt="Development Team Support"
                     referrerPolicy="no-referrer"
                   />
@@ -92,7 +92,7 @@ export default function DevTeamSupport() {
 
         {/* Core Philosophy */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-surface">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-20 items-center">
+          <div className="container-max w-full mx-auto grid lg:grid-cols-12 gap-20 items-center">
             <motion.div 
               className="lg:col-span-7"
               initial={{ opacity: 0, y: 30 }}
@@ -131,7 +131,7 @@ export default function DevTeamSupport() {
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl aspect-square group border border-slate-100">
                 <img 
                   className="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700" 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" 
+                  src="/assets/images/tech_workspace.png" 
                   alt="Dev Team Support"
                   referrerPolicy="no-referrer"
                 />
@@ -152,7 +152,7 @@ export default function DevTeamSupport() {
 
         {/* Solutions Bento Grid */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-slate-50">
-          <div className="max-w-6xl mx-auto">
+          <div className="container-max w-full mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Support Ecosystem</h2>
               <h3 className="text-4xl font-black text-slate-900 tracking-tight">Specialized QA Solutions</h3>
@@ -260,7 +260,7 @@ export default function DevTeamSupport() {
                 className="hidden lg:block lg:col-span-6 rounded-[2.5rem] overflow-hidden shadow-inner bg-slate-200 relative border border-slate-100"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&q=80" 
+                  src="/assets/images/trading_metrics.png" 
                   alt="Advanced Analytics" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -278,7 +278,7 @@ export default function DevTeamSupport() {
 
         {/* ROI Metrics */}
         <section className="px-8 md:px-16 py-24 bg-white border-y border-slate-100">
-          <div className="max-w-6xl mx-auto">
+          <div className="container-max w-full mx-auto">
             <h3 className="text-3xl font-black text-slate-900 mb-16 text-center tracking-tight">Assurance Objectives</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-slate-100 border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-sm">
               {[
@@ -298,7 +298,7 @@ export default function DevTeamSupport() {
 
         {/* Integration Protocol */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-slate-50">
-          <div className="max-w-6xl mx-auto">
+          <div className="container-max w-full mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Deployment</h2>
               <h3 className="text-4xl font-black text-slate-900 tracking-tight">The Integration Protocol</h3>

@@ -5,7 +5,7 @@ import { ArrowLeft, Search } from "lucide-react";
 export default function NotFound() {
   return (
     <div className="min-h-[80vh] flex items-center justify-center py-20">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="container-max w-full text-center">
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

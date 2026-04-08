@@ -44,7 +44,7 @@ export default function SoftwareTesting() {
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
-          <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div className="container-max w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -81,7 +81,7 @@ export default function SoftwareTesting() {
                 <div className="rounded-[2rem] overflow-hidden aspect-[4/3]">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80" 
+                    src="/assets/images/code_software.png" 
                     alt="Banking interface testing"
                     referrerPolicy="no-referrer"
                   />
@@ -98,7 +98,7 @@ export default function SoftwareTesting() {
 
       {/* Metric Cards Grid */}
       <section className="bg-surface-container-low py-24">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="container-max w-full">
           <motion.div 
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
             variants={staggerContainer}
@@ -130,7 +130,7 @@ export default function SoftwareTesting() {
 
       {/* Core Testing Services - Bento Grid Style */}
       <section className="py-32 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="container-max w-full">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -265,7 +265,7 @@ export default function SoftwareTesting() {
 
       {/* CTA Section */}
       <section className="py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="container-max w-full">
           <div className="orange-gradient rounded-[3rem] p-12 lg:p-24 relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 bg-grid-orange opacity-10"></div>
             <div className="relative z-10 max-w-3xl">

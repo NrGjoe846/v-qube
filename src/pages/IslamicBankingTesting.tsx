@@ -44,14 +44,14 @@ export default function IslamicBankingTesting() {
           <div className="absolute inset-0 z-0">
             <img 
               className="w-full h-full object-cover" 
-              src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&q=80" 
+              src="/assets/images/islamic_finance.png" 
               alt="Islamic Architecture Precision"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
           </div>
 
-          <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16 py-24">
+          <div className="container-max w-full relative z-10 py-24">
             <div className="max-w-3xl">
               <nav className="flex items-center gap-2 mb-8">
                 <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
@@ -89,7 +89,7 @@ export default function IslamicBankingTesting() {
 
         {/* Core Pillars - Bento Style */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-surface">
-          <div className="max-w-7xl mx-auto">
+          <div className="container-max w-full">
             <div className="mb-20">
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Domain Expertise</h2>
               <h3 className="text-4xl font-black text-slate-900 tracking-tight">Shariah-Compliant Frameworks</h3>
@@ -178,7 +178,7 @@ export default function IslamicBankingTesting() {
                     <img 
                       alt="Governance Precision" 
                       className="w-full h-full object-cover" 
-                      src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80" 
+                      src="/assets/images/financial_growth.png" 
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
@@ -192,7 +192,7 @@ export default function IslamicBankingTesting() {
         {/* Workflow Section */}
         <section className="px-8 md:px-16 py-24 lg:py-32 bg-slate-900 text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
-          <div className="max-w-7xl mx-auto relative z-10">
+          <div className="container-max w-full relative z-10">
             <div className="text-center mb-24">
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Methodology</h2>
               <h3 className="text-4xl md:text-5xl font-black tracking-tight">The V Qube Validation Workflow</h3>

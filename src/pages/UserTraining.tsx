@@ -43,7 +43,7 @@ export default function UserTraining() {
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
-          <div className="max-w-7xl mx-auto px-6 md:px-16 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div className="container-max w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
@@ -80,7 +80,7 @@ export default function UserTraining() {
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
                   <img 
                     className="w-full h-full object-cover" 
-                    src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80" 
+                    src="/assets/images/classroom_training.png" 
                     alt="Training Workshop"
                     referrerPolicy="no-referrer"
                   />
@@ -93,7 +93,7 @@ export default function UserTraining() {
 
       {/* Core Pillars: Bento Grid */}
       <section className="py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="container-max w-full">
           <div className="mb-20">
             <h2 className="text-4xl md:text-5xl font-black font-headline text-slate-900 mb-6 tracking-tighter">
               Precision Readiness Modules
@@ -189,7 +189,7 @@ export default function UserTraining() {
 
       {/* Methodology Section */}
       <section className="py-32 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="container-max w-full">
           <div className="flex flex-col lg:flex-row items-center gap-24">
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
@@ -201,7 +201,7 @@ export default function UserTraining() {
                 <div className="absolute inset-0 bg-primary/5 -rotate-3 rounded-[3rem]"></div>
                 <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border border-slate-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80" 
+                    src="/assets/images/business_dashboard.png" 
                     alt="Analytics Dashboard" 
                     className="w-full"
                     referrerPolicy="no-referrer"
@@ -241,7 +241,7 @@ export default function UserTraining() {
 
       {/* Service Availability Chips */}
       <section className="py-24 bg-slate-50 border-y border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 md:px-16 text-center">
+        <div className="container-max w-full text-center">
           <h2 className="text-3xl font-black text-slate-900 mb-16 tracking-tight">Service Availability</h2>
           <div className="flex flex-wrap justify-center gap-6">
             {[
