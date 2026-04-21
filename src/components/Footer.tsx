@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-import { 
-  Mail, 
-  Headset, 
-  Globe, 
-  Network, 
-  Shield, 
-  ArrowUpRight 
+import {
+  Mail,
+  Headset,
+  Globe,
+  Network,
+  Shield,
+  ArrowUpRight
 } from "lucide-react";
 
 const testingAreas = [
@@ -29,7 +29,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 pt-24 pb-12 overflow-hidden relative font-body">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-orange-500 to-primary opacity-50"></div>
-      
+
       <div className="container-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 relative z-10 w-full">
         <div className="lg:col-span-3 space-y-8">
           <Link to="/" className="flex items-center gap-3">
@@ -60,9 +60,9 @@ export default function Footer() {
           <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10 opacity-50">Testing Areas</h4>
           <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-xs font-bold leading-tight">
             {testingAreas.map((area) => (
-              <Link 
-                key={area.name} 
-                to={area.path} 
+              <Link
+                key={area.name}
+                to={area.path}
                 className="hover:text-primary transition-colors flex items-center gap-2 group"
               >
                 <div className="w-1 h-1 bg-slate-700 rounded-full group-hover:bg-primary transition-colors"></div>
@@ -78,19 +78,14 @@ export default function Footer() {
             <li className="flex items-center gap-4 group">
               <a href="mailto:consult@vqube.com" className="flex items-center gap-4 w-full">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Mail className="w-5 h-5" /></div>
-                <span className="text-slate-400 group-hover:text-white transition-colors">consult@vqube.com</span>
+                <span className="text-slate-400 group-hover:text-white transition-colors">consult@vqubeenterprises.com</span>
               </a>
             </li>
             <li className="flex items-center gap-4 group">
               <a href="tel:+18008782372" className="flex items-center gap-4 w-full">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Headset className="w-5 h-5" /></div>
-                <span className="text-slate-400 group-hover:text-white transition-colors">+1 (800) V-QUBE-QA</span>
+                <span className="text-slate-400 group-hover:text-white transition-colors">+91 70108 52807</span>
               </a>
-            </li>
-            <li className="pt-4">
-              <Link to="/contact" className="block w-full text-center orange-gradient text-white py-4 rounded-xl font-black shadow-2xl shadow-primary/20 hover:scale-105 transition-transform active:scale-95">
-                Initiate Consultation
-              </Link>
             </li>
           </ul>
         </div>
@@ -130,6 +125,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }

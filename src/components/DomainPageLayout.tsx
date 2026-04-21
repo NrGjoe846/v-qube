@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight, 
+import {
+  ArrowRight,
   ChevronRight,
   PlusCircle,
   ArrowUpRight
@@ -49,12 +49,12 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-surface-container-lowest">
         <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
         <div className="absolute inset-0 z-0">
-          <img 
-            className="w-full h-full object-cover mix-blend-overlay grayscale opacity-30" 
-            src={hero.image} 
+          <img
+            className="w-full h-full object-cover mix-blend-overlay grayscale opacity-30"
+            src={hero.image}
             alt={hero.title}
           />
-          <motion.div 
+          <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
             transition={{ duration: 20, repeat: Infinity }}
             className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-primary rounded-full blur-[180px]"
@@ -78,8 +78,8 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase mb-10">
                 {hero.badge}
               </div>
-              <h1 className="text-6xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10" 
-                  dangerouslySetInnerHTML={{ __html: hero.title }}>
+              <h1 className="text-6xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10"
+                dangerouslySetInnerHTML={{ __html: hero.title }}>
               </h1>
               <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-3xl font-medium opacity-80 mb-16">
                 {hero.description}
@@ -87,9 +87,6 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               <div className="flex flex-wrap gap-6">
                 <Link to="/contact?type=audit" className="px-14 py-6 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
                   Request Audit Framework
-                </Link>
-                <Link to="/contact?type=case-study" className="px-14 py-6 glass-button rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
-                  View Case Studies
                 </Link>
               </div>
             </motion.div>
@@ -102,7 +99,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
         <div className="container-max">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
             {competencies.map((comp, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -146,7 +143,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
             </div>
             <div className="lg:w-2/3 space-y-10">
               {pillars.items.map((pillar, index) => (
-                <motion.div 
+                <motion.div
                   key={pillar.id}
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -185,7 +182,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
         <div className="container-max">
           <div className="orange-gradient p-20 md:p-32 rounded-[5rem] text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -197,9 +194,6 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
                 <Link to="/contact?type=consultation" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
                   Initiate Consultation
                   <ArrowRight className="w-6 h-6" />
-                </Link>
-                <Link to="/contact?type=docs" className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
-                  Documentation
                 </Link>
               </div>
             </motion.div>
