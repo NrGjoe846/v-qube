@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
-import { 
-  ArrowRight, 
-  ChevronLeft, 
-  ChevronRight, 
-  LayoutDashboard, 
-  ShieldCheck, 
-  Zap, 
-  Target, 
-  Wallet, 
-  Gavel, 
-  ArrowLeftRight, 
+import {
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
+  LayoutDashboard,
+  ShieldCheck,
+  Zap,
+  Target,
+  Wallet,
+  Gavel,
+  ArrowLeftRight,
   ArrowUpRight,
   CheckCircle2,
   Building2,
@@ -46,7 +46,7 @@ export default function InvestmentBanking() {
       <main className="flex-1 p-8 md:p-16 lg:p-20">
         {/* Hero Section */}
         <section className="container-max w-full mb-20">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="w-full"
@@ -55,7 +55,7 @@ export default function InvestmentBanking() {
               Investment Banking Suite
             </span>
             <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 mb-8 leading-[0.9]">
-              High-Trust Validation for <br/>
+              High-Trust Validation for <br />
               <span className="text-primary italic">Global Capital.</span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10 font-medium">
@@ -66,16 +66,13 @@ export default function InvestmentBanking() {
                 Explore Methodology
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-50 transition-all shadow-sm">
-                Download Whitepaper
-              </button>
             </div>
           </motion.div>
         </section>
 
         {/* Bento Grid - Core Competencies */}
         <section className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -97,7 +94,7 @@ export default function InvestmentBanking() {
             <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors"></div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -107,7 +104,7 @@ export default function InvestmentBanking() {
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
                 <FileText className="text-white w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-black mb-4 tracking-tight">Underwriting <br/>Logic</h3>
+              <h3 className="text-2xl font-black mb-4 tracking-tight">Underwriting <br />Logic</h3>
               <p className="text-white/70 text-sm leading-relaxed">
                 Securitization and issuance workflow validation.
               </p>
@@ -120,7 +117,7 @@ export default function InvestmentBanking() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -135,7 +132,7 @@ export default function InvestmentBanking() {
             </p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -152,9 +149,9 @@ export default function InvestmentBanking() {
                 </p>
               </div>
               <div className="w-full md:w-1/3 aspect-square bg-slate-50 rounded-2xl overflow-hidden border border-slate-100">
-                <img 
-                  alt="Financial data visualization" 
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" 
+                <img
+                  alt="Financial data visualization"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   src="/assets/images/trading_dashboard.png"
                   referrerPolicy="no-referrer"
                 />
@@ -221,9 +218,9 @@ export default function InvestmentBanking() {
                 ))}
               </div>
               <div className="mt-12 text-center">
-                <img 
-                  className="w-full h-48 object-cover rounded-xl mb-6 grayscale brightness-110" 
-                  src="/assets/images/trading_metrics.png" 
+                <img
+                  className="w-full h-48 object-cover rounded-xl mb-6 grayscale brightness-110"
+                  src="/assets/images/trading_metrics.png"
                   alt="Financial metrics"
                   referrerPolicy="no-referrer"
                 />
@@ -246,9 +243,6 @@ export default function InvestmentBanking() {
               <Link to="/contact" className="bg-primary text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform shadow-2xl shadow-primary/40">
                 Schedule a Consultation
               </Link>
-              <button className="bg-white/5 border border-white/10 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-colors">
-                Technical Whitepaper
-              </button>
             </div>
           </div>
           <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-primary/20 to-transparent pointer-events-none"></div>
