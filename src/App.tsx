@@ -18,7 +18,7 @@ import TreasuryTesting from "./pages/TreasuryTesting";
 import RetailLoanTesting from "./pages/RetailLoanTesting";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
-import Sitemap from "./pages/Sitemap";
+
 import CorporateBanking from "./pages/CorporateBanking";
 import InvestmentBanking from "./pages/InvestmentBanking";
 import CapitalMarkets from "./pages/CapitalMarkets";
@@ -40,14 +40,14 @@ export default function App() {
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          
+
           {/* Services Section */}
           <Route path="/services" element={<ServicesHub />} />
           <Route path="/services/software-testing" element={<SoftwareTesting />} />
           <Route path="/services/support-users" element={<UserTraining />} />
           <Route path="/services/support-dev-teams" element={<DevTeamSupport />} />
           <Route path="/services/domain-support" element={<DomainSupport />} />
-          
+
           {/* Testing Areas Hub */}
           <Route path="/testing" element={<TestingHub />} />
           <Route path="/testing/retail-banking" element={<BankingServices />} />
@@ -63,12 +63,12 @@ export default function App() {
           <Route path="/testing/data-warehouse" element={<DataWarehouse />} />
           <Route path="/testing/self-service-banking" element={<SelfServiceBanking />} />
           <Route path="/testing/wealth-management" element={<WealthManagement />} />
-          
+
           {/* Legal & Utility */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/sitemap.xml" element={<Sitemap />} />
-          
+
+
           {/* 404 Page */}
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />

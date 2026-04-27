@@ -3,11 +3,41 @@ import logo from "../assets/logo.png";
 import {
   Mail,
   Headset,
-  Globe,
-  Network,
-  Shield,
+  Instagram,
+  Linkedin,
   ArrowUpRight
 } from "lucide-react";
+
+const XIcon = ({ size = 20, color = "currentColor", ...props }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill={color}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+);
+
+const WhatsAppIcon = ({ size = 20, color = "currentColor", strokeWidth = 2, ...props }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke={color}
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+    <path d="M16.5 12.5c-.3-.2-1.7-.8-2-1-.3-.2-.5-.3-.7.2-.2.4-.7 1-.9 1.2-.2.2-.4.2-.7 0-.3-.2-1.2-.4-2.3-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6.1-.2.3-.4.4-.6.1-.2.2-.4.3-.6.1-.2 0-.4 0-.6s-.6-1.5-.8-2c-.2-.5-.4-.4-.5-.4h-.5s-.4 0-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.1-1.3-.1-.2-.3-.3-.6-.4Z" />
+  </svg>
+);
 
 const testingAreas = [
   { name: "Core Banking", path: "/testing/core-banking" },
@@ -40,9 +70,10 @@ export default function Footer() {
             Next-generation quality engineering for the world's most critical financial infrastructures.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><Globe className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><Network className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><Shield className="w-5 h-5" /></a>
+            <a href="https://instagram.com/vqube" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><Instagram className="w-5 h-5" /></a>
+            <a href="https://linkedin.com/company/vqube" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><Linkedin className="w-5 h-5" /></a>
+            <a href="https://x.com/vqube" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><XIcon size={20} /></a>
+            <a href="https://wa.me/917010852807" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all border border-slate-700/50"><WhatsAppIcon size={20} /></a>
           </div>
         </div>
 
@@ -77,13 +108,13 @@ export default function Footer() {
           <ul className="space-y-6 text-sm font-medium">
             <li className="flex items-center gap-4 group">
               <a href="mailto:consult@vqube.com" className="flex items-center gap-4 w-full">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Mail className="w-5 h-5" /></div>
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Mail className="w-5 h-5" /></div>
                 <span className="text-slate-400 group-hover:text-white transition-colors">consult@vqubeenterprises.com</span>
               </a>
             </li>
             <li className="flex items-center gap-4 group">
               <a href="tel:+18008782372" className="flex items-center gap-4 w-full">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Headset className="w-5 h-5" /></div>
+                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Headset className="w-5 h-5" /></div>
                 <span className="text-slate-400 group-hover:text-white transition-colors">+91 70108 52807</span>
               </a>
             </li>
@@ -97,7 +128,7 @@ export default function Footer() {
           <div className="flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
             <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
             <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms</Link>
-            <Link to="/sitemap" className="hover:text-white transition-colors">Sitemap</Link>
+
           </div>
         </div>
 
