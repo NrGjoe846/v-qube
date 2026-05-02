@@ -59,8 +59,8 @@ export default function UserTraining() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
               >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
-                  Enterprise Infrastructure
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30 whitespace-nowrap">
+                  Critical Mission
                 </span>
                 <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">
                   User Training & <br />Rollout <span className="text-primary">Support.</span>
@@ -98,7 +98,7 @@ export default function UserTraining() {
         </section>
 
         {/* Core Pillars: Bento Grid */}
-        <section className="py-32 bg-surface">
+        <section className="py-32 bg-white">
           <div className="container-max w-full">
             <div className="mb-20">
               <h2 className="text-4xl md:text-5xl font-black font-headline text-slate-900 mb-6 tracking-tighter">
@@ -114,7 +114,7 @@ export default function UserTraining() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="md:col-span-8 bg-white p-12 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col justify-between group"
+                className="md:col-span-8 bg-slate-50 p-12 rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col justify-between group"
               >
                 <div>
                   <BookOpen className="w-12 h-12 text-primary mb-8" />
@@ -170,7 +170,7 @@ export default function UserTraining() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="md:col-span-4 bg-white p-10 rounded-[2rem] shadow-lg border border-slate-100 group"
+                className="md:col-span-4 bg-slate-50 p-10 rounded-[2rem] shadow-lg border border-slate-100 group"
               >
                 <Video className="w-10 h-10 text-primary mb-6" />
                 <h3 className="text-xl font-black text-slate-900 mb-4 tracking-tight">Video Micro-Learning</h3>
@@ -246,7 +246,7 @@ export default function UserTraining() {
         </section>
 
         {/* Service Availability Chips */}
-        <section className="py-24 bg-slate-50 border-y border-slate-100">
+        <section className="py-24 bg-white border-y border-slate-100">
           <div className="container-max w-full text-center">
             <h2 className="text-3xl font-black text-slate-900 mb-16 tracking-tight">Service Availability</h2>
             <div className="flex flex-wrap justify-center gap-6">
@@ -262,7 +262,7 @@ export default function UserTraining() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="inline-flex items-center px-8 py-4 rounded-full bg-white text-slate-900 font-black text-sm shadow-md border border-slate-100"
+                  className="inline-flex items-center px-8 py-4 rounded-full bg-slate-50 text-slate-900 font-black text-sm shadow-md border border-slate-100"
                 >
                   <div className="w-2.5 h-2.5 rounded-full bg-primary mr-4"></div>
                   {chip}
@@ -273,25 +273,21 @@ export default function UserTraining() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 bg-white relative overflow-hidden">
+        <section className="py-32 bg-primary relative overflow-hidden">
+          <div className="absolute inset-0 bg-grid-orange opacity-10"></div>
           <div className="max-w-5xl mx-auto px-6 md:px-16 relative z-10 text-center">
-            <div className="bg-primary rounded-[3rem] p-16 md:p-24 shadow-2xl shadow-primary/30 text-white relative overflow-hidden">
-              <div className="absolute inset-0 bg-grid-orange opacity-10"></div>
-              <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight">Ready for a Flawless Rollout?</h2>
-              <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
+            <div className="bg-white rounded-[3rem] p-16 md:p-24 shadow-2xl shadow-black/10 relative overflow-hidden">
+              <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight text-slate-900">Ready for a Flawless Rollout?</h2>
+              <p className="text-slate-600 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
                 Ensure your users are empowered from Day 1. Partner with V Qube for end-to-end training and support services.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Link to="/contact" className="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all text-center">
-                  Talk to a Rollout Specialist
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-all text-center shadow-xl shadow-primary/30">
+                  Rollout Specialist
                 </Link>
-                <button className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/20 transition-all">
-                  Download Capabilities Deck
-                </button>
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent -z-0"></div>
         </section>
       </main>
     </div>

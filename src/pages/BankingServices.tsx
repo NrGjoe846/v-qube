@@ -189,7 +189,7 @@ export default function BankingServices() {
                     <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-bold">01</div>
                     <div>
                       <h4 className="font-bold mb-2 text-lg">Zero-Variance Policy</h4>
-                      <p className="text-on-surface-variant text-sm leading-relaxed">We treat every penny as a mission-critical data point. No rounding errors, no exceptions.</p>
+                      <p className="text-on-surface-variant text-sm leading-relaxed">We treat every penny as a <span className="whitespace-nowrap">mission-critical</span> data point. No rounding errors, no exceptions.</p>
                     </div>
                   </div>
                   <div className="flex gap-6">

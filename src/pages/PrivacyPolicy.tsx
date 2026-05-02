@@ -60,8 +60,8 @@ export default function PrivacyPolicy() {
               </p>
               <p className="font-bold text-slate-900">
                 V Qube Enterprises<br />
-                Email: privacy@vqube.com<br />
-                Address: 123 Financial District, Suite 500, NY
+                Email: consult@vqubeenterprises.com<br />
+                Address: Chennai, Tamil Nadu
               </p>
             </section>
           </div>

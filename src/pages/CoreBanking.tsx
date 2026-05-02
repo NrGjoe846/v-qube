@@ -283,14 +283,14 @@ export default function CoreBanking() {
         </section>
 
         {/* Testing Matrix Table */}
-        <section className="section-padding bg-slate-950 text-white relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20 bg-grid-white"></div>
+        <section className="section-padding bg-white text-slate-900 relative overflow-hidden">
+          <div className="absolute inset-0 opacity-10 bg-grid-orange"></div>
           <div className="container-max relative z-10">
             <div className="mb-24 text-center">
-              <h2 className="text-5xl md:text-7xl font-black tracking-tight mb-8">Detailed Testing Matrix</h2>
-              <p className="text-slate-400 text-xl font-medium max-w-2xl mx-auto">Comprehensive breakdown of tests performed across core modules to ensure zero-defect deployments.</p>
+              <h2 className="text-5xl md:text-7xl font-black tracking-tight mb-8 text-slate-900">Detailed Testing Matrix</h2>
+              <p className="text-slate-600 text-xl font-medium max-w-2xl mx-auto">Comprehensive breakdown of tests performed across core modules to ensure zero-defect deployments.</p>
             </div>
-            <div className="overflow-x-auto glass-card border border-white/10 rounded-[4rem] bg-white/5 backdrop-blur-3xl shadow-2xl">
+            <div className="overflow-x-auto glass-card border border-slate-100 rounded-[4rem] shadow-2xl text-white" style={{ backgroundColor: 'oklch(0.21 0.04 265.75)' }}>
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -311,10 +311,10 @@ export default function CoreBanking() {
                       <td className="px-12 py-10">
                         <span className="font-black text-2xl group-hover:text-primary transition-colors">{row.type}</span>
                       </td>
-                      <td className="px-12 py-10 text-slate-400 font-medium group-hover:text-slate-200 transition-colors">{row.obj}</td>
+                      <td className="px-12 py-10 text-slate-400 font-medium group-hover:text-white transition-colors">{row.obj}</td>
                       <td className="px-12 py-10 text-sm font-black tracking-wide">{row.deliverable}</td>
                       <td className="px-12 py-10">
-                        <span className={`px-5 py-2 bg-${row.color}/10 text-${row.color} text-[10px] font-black uppercase rounded-full tracking-widest border border-${row.color}/20`}>{row.status}</span>
+                        <span className={`px-5 py-2 bg-${row.color}/10 text-${row.color} text-[10px] font-black uppercase rounded-full tracking-widest border border-${row.color}/20 whitespace-nowrap`}>{row.status}</span>
                       </td>
                     </tr>
                   ))}

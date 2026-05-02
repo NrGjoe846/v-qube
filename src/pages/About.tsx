@@ -109,7 +109,7 @@ export default function About() {
       </section>
 
       {/* Legacy Timeline */}
-      <section className="py-32 bg-slate-50 overflow-hidden">
+      <section className="py-32 bg-white overflow-hidden">
         <div className="container-max w-full">
           <div className="mb-24">
             <label className="text-[10px] sm:text-xs font-black tracking-[0.3em] uppercase text-primary mb-4 block">Our Journey</label>
@@ -257,7 +257,7 @@ export default function About() {
               <h2 className="text-5xl md:text-8xl font-black text-white leading-[1] mb-12 tracking-tight">Secure your digital future with the laboratory of <span className="italic">BFSI testing.</span></h2>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
                 <Link to="/contact" className="bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/10 inline-block w-full sm:w-auto">Initiate Consultation</Link>
-                <button className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all w-full sm:w-auto">Request Portfolio</button>
+                <Link to="/contact" className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all w-full sm:w-auto inline-block text-center">Request Portfolio</Link>
               </div>
             </div>
           </div>

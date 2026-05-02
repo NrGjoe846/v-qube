@@ -71,7 +71,7 @@ export default function SoftwareTesting() {
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link to="/contact?type=audit" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
-                    Start Free Audit
+                    Start Audit Now
                   </Link>
                 </div>
               </motion.div>
@@ -160,7 +160,7 @@ export default function SoftwareTesting() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="md:col-span-8 group relative overflow-hidden bg-slate-50 rounded-[2.5rem] p-12 flex flex-col justify-between transition-all hover:bg-primary/5 border border-slate-100"
+                className="md:col-span-8 group relative overflow-hidden bg-white rounded-[2.5rem] p-12 flex flex-col justify-between transition-all hover:bg-primary/5 border border-slate-100"
               >
                 <div className="relative z-10">
                   <div className="flex items-center gap-4 mb-8">
@@ -219,7 +219,7 @@ export default function SoftwareTesting() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="md:col-span-5 bg-slate-50 rounded-[2.5rem] p-12 flex flex-col justify-between border border-slate-100 hover:border-primary/20 transition-all"
+                className="md:col-span-5 bg-white rounded-[2.5rem] p-12 flex flex-col justify-between border border-slate-100 hover:border-primary/20 transition-all"
               >
                 <div>
                   <div className="w-14 h-14 rounded-2xl bg-white shadow-sm flex items-center justify-center text-slate-900 mb-8">
@@ -258,7 +258,7 @@ export default function SoftwareTesting() {
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                     </Link>
                   </div>
-                  <div className="w-full lg:w-48 aspect-square bg-slate-50 rounded-3xl overflow-hidden relative border border-slate-100">
+                  <div className="w-full lg:w-48 aspect-square bg-white rounded-3xl overflow-hidden relative border border-slate-100">
                     <div className="absolute inset-0 flex items-center justify-center">
                       <Cpu className="w-20 h-20 text-primary/20" />
                     </div>
@@ -279,7 +279,7 @@ export default function SoftwareTesting() {
                   Ready to secure your banking infrastructure?
                 </h2>
                 <p className="text-white/80 text-xl mb-12 leading-relaxed">
-                  Join 50+ financial institutions that trust V Qube for their mission-critical testing. Schedule a technical audit with our BFSI specialists today.
+                  Join 50+ financial institutions that trust V Qube for their <span className="whitespace-nowrap">mission-critical</span> testing. Schedule a technical audit with our BFSI specialists today.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
                   <Link to="/contact?type=audit" className="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all text-center">

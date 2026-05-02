@@ -69,7 +69,7 @@ export default function TestingHub() {
           ></motion.div>
         </div>
 
-        <div className="container-max relative z-10 w-full pt-20">
+        <div className="container-max relative z-10 w-full pt-20 pb-20">
           <div className="max-w-4xl">
             <nav className="flex items-center gap-2 mb-10">
               <Link to="/" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Home</Link>
@@ -88,7 +88,7 @@ export default function TestingHub() {
                 Testing <br/><span className="text-gradient">Domains.</span>
               </h1>
               <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-16">
-                Surgical precision across the entire financial services ecosystem. Explore our specialized testing laboratories designed for mission-critical assurance.
+                Surgical precision across the entire financial services ecosystem. Explore our specialized testing laboratories designed for <span className="whitespace-nowrap">mission-critical</span> assurance.
               </p>
               <div className="flex flex-wrap gap-6">
                 <a href="#domains" className="px-14 py-6 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">

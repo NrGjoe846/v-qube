@@ -1,17 +1,17 @@
 import { motion } from "motion/react";
-import { 
-  ShieldCheck, 
-  Database, 
-  Users, 
-  Rocket, 
-  ChevronRight, 
-  ShieldAlert, 
-  Activity, 
-  Network, 
-  Lock, 
-  Server, 
-  Cpu, 
-  Globe, 
+import {
+  ShieldCheck,
+  Database,
+  Users,
+  Rocket,
+  ChevronRight,
+  ShieldAlert,
+  Activity,
+  Network,
+  Lock,
+  Server,
+  Cpu,
+  Globe,
   CheckCircle2,
   ShieldEllipsis,
   Key,
@@ -39,7 +39,7 @@ export default function DomainSupport() {
                 <ChevronRight className="w-3 h-3 text-slate-300" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">IT Domain Support</span>
               </nav>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -52,14 +52,11 @@ export default function DomainSupport() {
                   IT Domain Support for <span className="text-primary">Financial Institutions.</span>
                 </h1>
                 <p className="text-lg lg:text-xl text-slate-600 leading-relaxed mb-10 font-medium">
-                  Secure, compliant, and highly available domain infrastructure tailored for the rigorous demands of BFSI operations. Precision testing meets mission-critical administration.
+                  Secure, compliant, and highly available domain infrastructure tailored for the rigorous demands of BFSI operations. Precision testing meets <span className="whitespace-nowrap">mission-critical</span> administration.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link to="/contact?type=assessment" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all">
                     Request Assessment
-                  </Link>
-                  <Link to="/contact?type=framework" className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
-                    View Compliance Framework
                   </Link>
                 </div>
               </motion.div>
@@ -73,9 +70,9 @@ export default function DomainSupport() {
             >
               <div className="bg-white p-4 rounded-[2.5rem] shadow-2xl border border-outline-variant/10 relative z-10">
                 <div className="rounded-[2rem] overflow-hidden aspect-square">
-                  <img 
-                    className="w-full h-full object-cover" 
-                    src="/assets/images/network_connectivity.png" 
+                  <img
+                    className="w-full h-full object-cover"
+                    src="/assets/images/network_connectivity.png"
                     alt="High-tech data center"
                     referrerPolicy="no-referrer"
                   />
@@ -106,9 +103,9 @@ export default function DomainSupport() {
         </section>
 
         {/* Core Services Bento Grid */}
-        <section className="py-24 lg:py-32 bg-slate-50 px-8 md:px-16">
+        <section className="py-24 lg:py-32 bg-white px-8 md:px-16">
           <div className="container-max w-full mx-auto">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -119,10 +116,10 @@ export default function DomainSupport() {
               <h3 className="text-4xl font-black text-slate-900 mb-6 tracking-tight">Infrastructure Laboratory</h3>
               <p className="text-slate-600 text-lg max-w-2xl leading-relaxed">Our laboratory-grade approach ensures your domain controllers and network assets are fortified against modern threats while maintaining regulatory alignment.</p>
             </motion.div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               {/* Security Compliance */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -145,7 +142,7 @@ export default function DomainSupport() {
               </motion.div>
 
               {/* Network Admin */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -160,7 +157,7 @@ export default function DomainSupport() {
               </motion.div>
 
               {/* Access Management */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -170,12 +167,12 @@ export default function DomainSupport() {
                 <Key className="w-12 h-12 text-primary mb-8" />
                 <h4 className="text-2xl font-black mb-4 tracking-tight leading-tight text-slate-900">Access Management</h4>
                 <p className="text-slate-500 leading-relaxed">
-                  Granular RBAC and Zero-Trust identity verification protocols to secure mission-critical assets.
+                  Granular RBAC and Zero-Trust identity verification protocols to secure <span className="whitespace-nowrap">mission-critical</span> assets.
                 </p>
               </motion.div>
 
               {/* 24/7 Monitoring */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -190,16 +187,16 @@ export default function DomainSupport() {
                     <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Global Ops Active</span>
                   </div>
                 </div>
-                <img 
-                  className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none" 
-                  src="/assets/images/trading_metrics.png" 
+                <img
+                  className="absolute inset-0 w-full h-full object-cover opacity-10 pointer-events-none"
+                  src="/assets/images/trading_metrics.png"
                   alt="Data visualization"
                   referrerPolicy="no-referrer"
                 />
               </motion.div>
 
               {/* Disaster Recovery */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -207,9 +204,9 @@ export default function DomainSupport() {
                 className="md:col-span-8 bg-slate-900 text-white rounded-[2.5rem] p-12 flex items-center gap-12 overflow-hidden shadow-xl"
               >
                 <div className="hidden sm:block w-1/3 aspect-square rounded-3xl overflow-hidden shadow-lg">
-                  <img 
-                    src="/assets/images/global_network.png" 
-                    alt="Digital globe" 
+                  <img
+                    src="/assets/images/global_network.png"
+                    alt="Digital globe"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
                   />
@@ -226,7 +223,7 @@ export default function DomainSupport() {
         </section>
 
         {/* Technical Deep-Dive */}
-        <section className="px-8 md:px-16 py-24 bg-slate-50">
+        <section className="px-8 md:px-16 py-24 bg-white">
           <div className="container-max w-full mx-auto grid lg:grid-cols-2 gap-24 items-center">
             <div>
               <h2 className="text-4xl font-black text-slate-900 mb-12 tracking-tighter">The Infrastructure Vault</h2>
@@ -249,7 +246,7 @@ export default function DomainSupport() {
               </div>
             </div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, rotate: 2 }}
               whileInView={{ opacity: 1, rotate: 0 }}
               viewport={{ once: true }}
@@ -279,10 +276,10 @@ export default function DomainSupport() {
                 <div className="pt-6 border-t border-slate-800">
                   <div className="h-24 w-full bg-slate-800/30 rounded-xl relative overflow-hidden">
                     <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 40">
-                      <motion.path 
-                        d="M0 35 Q 20 10 40 30 T 100 5" 
-                        fill="none" 
-                        stroke="#0040df" 
+                      <motion.path
+                        d="M0 35 Q 20 10 40 30 T 100 5"
+                        fill="none"
+                        stroke="#0040df"
                         strokeWidth="2"
                         initial={{ pathLength: 0 }}
                         animate={{ pathLength: 1 }}
@@ -303,7 +300,7 @@ export default function DomainSupport() {
           <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Domain?</h3>
-            <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the leading financial institutions that trust V Qube for mission-critical infrastructure administration.</p>
+            <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the leading financial institutions that trust V Qube for <span className="whitespace-nowrap">mission-critical</span> infrastructure administration.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
               <Link to="/contact?type=consultation" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
                 Schedule a Consultation

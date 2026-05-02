@@ -15,7 +15,7 @@
   --color-on-secondary-fixed: #431407;
   --color-on-secondary-container: #7c2d12;
   --color-inverse-surface: #362f2b;
-  --color-background: #fffcf9;
+  --color-background: #ffffff;
   --color-on-tertiary-fixed-variant: #812900;
   --color-on-primary-fixed-variant: #7c2d12;
   --color-inverse-primary: #ffb59b;
@@ -34,7 +34,7 @@
   --color-on-primary: #ffffff;
   --color-secondary: #ea580c;
   --color-secondary-fixed-dim: #ffb59b;
-  --color-surface-container-low: #fff8f2;
+  --color-surface-container-low: #ffffff;
   --color-on-primary-fixed: #431407;
   --color-on-background: #201a17;
   --color-surface-dim: #e6d8cf;
@@ -42,12 +42,12 @@
   --color-tertiary-fixed: #ffdbcf;
   --color-primary-container: #fff7ed;
   --color-surface-variant: #f5e8dd;
-  --color-surface: #fffcf9;
+  --color-surface: #ffffff;
   --color-on-tertiary: #ffffff;
   --color-inverse-on-surface: #faefe7;
   --color-on-surface-variant: #53433b;
   --color-surface-tint: #f97316;
-  --color-surface-bright: #fffcf9;
+  --color-surface-bright: #ffffff;
   --color-secondary-fixed: #ffedd5;
   --color-error-container: #ffdad6;
   --color-on-tertiary-container: #ffece6;
@@ -83,7 +83,7 @@
     background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   }
   .glass-card {
-    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(249,115,22,0.05)];
+    @apply bg-white border border-slate-100 shadow-[0_8px_32px_rgba(249,115,22,0.05)];
   }
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-orange-600;
