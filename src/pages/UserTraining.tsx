@@ -54,17 +54,26 @@ export default function UserTraining() {
                 <ChevronRight className="w-3 h-3 text-slate-300" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">Training & Rollout</span>
               </nav>
-              <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">
-                User Training & <br />Rollout <span className="text-primary">Support.</span>
-              </h1>
-              <p className="text-xl text-slate-600 leading-relaxed max-w-xl mb-12 font-medium">
-                Bridge the gap between technical deployment and operational excellence. Our precision-engineered rollout strategies ensure seamless adoption across BFSI ecosystems.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
-                  Request Rollout Plan
-                </Link>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+              >
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
+                  Enterprise Infrastructure
+                </span>
+                <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">
+                  User Training & <br />Rollout <span className="text-primary">Support.</span>
+                </h1>
+                <p className="text-xl text-slate-600 leading-relaxed max-w-xl mb-12 font-medium">
+                  Bridge the gap between technical deployment and operational excellence. Our precision-engineered rollout strategies ensure seamless adoption across BFSI ecosystems.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/25 hover:scale-105 transition-transform">
+                    Request Rollout Plan
+                  </Link>
+                </div>
+              </motion.div>
             </motion.div>
 
             <motion.div

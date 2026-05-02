@@ -62,8 +62,8 @@ export default function DevTeamSupport() {
                   <Link to="/contact" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all">
                     Request Integration Plan
                   </Link>
-                  <Link to="/testing" className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
-                    QA Methodology
+                  <Link to="/contact?type=qa-methodology" className="px-8 py-4 bg-slate-50 text-slate-900 border border-slate-200 rounded-xl font-black hover:bg-slate-100 transition-all">
+                    Enquiry QA Methodology
                   </Link>
                 </div>
               </motion.div>
