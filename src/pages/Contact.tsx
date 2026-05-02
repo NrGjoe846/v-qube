@@ -64,7 +64,7 @@ ${data.description}
 End of Request
     `.trim();
 
-    window.location.href = `mailto:consult@vqube.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:consult@vqubeenterprises.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 5000);
@@ -106,18 +106,18 @@ End of Request
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group">
                   <MapPin className="text-primary w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
-                  <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">Singapore Node</h4>
-                  <p className="text-slate-900 font-bold text-sm leading-relaxed">One Financial District,<br/>Suite 400, Singapore</p>
+                  <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">India Node</h4>
+                  <p className="text-slate-900 font-bold text-sm leading-relaxed">Chennai,<br/>Tamil Nadu</p>
                 </div>
-                <a href="mailto:consult@vqube.com" className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group block">
+                <a href="mailto:consult@vqubeenterprises.com" className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group block">
                   <Mail className="text-primary w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
                   <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">Secure Channel</h4>
-                  <p className="text-slate-900 font-bold text-sm">consult@vqube.com</p>
+                  <p className="text-slate-900 font-bold text-sm">consult@vqubeenterprises.com</p>
                 </a>
-                <a href="tel:+1800878233" className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group block">
+                <a href="tel:+917010852807" className="p-8 rounded-[2rem] bg-white shadow-sm border border-slate-100 hover:shadow-xl transition-all group block">
                   <Phone className="text-primary w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
                   <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 text-slate-400">Direct Link</h4>
-                  <p className="text-slate-900 font-bold text-sm">+1 800 V-QUBE</p>
+                  <p className="text-slate-900 font-bold text-sm">+91 70108 52807</p>
                 </a>
                 <div className="p-8 rounded-[2rem] bg-primary text-white shadow-2xl shadow-primary/30 flex flex-col justify-between">
                   <div>
