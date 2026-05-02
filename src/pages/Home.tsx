@@ -100,13 +100,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Trusted By / Compliance Icons */}
-            <div className="mt-20 pt-10 border-t border-outline-variant/10 flex flex-wrap gap-10 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
-              <div className="flex items-center gap-2 text-sm font-black tracking-widest uppercase"><ShieldCheck className="w-5 h-5" /> PCI-DSS</div>
-              <div className="flex items-center gap-2 text-sm font-black tracking-widest uppercase"><ShieldAlert className="w-5 h-5" /> DORA 2025</div>
-              <div className="flex items-center gap-2 text-sm font-black tracking-widest uppercase"><FileCheck className="w-5 h-5" /> AML/KYC</div>
-              <div className="flex items-center gap-2 text-sm font-black tracking-widest uppercase"><CheckCircle2 className="w-5 h-5" /> ISO 27001</div>
-            </div>
+
           </motion.div>
 
           <motion.div
@@ -188,7 +182,7 @@ export default function Home() {
               { icon: <TrendingDown />, title: "Financial Impact", desc: "Critical systems failure can cost $1M+ per hour in operational losses and customer churn.", value: "$1M+/hr", color: "primary" },
               { icon: <Gavel />, title: "Regulatory Shield", desc: "Non-compliance penalties average $22M annually for global financial institutions.", value: "$22M/yr", color: "error", offset: true },
               { icon: <Building2 />, title: "Domain Mastery", desc: "Generic QA misses nuanced BFSI logic. Our domain-first approach ensures functional integrity.", value: "Domain-First", color: "secondary" },
-              { icon: <Rocket />, title: "Automation ROI", desc: "Accelerate release cycles while maintaining ironclad security through AI-driven automation.", value: "$2.2M saved", color: "tertiary", offset: true }
+              { icon: <Rocket />, title: "Automation ROI", desc: "Accelerate release cycles while maintaining ironclad security through AI-driven automation.", value: "$2.2M saved", color: "primary", offset: true }
             ].map((card, i) => (
               <motion.div
                 key={i}
@@ -216,7 +210,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-extrabold text-on-surface mb-6">14 Specialist BFSI Testing Domains</h2>
               <p className="text-on-surface-variant max-w-xl text-lg font-medium">Comprehensive coverage across the entire financial services ecosystem, from legacy core banking to emerging fintech.</p>
             </div>
-            <Link to="/testing/retail-banking" className="text-primary font-black flex items-center gap-3 group text-lg bg-white px-8 py-4 rounded-2xl shadow-xl shadow-slate-200 hover:shadow-primary/20 transition-all active:scale-95">
+            <Link to="/testing" className="text-primary font-black flex items-center gap-3 group text-lg bg-white px-8 py-4 rounded-2xl shadow-xl shadow-slate-200 hover:shadow-primary/20 transition-all active:scale-95">
               View All Domains <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
