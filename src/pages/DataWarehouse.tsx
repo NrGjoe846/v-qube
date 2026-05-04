@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { 
-  Database, 
-  Zap, 
-  ShieldCheck, 
-  Layers, 
-  ArrowRight, 
-  ChevronRight, 
-  BarChart3, 
-  RefreshCw, 
-  Search, 
+import {
+  Database,
+  Zap,
+  ShieldCheck,
+  Layers,
+  ArrowRight,
+  ChevronRight,
+  BarChart3,
+  RefreshCw,
+  Search,
   CheckCircle2,
   FileText,
   Activity,
@@ -47,14 +47,14 @@ export default function DataWarehouse() {
               className="max-w-3xl"
             >
               <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[1]">
-                Data Warehouse <br/><span className="text-primary italic">& ETL Validation.</span>
+                Data Warehouse <br /><span className="text-primary italic">& ETL Validation.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium">
                 Strategic integrity for your enterprise intelligence. We validate the complex pipelines that transform raw data into high-stakes business decisions.
               </p>
               <div className="flex gap-4">
                 <Link to="/contact" className="bg-primary text-white px-8 py-4 rounded-xl font-black flex items-center gap-3 hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-95 group">
-                  Explore ETL Framework
+                  Enquiry ETL Framework
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </Link>
               </div>
@@ -67,15 +67,15 @@ export default function DataWarehouse() {
           <div className="container-max w-full">
             <div className="grid lg:grid-cols-12 gap-16 items-center">
               <div className="lg:col-span-5">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white"
                 >
-                  <img 
-                    className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700" 
-                    alt="Data center infrastructure" 
+                  <img
+                    className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    alt="Data center infrastructure"
                     src="/assets/images/data_center.png"
                   />
                   <div className="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
@@ -122,7 +122,7 @@ export default function DataWarehouse() {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               {/* Data Integrity */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -143,7 +143,7 @@ export default function DataWarehouse() {
               </motion.div>
 
               {/* High-Performance ETL */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -159,7 +159,7 @@ export default function DataWarehouse() {
               </motion.div>
 
               {/* Metadata Validation */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -172,7 +172,7 @@ export default function DataWarehouse() {
               </motion.div>
 
               {/* Automated Regression */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -185,7 +185,7 @@ export default function DataWarehouse() {
               </motion.div>
 
               {/* Data Security */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -219,7 +219,7 @@ export default function DataWarehouse() {
                   { id: "04", color: "red-500", title: "Regression & Scalability", desc: "Verifying that the warehouse performance remains consistent as data volume grows from gigabytes to petabytes." },
                   { id: "05", color: "slate-900", title: "Incremental Load Testing", desc: "Testing the integrity of daily or hourly delta loads without affecting the existing historical data." }
                 ].map((area, index) => (
-                  <motion.div 
+                  <motion.div
                     key={area.id}
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}

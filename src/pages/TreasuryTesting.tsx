@@ -1,18 +1,18 @@
 import { motion } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  Landmark, 
-  Shield, 
-  TrendingUp, 
-  CreditCard, 
-  Wallet, 
-  Activity, 
-  Network, 
-  ArrowLeftRight, 
-  User, 
-  Briefcase, 
-  Gavel, 
-  RefreshCw, 
+import {
+  Landmark,
+  Shield,
+  TrendingUp,
+  CreditCard,
+  Wallet,
+  Activity,
+  Network,
+  ArrowLeftRight,
+  User,
+  Briefcase,
+  Gavel,
+  RefreshCw,
   Layers,
   ChevronRight,
   Terminal,
@@ -48,18 +48,16 @@ export default function TreasuryTesting() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
-          </div>
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
 
           <div className="container-max w-full relative z-10 py-24">
             <div className="max-w-3xl">
               <nav className="flex items-center gap-2 mb-8">
-                <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Home</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
-                <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Testing Hub</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
+                <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-on-surface/40 hover:text-primary">Home</Link>
+                <ChevronRight className="w-3 h-3 text-on-surface/20" />
+                <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface/40 hover:text-primary">Testing Hub</Link>
+                <ChevronRight className="w-3 h-3 text-on-surface/20" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">Treasury</span>
               </nav>
               <motion.div
@@ -70,17 +68,14 @@ export default function TreasuryTesting() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   <TrendingUp className="w-3 h-3 mr-2" /> Strategic Treasury Assurance
                 </span>
-                <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
-                  Precision testing for <span className="text-primary italic">high-velocity</span> liquidity.
+                <h1 className="text-5xl md:text-8xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8">
+                  Precision testing for <span className="text-gradient italic">high-velocity</span> liquidity.
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed max-w-2xl font-medium mb-12">
+                <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-12">
                   V Qube Enterprises provides industrial-grade validation for treasury management systems, focusing on real-time FX risk, automated liquidity buffers, and global SWIFT standard adoption.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a href="#modules" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
-                    Explore Modules
-                  </a>
-                  <Link to="/contact?type=specs" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                  <Link to="/contact?type=specs" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/20 hover:scale-105 transition-all active:scale-95">
                     View Technical Specs
                   </Link>
                 </div>
@@ -127,7 +122,7 @@ export default function TreasuryTesting() {
                   Transition assurance for structural messaging updates and cross-border payment rails.
                 </p>
                 <Link to="/contact?type=protocol" className="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest group/link">
-                  Protocol Spec 
+                  Protocol Spec
                   <ChevronRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -144,10 +139,10 @@ export default function TreasuryTesting() {
               {/* Compliance Vault */}
               <div className="md:col-span-8 bg-slate-50 p-10 rounded-[3rem] border border-slate-100 flex flex-col sm:flex-row items-center gap-12 group">
                 <div className="hidden sm:block flex-shrink-0 w-40 h-40 rounded-3xl bg-white shadow-sm overflow-hidden border border-slate-100">
-                  <img 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                    src="/assets/images/network_connectivity.png" 
-                    alt="High-tech security" 
+                  <img
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    src="/assets/images/network_connectivity.png"
+                    alt="High-tech security"
                     referrerPolicy="no-referrer"
                   />
                 </div>
@@ -175,7 +170,7 @@ export default function TreasuryTesting() {
             <div className="flex flex-col lg:flex-row gap-20">
               <div className="lg:w-1/3">
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter leading-none mb-8">
-                  The Testing <br/><span className="text-primary italic">Architecture.</span>
+                  The Testing <br /><span className="text-primary italic">Architecture.</span>
                 </h2>
                 <p className="text-slate-600 text-lg leading-relaxed mb-10 font-medium">
                   Our proprietary "Vault Protocol" ensures every treasury function is isolated, stressed, and validated before integration.

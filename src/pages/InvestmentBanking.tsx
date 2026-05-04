@@ -62,10 +62,10 @@ export default function InvestmentBanking() {
               Precision-engineered testing frameworks for M&A advisory, underwriting logic, and high-frequency market data integration.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="orange-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
-                Explore Methodology
+              <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
+                Enquiry Methodology
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </Link>
             </div>
           </motion.div>
         </section>

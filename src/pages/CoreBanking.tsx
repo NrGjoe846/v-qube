@@ -74,10 +74,10 @@ export default function CoreBanking() {
                 Ensuring absolute precision, security, and performance for the heartbeat of your financial institution through specialized BFSI quality engineering.
               </p>
               <div className="flex flex-wrap gap-6">
-                <button className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95">
                   Enquiry Methodology
                   <ArrowRight className="w-5 h-5 inline-block ml-3 group-hover:translate-x-2 transition-transform" />
-                </button>
+                </Link>
               </div>
             </motion.div>
           </div>
@@ -304,8 +304,8 @@ export default function CoreBanking() {
                   {[
                     { type: "Regression Testing", obj: "Validating existing features after core upgrades.", deliverable: "Stability Certificate", status: "Mission Critical", color: "primary" },
                     { type: "Data Migration", obj: "Integrity checks when moving legacy data.", deliverable: "Mapping Audit Report", status: "High Precision", color: "secondary" },
-                    { type: "DR / Failover", obj: "Ensuring Disaster Recovery takes over.", deliverable: "RTO/RPO Validation", status: "Resilience", color: "blue-400" },
-                    { type: "Globalization", obj: "Multi-currency and local compliance.", deliverable: "Localized Compliance", status: "Scalability", color: "emerald-400" }
+                    { type: "DR / Failover", obj: "Ensuring Disaster Recovery takes over.", deliverable: "RTO/RPO Validation", status: "Resilience", color: "primary" },
+                    { type: "Globalization", obj: "Multi-currency and local compliance.", deliverable: "Localized Compliance", status: "Scalability", color: "primary" }
                   ].map((row, i) => (
                     <tr key={i} className="group hover:bg-white/[0.03] transition-colors">
                       <td className="px-12 py-10">

@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight, 
-  Smartphone, 
-  Monitor, 
-  Laptop, 
-  ShieldCheck, 
-  Zap, 
-  Activity, 
+import {
+  ArrowRight,
+  Smartphone,
+  Monitor,
+  Laptop,
+  ShieldCheck,
+  Zap,
+  Activity,
   CheckCircle2,
   ChevronRight,
   Database,
@@ -83,7 +83,7 @@ export default function SelfServiceBanking() {
                     Strategic QA Center
                   </span>
                   <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-on-surface leading-[0.95] mb-8">
-                    Self-Service Banking <br/> Testing — <span className="text-primary italic">ATM, Mobile, Internet</span>
+                    Self-Service Banking <br /> Testing — <span className="text-primary italic">ATM, Mobile, Internet</span>
                   </h1>
                   <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12 font-medium">
                     Engineering flawless user journeys across the digital frontier. Our specialized BFSI testing framework ensures absolute security and zero-latency performance for your critical self-service channels.
@@ -93,9 +93,6 @@ export default function SelfServiceBanking() {
                       Secure Your Digital Channels
                       <ArrowRight className="w-5 h-5" />
                     </Link>
-                    <button className="bg-white text-slate-900 border border-slate-200 px-8 py-4 rounded-xl font-black hover:bg-slate-50 transition-all">
-                      View Methodology
-                    </button>
                   </div>
                 </motion.div>
               </div>
@@ -106,9 +103,9 @@ export default function SelfServiceBanking() {
                   transition={{ duration: 0.8 }}
                   className="aspect-square bg-surface-container-low rounded-[3rem] relative overflow-hidden shadow-2xl border-4 border-white"
                 >
-                  <img 
-                    className="w-full h-full object-cover grayscale opacity-80" 
-                    alt="Modern ATM interface" 
+                  <img
+                    className="w-full h-full object-cover grayscale opacity-80"
+                    alt="Modern ATM interface"
                     src="/assets/images/banking_service.png"
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
@@ -163,7 +160,7 @@ export default function SelfServiceBanking() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* ATM Testing */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -190,7 +187,7 @@ export default function SelfServiceBanking() {
               </motion.div>
 
               {/* Mobile Apps */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -211,7 +208,7 @@ export default function SelfServiceBanking() {
               </motion.div>
 
               {/* Internet Banking */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -230,7 +227,7 @@ export default function SelfServiceBanking() {
               </motion.div>
 
               {/* Compliance Focus */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
