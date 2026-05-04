@@ -43,33 +43,54 @@ export default function InvestmentBanking() {
   return (
     <div className="flex min-h-screen bg-surface">
       {/* Main Content Area */}
-      <main className="flex-1 p-8 md:p-16 lg:p-20">
-        {/* Hero Section */}
-        <section className="container-max w-full mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="w-full"
-          >
-            <span className="inline-block px-4 py-1.5 mb-6 text-[10px] font-bold tracking-[0.2em] uppercase bg-primary/10 text-primary rounded-full">
-              Investment Banking Suite
-            </span>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-slate-900 mb-8 leading-[0.9]">
-              High-Trust Validation for <br />
-              <span className="text-primary italic">Global Capital.</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-600 leading-relaxed max-w-2xl mb-10 font-medium">
-              Precision-engineered testing frameworks for M&A advisory, underwriting logic, and high-frequency market data integration.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 shadow-xl shadow-primary/20 hover:scale-105 transition-all">
-                Enquiry Methodology
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </motion.div>
-        </section>
+      <main className="flex-1">
+        {/* Breadcrumb Nav */}
+        <div className="container-max pt-32 pb-4 relative z-20">
+          <nav className="flex items-center gap-2">
+            <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Services</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Domains</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Investment Banking</span>
+          </nav>
+        </div>
 
+        {/* Hero Section */}
+        <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
+          ></motion.div>
+
+          <div className="container-max relative z-10 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-4xl"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
+                Investment Banking Suite
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+                High-Trust Validation for <br /><span className="text-gradient italic">Global Capital.</span>
+              </h1>
+              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
+                Precision-engineered testing frameworks for M&A advisory, underwriting logic, and high-frequency market data integration.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95 flex items-center gap-3">
+                  Enquiry Methodology
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </header>
+
+        <div className="p-8 md:p-16 lg:p-20">
         {/* Bento Grid - Core Competencies */}
         <section className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
           <motion.div
@@ -248,6 +269,7 @@ export default function InvestmentBanking() {
           <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-primary/20 to-transparent pointer-events-none"></div>
           <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/10 blur-[120px] rounded-full"></div>
         </section>
+        </div>
       </main>
     </div>
   );

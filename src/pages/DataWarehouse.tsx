@@ -22,38 +22,44 @@ export default function DataWarehouse() {
     <div className="flex min-h-screen bg-surface font-body text-on-surface antialiased">
       {/* Main Content */}
       <main className="flex-1">
-        {/* Dynamic Nav Breadcrumb */}
-        <div className="absolute top-28 left-8 lg:left-16 z-20">
+        {/* Breadcrumb Nav */}
+        <div className="container-max pt-32 pb-4 relative z-20">
           <nav className="flex items-center gap-2">
-            <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
-            <ChevronRight className="w-3 h-3 text-slate-300" />
-            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Domains</Link>
-            <ChevronRight className="w-3 h-3 text-slate-300" />
+            <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Services</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Domains</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
             <span className="text-[10px] font-black uppercase tracking-widest text-primary">Data Warehouse</span>
           </nav>
         </div>
 
         {/* Hero Section */}
-        <header className="relative overflow-hidden bg-surface-container-low mx-4 mt-20 rounded-[3rem] border border-slate-200 shadow-sm mb-12 py-24 lg:py-32">
-          <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/4"></div>
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary rounded-full blur-[100px] translate-y-1/2 -translate-x-1/4"></div>
-          </div>
-          <div className="container-max w-full relative z-10">
+        <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
+          ></motion.div>
+
+          <div className="container-max relative z-10 w-full">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl"
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-4xl"
             >
-              <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[1]">
-                Data Warehouse <br /><span className="text-primary italic">& ETL Validation.</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
+                Enterprise Data Intelligence
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+                Data Warehouse <br /><span className="text-gradient italic">&amp; ETL Validation.</span>
               </h1>
-              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium">
+              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
                 Strategic integrity for your enterprise intelligence. We validate the complex pipelines that transform raw data into high-stakes business decisions.
               </p>
-              <div className="flex gap-4">
-                <Link to="/contact" className="bg-primary text-white px-8 py-4 rounded-xl font-black flex items-center gap-3 hover:shadow-2xl hover:shadow-primary/30 transition-all active:scale-95 group">
+              <div className="flex flex-wrap gap-6">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95 flex items-center gap-3">
                   Enquiry ETL Framework
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </Link>

@@ -37,7 +37,6 @@ import {
   Code2,
   Waves,
   Globe,
-  Currency,
   Calculator,
   Car,
   UserPlus
@@ -50,44 +49,56 @@ export default function RetailLoanTesting() {
   return (
     <div className="flex min-h-screen bg-surface">
       {/* Main Content */}
-      <main className="flex-1 p-8 lg:p-20 pt-32">
-        <div className="container-max w-full mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="w-full"
-          >
-          {/* Breadcrumb Navigation */}
-          <nav className="flex items-center gap-2 mb-10">
-            <Link to="/" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Home</Link>
-            <ChevronRight className="w-3 h-3 text-on-surface/20" />
-            <Link to="/testing" className="text-[10px] font-black uppercase tracking-[0.3em] text-on-surface/40 hover:text-primary transition-colors">Testing Hub</Link>
-            <ChevronRight className="w-3 h-3 text-on-surface/20" />
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary">Retail Loans</span>
+      <main className="flex-1">
+        {/* Breadcrumb Nav */}
+        <div className="container-max pt-32 pb-4 relative z-20">
+          <nav className="flex items-center gap-2">
+            <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Home</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Testing Hub</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Retail Loans</span>
           </nav>
-          {/* Header Section */}
-          <header className="mb-16">
-            <motion.span 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-[0.1em] mb-4"
-            >
-              QA Framework Module 04-B
-            </motion.span>
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-on-surface mb-6 leading-tight">
-              Retail Loan <br />
-              <span className="text-primary italic">Validation Framework</span>
-            </h1>
-            <p className="max-w-2xl text-on-surface-variant text-lg leading-relaxed">
-              Systematic auditing of personal, home, and vehicle loan lifecycles. Our automated verification engine ensures amortization accuracy and regulatory adherence across every jurisdiction.
-            </p>
-          </header>
+        </div>
 
-          {/* Bento Grid: Loan Type Specialized Testing */}
-          <section className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
-            {/* Home Loans */}
+        {/* Hero Section */}
+        <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
+          ></motion.div>
+
+          <div className="container-max relative z-10 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-4xl"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
+                QA Framework Module 04-B
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+                Retail Loan <br /><span className="text-gradient">Validation Framework.</span>
+              </h1>
+              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
+                Systematic auditing of personal, home, and vehicle loan lifecycles. Our automated verification engine ensures amortization accuracy and regulatory adherence across every jurisdiction.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95">
+                  Enquiry Methodology
+                  <ArrowRight className="w-5 h-5 inline-block ml-3 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </header>
+
+        {/* Bento Grid: Loan Type Specialized Testing */}
+        <section className="px-8 md:px-16 py-24 bg-surface">
+          <div className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6">
             <motion.div 
               whileHover={{ y: -5 }}
               className="md:col-span-8 bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden group"
@@ -270,8 +281,6 @@ export default function RetailLoanTesting() {
                 </Link>
               </div>
             </motion.div>
-          </div>
-        </div>
       </main>
     </div>
   );

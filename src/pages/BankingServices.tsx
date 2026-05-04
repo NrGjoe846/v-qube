@@ -40,7 +40,6 @@ import {
   Code2,
   Waves,
   Globe,
-  Currency,
   Calculator
 } from "lucide-react";
 
@@ -51,31 +50,55 @@ export default function BankingServices() {
   return (
     <div className="flex min-h-screen bg-surface">
       {/* Main Content */}
-      <main className="flex-1 p-8 lg:p-20 pt-32">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="container-max w-full"
-        >
-          {/* Header Section */}
-          <header className="mb-16">
-            <motion.span 
-              initial={{ opacity: 0, x: -20 }}
+      <main className="flex-1">
+        {/* Breadcrumb Nav */}
+        <div className="container-max pt-32 pb-4 relative z-20">
+          <nav className="flex items-center gap-2">
+            <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Home</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Testing Hub</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Retail Banking</span>
+          </nav>
+        </div>
+
+        {/* Hero Section */}
+        <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
+          ></motion.div>
+
+          <div className="container-max relative z-10 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-              className="inline-block px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold uppercase tracking-[0.1em] mb-4"
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-4xl"
             >
-              QA Framework Module 01-A
-            </motion.span>
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight text-on-surface mb-6 leading-tight">
-              Retail Banking <br />
-              <span className="text-primary italic">Testing Suite</span>
-            </h1>
-            <p className="max-w-2xl text-on-surface-variant text-lg leading-relaxed">
-              Precision-grade auditing for the core of consumer finance. From high-frequency transactions to complex deposit compounding, our validation suite ensures architectural integrity at every ledger entry.
-            </p>
-          </header>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
+                QA Framework Module 01-A
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+                Retail Banking <br /><span className="text-gradient">Testing Suite.</span>
+              </h1>
+              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
+                Precision-grade auditing for the core of consumer finance. From high-frequency transactions to complex deposit compounding, our validation suite ensures architectural integrity at every ledger entry.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95">
+                  Enquiry Methodology
+                  <ArrowRight className="w-5 h-5 inline-block ml-3 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </header>
+
+        <div className="p-8 lg:p-20">
+          <div className="container-max w-full">
 
           {/* Bento Grid: Specialized Testing */}
           <section className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20">
@@ -282,7 +305,8 @@ export default function BankingServices() {
               </div>
             </div>
           </section>
-        </motion.div>
+          </div>
+        </div>
       </main>
     </div>
   );

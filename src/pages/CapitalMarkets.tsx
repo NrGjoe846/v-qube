@@ -31,24 +31,52 @@ export default function CapitalMarkets() {
   return (
     <div className="flex min-h-screen bg-surface">
       {/* Main Content Area */}
-      <main className="flex-1 p-8 md:p-16 lg:p-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          {/* Hero Section */}
-          <section className="container-max w-full mb-24">
-            <span className="inline-block bg-secondary-fixed text-on-secondary-fixed px-4 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase mb-6 shadow-sm">
-              Capital Markets Precision
-            </span>
-            <h1 className="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] text-on-surface mb-8">
-              The Strategic<br/><span className="text-primary italic">Trading Vault</span>
-            </h1>
-            <p className="text-xl text-on-surface-variant max-w-2xl leading-relaxed font-medium">
-              High-integrity validation for institutional-grade trading infrastructure. We ensure zero-latency accuracy for market data feeds and flawless post-trade settlement architecture.
-            </p>
-          </section>
+      <main className="flex-1">
+        {/* Breadcrumb Nav */}
+        <div className="container-max pt-32 pb-4 relative z-20">
+          <nav className="flex items-center gap-2">
+            <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Services</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Domains</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <span className="text-[10px] font-black uppercase tracking-widest text-primary">Capital Markets</span>
+          </nav>
+        </div>
+
+        {/* Hero Section */}
+        <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
+          ></motion.div>
+
+          <div className="container-max relative z-10 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-4xl"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
+                Capital Markets Precision
+              </div>
+              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+                The Strategic<br /><span className="text-gradient italic">Trading Vault.</span>
+              </h1>
+              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
+                High-integrity validation for institutional-grade trading infrastructure. We ensure zero-latency accuracy for market data feeds and flawless post-trade settlement architecture.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95">
+                  Enquiry Methodology
+                  <ArrowRight className="w-5 h-5 inline-block ml-3 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </header>
 
           {/* Bento Grid - Testing Specializations */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
@@ -178,7 +206,6 @@ export default function CapitalMarkets() {
               </div>
             </div>
           </section>
-        </motion.div>
       </main>
     </div>
   );

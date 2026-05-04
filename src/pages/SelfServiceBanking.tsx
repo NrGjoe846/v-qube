@@ -58,67 +58,51 @@ export default function SelfServiceBanking() {
     <div className="flex min-h-screen bg-surface font-body text-on-surface antialiased">
       {/* Main Content */}
       <main className="flex-1">
-        {/* Dynamic Nav Breadcrumb */}
-        <div className="absolute top-28 left-8 lg:left-16 z-20">
+        {/* Breadcrumb Nav */}
+        <div className="container-max pt-32 pb-4 relative z-20">
           <nav className="flex items-center gap-2">
-            <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
-            <ChevronRight className="w-3 h-3 text-slate-300" />
-            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Domains</Link>
-            <ChevronRight className="w-3 h-3 text-slate-300" />
+            <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Services</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
+            <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant/40 hover:text-primary transition-colors">Domains</Link>
+            <ChevronRight className="w-3 h-3 text-on-surface-variant/20" />
             <span className="text-[10px] font-black uppercase tracking-widest text-primary">Self-Service Banking</span>
           </nav>
         </div>
 
         {/* Hero Section */}
-        <section className="relative pt-32 pb-32 overflow-hidden bg-surface-bright">
-          <div className="container-max w-full relative z-10">
-            <div className="grid lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-7">
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                >
-                  <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/10">
-                    Strategic QA Center
-                  </span>
-                  <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-on-surface leading-[0.95] mb-8">
-                    Self-Service Banking <br /> Testing — <span className="text-primary italic">ATM, Mobile, Internet</span>
-                  </h1>
-                  <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12 font-medium">
-                    Engineering flawless user journeys across the digital frontier. Our specialized BFSI testing framework ensures absolute security and zero-latency performance for your critical self-service channels.
-                  </p>
-                  <div className="flex flex-wrap gap-4">
-                    <Link to="/contact" className="orange-gradient text-white px-8 py-4 rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95 flex items-center gap-3">
-                      Secure Your Digital Channels
-                      <ArrowRight className="w-5 h-5" />
-                    </Link>
-                  </div>
-                </motion.div>
+        <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
+          <motion.div
+            animate={{ scale: [1, 1.1, 1], opacity: [0.05, 0.08, 0.05] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
+          ></motion.div>
+
+          <div className="container-max relative z-10 w-full">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+              className="max-w-4xl"
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
+                Strategic QA Center
               </div>
-              <div className="lg:col-span-5 relative">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.8 }}
-                  className="aspect-square bg-surface-container-low rounded-[3rem] relative overflow-hidden shadow-2xl border-4 border-white"
-                >
-                  <img
-                    className="w-full h-full object-cover grayscale opacity-80"
-                    alt="Modern ATM interface"
-                    src="/assets/images/banking_service.png"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
-                  {/* Floating Metric Card */}
-                  <div className="absolute bottom-8 right-8 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl max-w-xs border border-slate-200">
-                    <div className="text-primary text-4xl font-black mb-1 tracking-tighter">99.99%</div>
-                    <div className="text-slate-600 text-xs font-bold leading-tight uppercase tracking-widest">Uptime reliability guaranteed for critical ATM transactions.</div>
-                  </div>
-                </motion.div>
+              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+                Self-Service Banking <br /><span className="text-gradient">Testing Solutions.</span>
+              </h1>
+              <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
+                Engineering flawless user journeys across the digital frontier. Our specialized BFSI testing framework ensures absolute security and zero-latency performance for your critical self-service channels.
+              </p>
+              <div className="flex flex-wrap gap-6">
+                <Link to="/contact" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95 flex items-center gap-3">
+                  Secure Your Digital Channels
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </section>
+        </header>
 
         {/* Educational Section */}
         <section className="py-32 bg-surface-container-low">
