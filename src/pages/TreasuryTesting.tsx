@@ -36,8 +36,7 @@ import {
   Settings,
   Code2,
   Waves,
-  Globe,
-  Currency
+  Globe
 } from "lucide-react";
 
 
@@ -51,12 +50,6 @@ export default function TreasuryTesting() {
         {/* Hero Section */}
         <section className="relative min-h-[70vh] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src="/assets/images/trading_metrics.png" 
-              alt="Treasury Management"
-              referrerPolicy="no-referrer"
-            />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
           </div>
 

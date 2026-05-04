@@ -195,6 +195,7 @@ export default function About() {
       </section>
 
       {/* Leadership Team */}
+      {false && (
       <section className="section-padding bg-surface">
         <div className="container-max">
           <div className="text-center mb-24">
@@ -225,6 +226,7 @@ export default function About() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Trust Bar */}
       <section className="py-20 bg-surface-container-lowest border-y border-outline-variant/10">

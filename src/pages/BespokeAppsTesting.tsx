@@ -46,24 +46,16 @@ export default function BespokeAppsTesting() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src="/assets/images/cybersecurity.png" 
-              alt="Cybersecurity and Code"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
-          </div>
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
 
           <div className="container-max w-full relative z-10 py-24">
             <div className="max-w-3xl">
               <nav className="flex items-center gap-2 mb-8">
-                <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Home</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
-                <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Testing Hub</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
+                <Link to="/" className="text-[10px] font-black uppercase tracking-widest text-on-surface/40 hover:text-primary">Home</Link>
+                <ChevronRight className="w-3 h-3 text-on-surface/20" />
+                <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface/40 hover:text-primary">Testing Hub</Link>
+                <ChevronRight className="w-3 h-3 text-on-surface/20" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">Bespoke Apps</span>
               </nav>
               <motion.div
@@ -74,17 +66,17 @@ export default function BespokeAppsTesting() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   <CheckCircle2 className="w-3 h-3 mr-2" /> Precision QA Laboratory
                 </span>
-                <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter leading-[0.9] mb-8">
-                  Bespoke <span className="text-primary italic">Applications</span> Testing.
+                <h1 className="text-5xl md:text-8xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8">
+                  Bespoke <span className="text-gradient italic">Applications</span> Testing.
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed max-w-2xl font-medium mb-12">
+                <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-12">
                   Custom-engineered testing frameworks for unique BFSI ecosystems. We validate the complex logic of fintech startups and the rigid integration requirements of enterprise banking.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all active:scale-95">
                     Start Lab Audit
                   </Link>
-                  <Link to="/contact" className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
+                  <Link to="/contact" className="px-8 py-4 glass-card text-on-surface border border-outline-variant/20 rounded-xl font-black hover:bg-primary/5 transition-all">
                     Technical Specs
                   </Link>
                 </div>

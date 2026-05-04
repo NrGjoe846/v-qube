@@ -49,11 +49,6 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-surface-container-lowest">
         <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
         <div className="absolute inset-0 z-0">
-          <img
-            className="w-full h-full object-cover mix-blend-overlay grayscale opacity-30"
-            src={hero.image}
-            alt={hero.title}
-          />
           <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
             transition={{ duration: 20, repeat: Infinity }}

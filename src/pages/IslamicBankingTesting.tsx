@@ -1,17 +1,17 @@
 import { motion } from "motion/react";
-import { 
-  Landmark, 
-  Shield, 
-  TrendingUp, 
-  CreditCard, 
-  Wallet, 
-  Activity, 
-  Network, 
-  ArrowLeftRight, 
-  User, 
-  Briefcase, 
-  Gavel, 
-  RefreshCw, 
+import {
+  Landmark,
+  Shield,
+  TrendingUp,
+  CreditCard,
+  Wallet,
+  Activity,
+  Network,
+  ArrowLeftRight,
+  User,
+  Briefcase,
+  Gavel,
+  RefreshCw,
   Layers,
   ChevronRight,
   CheckCircle2,
@@ -40,24 +40,16 @@ export default function IslamicBankingTesting() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img 
-              className="w-full h-full object-cover" 
-              src="/assets/images/islamic_finance.png" 
-              alt="Islamic Architecture Precision"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
-          </div>
+        <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-surface-container-lowest">
+          <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
 
           <div className="container-max w-full relative z-10 py-24">
             <div className="max-w-3xl">
               <nav className="flex items-center gap-2 mb-8">
-                <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Services</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
-                <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-slate-400 hover:text-primary">Domains</Link>
-                <ChevronRight className="w-3 h-3 text-slate-300" />
+                <Link to="/services" className="text-[10px] font-black uppercase tracking-widest text-on-surface/40 hover:text-primary">Services</Link>
+                <ChevronRight className="w-3 h-3 text-on-surface/20" />
+                <Link to="/testing" className="text-[10px] font-black uppercase tracking-widest text-on-surface/40 hover:text-primary">Domains</Link>
+                <ChevronRight className="w-3 h-3 text-on-surface/20" />
                 <span className="text-[10px] font-black uppercase tracking-widest text-primary">Islamic Banking</span>
               </nav>
               <motion.div
@@ -68,19 +60,16 @@ export default function IslamicBankingTesting() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Shariah-Compliant Assurance
                 </span>
-                <h1 className="text-5xl md:text-6xl font-black text-white tracking-tighter leading-[1.1] mb-8">
-                  Shariah-Compliant <br/><span className="text-primary italic">Precision Testing.</span>
+                <h1 className="text-5xl md:text-6xl font-black text-on-surface tracking-tighter leading-[1.1] mb-8">
+                  Shariah-Compliant <br /><span className="text-gradient italic">Precision Testing.</span>
                 </h1>
-                <p className="text-xl text-slate-300 leading-relaxed max-w-2xl font-medium mb-12">
+                <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-12">
                   End-to-end quality assurance for Islamic financial ecosystems. We validate the intricate logic of Murabaha financing, Ijarah leasing, and Shariah governance frameworks with surgical precision.
                 </p>
                 <div className="flex flex-wrap gap-4">
                   <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
                     Request Consultation
                   </Link>
-                  <button className="px-8 py-4 bg-white/10 backdrop-blur-md text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
-                    Technical Specs
-                  </button>
                 </div>
               </motion.div>
             </div>
@@ -97,7 +86,7 @@ export default function IslamicBankingTesting() {
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
               {/* Murabaha & Ijarah Logic */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -127,7 +116,7 @@ export default function IslamicBankingTesting() {
               </motion.div>
 
               {/* Takaful Ecosystems */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -149,7 +138,7 @@ export default function IslamicBankingTesting() {
               </motion.div>
 
               {/* Shariah Governance */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -175,10 +164,10 @@ export default function IslamicBankingTesting() {
                     </div>
                   </div>
                   <div className="w-full lg:w-96 aspect-square rounded-[2.5rem] bg-slate-100 relative overflow-hidden shrink-0 shadow-2xl">
-                    <img 
-                      alt="Governance Precision" 
-                      className="w-full h-full object-cover" 
-                      src="/assets/images/financial_growth.png" 
+                    <img
+                      alt="Governance Precision"
+                      className="w-full h-full object-cover"
+                      src="/assets/images/financial_growth.png"
                       referrerPolicy="no-referrer"
                     />
                     <div className="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
@@ -219,7 +208,7 @@ export default function IslamicBankingTesting() {
                   icon: <ShieldCheck className="w-8 h-8" />
                 }
               ].map((item, i) => (
-                <motion.div 
+                <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

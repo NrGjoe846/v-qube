@@ -1,19 +1,19 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight, 
-  Building2, 
-  CreditCard, 
-  Smartphone, 
-  LayoutDashboard, 
-  Shield, 
-  Globe, 
-  Network, 
-  Database, 
-  Lock, 
-  Zap, 
-  Activity, 
-  Users, 
+import {
+  ArrowRight,
+  Building2,
+  CreditCard,
+  Smartphone,
+  LayoutDashboard,
+  Shield,
+  Globe,
+  Network,
+  Database,
+  Lock,
+  Zap,
+  Activity,
+  Users,
   Briefcase,
   Wallet,
   ChevronRight,
@@ -57,12 +57,7 @@ export default function TestingHub() {
       <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-surface-container-lowest">
         <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
         <div className="absolute inset-0 z-0">
-          <img 
-            className="w-full h-full object-cover mix-blend-overlay grayscale opacity-30" 
-            src="/assets/images/trading_metrics.png" 
-            alt="Testing Laboratory"
-          />
-          <motion.div 
+          <motion.div
             animate={{ scale: [1, 1.2, 1], opacity: [0.1, 0.2, 0.1] }}
             transition={{ duration: 20, repeat: Infinity }}
             className="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-primary rounded-full blur-[180px]"
@@ -85,7 +80,7 @@ export default function TestingHub() {
                 Global QA Standards
               </div>
               <h1 className="text-6xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10">
-                Testing <br/><span className="text-gradient">Domains.</span>
+                Testing <br /><span className="text-gradient">Domains.</span>
               </h1>
               <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-16">
                 Surgical precision across the entire financial services ecosystem. Explore our specialized testing laboratories designed for <span className="whitespace-nowrap">mission-critical</span> assurance.
@@ -94,9 +89,6 @@ export default function TestingHub() {
                 <a href="#domains" className="px-14 py-6 bg-primary text-white rounded-2xl font-black text-xl shadow-2xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
                   Browse Domains
                 </a>
-                <Link to="/contact" className="px-14 py-6 glass-button rounded-2xl font-black text-xl hover:bg-white/10 transition-all">
-                  Consult an Expert
-                </Link>
               </div>
             </motion.div>
           </div>
@@ -125,7 +117,7 @@ export default function TestingHub() {
       {/* Grid Section */}
       <section id="domains" className="section-padding bg-surface">
         <div className="container-max">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -133,11 +125,11 @@ export default function TestingHub() {
             className="mb-24"
           >
             <div className="w-16 h-1.5 orange-gradient rounded-full mb-8"></div>
-            <h2 className="text-5xl md:text-7xl font-black text-on-surface mb-8 tracking-tight leading-[1]">Specialized <br/>Laboratories.</h2>
+            <h2 className="text-5xl md:text-7xl font-black text-on-surface mb-8 tracking-tight leading-[1]">Specialized <br />Laboratories.</h2>
             <p className="text-on-surface-variant text-xl max-w-2xl leading-relaxed font-medium opacity-60">Our testing hub is organized into specialized domain laboratories, each equipped with bespoke tools and expert personnel.</p>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0 },
               show: {
@@ -171,8 +163,8 @@ export default function TestingHub() {
                     {area.desc}
                   </p>
                 </div>
-                <Link 
-                  to={area.path} 
+                <Link
+                  to={area.path}
                   className="inline-flex items-center gap-4 font-black text-xs uppercase tracking-widest text-primary group-hover:gap-6 transition-all"
                 >
                   Enter Laboratory <ArrowRight className="w-5 h-5" />
@@ -188,13 +180,13 @@ export default function TestingHub() {
         <div className="container-max">
           <div className="orange-gradient p-16 md:p-32 rounded-[5rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               className="relative z-10 max-w-4xl"
             >
-              <h3 className="text-5xl md:text-8xl font-black mb-12 z-10 tracking-tight leading-[1]">Need a Custom <br/>QA Strategy?</h3>
+              <h3 className="text-5xl md:text-8xl font-black mb-12 z-10 tracking-tight leading-[1]">Need a Custom <br />QA Strategy?</h3>
               <p className="text-xl md:text-2xl text-white/80 max-w-2xl mb-16 z-10 font-medium leading-relaxed">Our domain experts are ready to architect a precision-testing framework tailored to your unique requirements.</p>
               <div className="flex flex-col sm:flex-row gap-8 z-10">
                 <Link to="/contact" className="bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/10">

@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  Shield, 
-  Zap, 
-  Wallet, 
-  Cpu, 
-  FileText, 
-  ArrowRight, 
-  ChevronRight, 
+import {
+  Shield,
+  Zap,
+  Wallet,
+  Cpu,
+  FileText,
+  ArrowRight,
+  ChevronRight,
   PlusCircle,
   Landmark,
   Building2,
@@ -48,15 +48,15 @@ export default function CoreBanking() {
         {/* Hero Section */}
         <header className="relative min-h-[70vh] flex items-center bg-surface-container-lowest">
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
-          <motion.div 
-            animate={{ 
+          <motion.div
+            animate={{
               scale: [1, 1.1, 1],
               opacity: [0.05, 0.08, 0.05]
             }}
             transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
             className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary rounded-full blur-[150px] pointer-events-none"
           ></motion.div>
-          
+
           <div className="container-max relative z-10 w-full">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -68,14 +68,14 @@ export default function CoreBanking() {
                 Precision Testing for Global Banking
               </div>
               <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
-                Core Banking <br/><span className="text-gradient">Testing Solutions.</span>
+                Core Banking <br /><span className="text-gradient">Testing Solutions.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
                 Ensuring absolute precision, security, and performance for the heartbeat of your financial institution through specialized BFSI quality engineering.
               </p>
               <div className="flex flex-wrap gap-6">
                 <button className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 transition-all group active:scale-95">
-                  Explore Methodology
+                  Enquiry Methodology
                   <ArrowRight className="w-5 h-5 inline-block ml-3 group-hover:translate-x-2 transition-transform" />
                 </button>
               </div>
@@ -88,16 +88,16 @@ export default function CoreBanking() {
           <div className="container-max">
             <div className="grid lg:grid-cols-12 gap-20 items-center">
               <div className="lg:col-span-5">
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
                   className="relative rounded-[3rem] overflow-hidden shadow-2xl border-2 border-white/20"
                 >
-                  <img 
-                    className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-[2s]" 
-                    alt="Core banking server center" 
+                  <img
+                    className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-[2s]"
+                    alt="Core banking server center"
                     src="/assets/images/data_center.png"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent mix-blend-overlay"></div>
@@ -145,7 +145,7 @@ export default function CoreBanking() {
             </div>
             <div className="grid md:grid-cols-3 gap-10">
               {/* Large Feature */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -156,7 +156,7 @@ export default function CoreBanking() {
                   <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 border border-primary/10">
                     <Shield className="w-8 h-8" />
                   </div>
-                  <h3 className="text-4xl font-black mb-8 tracking-tight leading-tight">End-to-End <br/>Security Validation</h3>
+                  <h3 className="text-4xl font-black mb-8 tracking-tight leading-tight">End-to-End <br />Security Validation</h3>
                   <p className="text-on-surface-variant leading-relaxed mb-12 text-lg font-medium opacity-80">We perform deep-layer penetration testing and protocol validation across the entire core infrastructure to prevent unauthorized access and data breaches.</p>
                 </div>
                 <div className="flex flex-wrap gap-4 pt-10 border-t border-outline-variant/10">
@@ -167,7 +167,7 @@ export default function CoreBanking() {
               </motion.div>
 
               {/* High-Velocity Throughput */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -185,7 +185,7 @@ export default function CoreBanking() {
               </motion.div>
 
               {/* Ledger Integrity */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -200,7 +200,7 @@ export default function CoreBanking() {
               </motion.div>
 
               {/* API Interoperability */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -208,14 +208,14 @@ export default function CoreBanking() {
                 className="glass-card p-14 rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
               >
                 <div className="w-14 h-14 bg-blue-500/10 text-blue-500 rounded-2xl flex items-center justify-center mb-10 group-hover:bg-blue-500 group-hover:text-white transition-all duration-500">
-                   <Cpu className="w-7 h-7" />
+                  <Cpu className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl font-black mb-6 tracking-tight">API Inbound/Outbound</h3>
                 <p className="text-on-surface-variant leading-relaxed font-medium opacity-80">Validating third-party integrations and open banking endpoints for seamless external connectivity.</p>
               </motion.div>
 
               {/* Audit Compliance */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -239,7 +239,7 @@ export default function CoreBanking() {
               <div className="lg:w-1/3">
                 <div className="sticky top-40">
                   <div className="w-20 h-2 orange-gradient rounded-full mb-8"></div>
-                  <h2 className="text-5xl md:text-7xl font-black tracking-tight text-on-surface mb-10 leading-[1]">Specialized <br/>Focus Areas.</h2>
+                  <h2 className="text-5xl md:text-7xl font-black tracking-tight text-on-surface mb-10 leading-[1]">Specialized <br />Focus Areas.</h2>
                   <p className="text-xl text-on-surface-variant mb-12 font-medium opacity-70 leading-relaxed">Our testing methodology is partitioned into five critical pillars to ensure 360-degree coverage of your core banking landscape.</p>
                   <div className="flex items-center gap-4 text-primary font-black uppercase text-xs tracking-widest">
                     <span className="w-12 h-[1px] bg-primary/30"></span>
@@ -255,7 +255,7 @@ export default function CoreBanking() {
                   { id: "04", color: "red-500", title: "Security & VAPT", desc: "Vulnerability Assessment and Penetration Testing specifically tuned for financial data protection and fraud prevention." },
                   { id: "05", color: "slate-900", title: "User Acceptance (UAT)", desc: "Testing from the banker's perspective to ensure the interface facilitates fast, error-free operations at the teller desk." }
                 ].map((area, index) => (
-                  <motion.div 
+                  <motion.div
                     key={area.id}
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -329,13 +329,13 @@ export default function CoreBanking() {
           <div className="container-max">
             <div className="orange-gradient p-20 md:p-32 rounded-[5rem] text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
               <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 className="relative z-10 max-w-4xl mx-auto"
               >
-                <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tight leading-[1]">Ready to Secure Your <br/>Core Banking?</h2>
+                <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tight leading-[1]">Ready to Secure Your <br />Core Banking?</h2>
                 <p className="text-xl md:text-2xl text-white/80 mb-16 font-medium leading-relaxed">Partner with V Qube Enterprises to architect a precision-testing framework that grows with your institution.</p>
                 <Link to="/contact" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-[2rem] font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
                   Initiate Strategy Session
