@@ -207,7 +207,7 @@ export default function CoreBanking() {
                 transition={{ delay: 0.3 }}
                 className="glass-card p-14 rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="w-14 h-14 bg-blue-500/10 text-blue-500 rounded-2xl flex items-center justify-center mb-10 group-hover:bg-blue-500 group-hover:text-white transition-all duration-500">
+                <div className="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                   <Cpu className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl font-black mb-6 tracking-tight">API Inbound/Outbound</h3>
@@ -251,7 +251,7 @@ export default function CoreBanking() {
                 {[
                   { id: "01", color: "primary", title: "Functional Testing", desc: "Validating core banking modules including Savings, Current Accounts, Loans, Deposits, and Fixed Deposits for business logic accuracy." },
                   { id: "02", color: "secondary", title: "Integration Testing", desc: "Ensuring seamless data flow between Core Banking, Mobile Apps, ATM Controllers, and SWIFT payment gateways." },
-                  { id: "03", color: "blue-500", title: "Performance Engineering", desc: "Stress testing the central server to handle millions of concurrent transactions during month-end or festive peaks." },
+                  { id: "03", color: "primary", title: "Performance Engineering", desc: "Stress testing the central server to handle millions of concurrent transactions during month-end or festive peaks." },
                   { id: "04", color: "red-500", title: "Security & VAPT", desc: "Vulnerability Assessment and Penetration Testing specifically tuned for financial data protection and fraud prevention." },
                   { id: "05", color: "slate-900", title: "User Acceptance (UAT)", desc: "Testing from the banker's perspective to ensure the interface facilitates fast, error-free operations at the teller desk." }
                 ].map((area, index) => (

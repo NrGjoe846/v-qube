@@ -18,7 +18,7 @@ import {
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [searchParams] = useSearchParams();
-  const [selectedService, setSelectedService] = useState("Compliance Audit");
+  const [selectedService, setSelectedService] = useState("");
 
   // Map URL type params to service options
   useEffect(() => {
@@ -125,7 +125,7 @@ End of Request
                     <h4 className="font-black text-[10px] uppercase tracking-[0.2em] mb-3 opacity-60">Service SLA</h4>
                   </div>
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-blue-200" />
+                    <CheckCircle2 className="w-5 h-5 text-white/60" />
                     <p className="text-sm font-black italic">24-hour response promise</p>
                   </div>
                 </div>
@@ -171,7 +171,6 @@ End of Request
                         name="name"
                         required
                         className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
-                        placeholder="e.g. Alexander Chen" 
                       />
                     </div>
                     <div className="space-y-3">
@@ -181,7 +180,6 @@ End of Request
                         name="organization"
                         required
                         className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
-                        placeholder="Global Finance Ltd." 
                       />
                     </div>
                   </div>
@@ -193,7 +191,6 @@ End of Request
                         name="email"
                         required
                         className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
-                        placeholder="name@company.com" 
                       />
                     </div>
                     <div className="space-y-3">
@@ -202,7 +199,6 @@ End of Request
                         type="tel" 
                         name="phone"
                         className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
-                        placeholder="+1 (555) 000-0000" 
                       />
                     </div>
                   </div>
@@ -214,7 +210,9 @@ End of Request
                         value={selectedService}
                         onChange={(e) => setSelectedService(e.target.value)}
                         className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer"
+                        required
                       >
+                        <option value="" disabled>Select an option</option>
                         <option>Compliance Audit</option>
                         <option>QA Automation Lab</option>
                         <option>Security Simulation</option>
@@ -223,7 +221,8 @@ End of Request
                     </div>
                     <div className="space-y-3">
                       <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Target Domain</label>
-                      <select name="domain" className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer">
+                      <select name="domain" className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer" required defaultValue="">
+                        <option value="" disabled>Select an option</option>
                         <option>Banking & Retail</option>
                         <option>Insurance Systems</option>
                         <option>Capital Markets</option>
@@ -237,7 +236,6 @@ End of Request
                       name="description"
                       required
                       className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300 resize-none" 
-                      placeholder="Detail your specific simulation requirements..." 
                       rows={4}
                     ></textarea>
                   </div>

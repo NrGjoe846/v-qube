@@ -57,7 +57,7 @@ export default function IslamicBankingTesting() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Shariah-Compliant Assurance
                 </span>
                 <h1 className="text-5xl md:text-6xl font-black text-on-surface tracking-tighter leading-[1.1] mb-8">
@@ -67,7 +67,7 @@ export default function IslamicBankingTesting() {
                   End-to-end quality assurance for Islamic financial ecosystems. We validate the intricate logic of Murabaha financing, Ijarah leasing, and Shariah governance frameworks with surgical precision.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <Link to="/contact" className="px-8 py-4 bg-primary text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:bg-blue-600 transition-all active:scale-95">
+                  <Link to="/contact" className="px-8 py-4 orange-gradient text-white rounded-xl font-black shadow-xl shadow-primary/25 hover:scale-105 transition-all active:scale-95">
                     Request Consultation
                   </Link>
                 </div>
@@ -132,9 +132,6 @@ export default function IslamicBankingTesting() {
                     Testing mutual insurance frameworks, including Waqf models and surplus distribution algorithms for participant pools.
                   </p>
                 </div>
-                <button className="bg-white text-primary px-8 py-4 rounded-xl font-black text-sm self-start hover:bg-slate-50 transition-all active:scale-95 shadow-lg">
-                  Explore Module
-                </button>
               </motion.div>
 
               {/* Shariah Governance */}

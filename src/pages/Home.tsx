@@ -111,7 +111,7 @@ export default function Home() {
           >
             {[
               { label: "Cost of Banking Downtime", value: "$300K+", sub: "Per Hour", color: "primary", icon: <TrendingDown className="w-6 h-6" /> },
-              { label: "Avg Annual Loss from Disruptions", value: "$152M", sub: "For Institutions", color: "error", icon: <ShieldAlert className="w-6 h-6" /> },
+              { label: "Avg Annual Loss from Disruptions", value: "$152M", sub: "For Institutions", color: "primary", icon: <ShieldAlert className="w-6 h-6" /> },
               { label: "Test Time Reduction via AI", value: "50-70%", sub: "Efficiency Gain", color: "secondary", icon: <Rocket className="w-6 h-6" /> }
             ].map((stat, i) => (
               <motion.div
@@ -180,7 +180,7 @@ export default function Home() {
           >
             {[
               { icon: <TrendingDown />, title: "Financial Impact", desc: "Critical systems failure can cost $1M+ per hour in operational losses and customer churn.", value: "$1M+/hr", color: "primary" },
-              { icon: <Gavel />, title: "Regulatory Shield", desc: "Non-compliance penalties average $22M annually for global financial institutions.", value: "$22M/yr", color: "error", offset: true },
+              { icon: <Gavel />, title: "Regulatory Shield", desc: "Non-compliance penalties average $22M annually for global financial institutions.", value: "$22M/yr", color: "primary", offset: true },
               { icon: <Building2 />, title: "Domain Mastery", desc: "Generic QA misses nuanced BFSI logic. Our domain-first approach ensures functional integrity.", value: "Domain-First", color: "secondary" },
               { icon: <Rocket />, title: "Automation ROI", desc: "Accelerate release cycles while maintaining ironclad security through AI-driven automation.", value: "$2.2M saved", color: "primary", offset: true }
             ].map((card, i) => (
@@ -271,7 +271,7 @@ export default function Home() {
             </Link>
             {/* Regulatory */}
             <Link to="/testing/insurance" className="glass-card rounded-3xl p-10 flex flex-col justify-between group cursor-pointer shadow-xl hover:shadow-2xl transition-all duration-500">
-              <div className="w-12 h-12 bg-error/10 text-error rounded-2xl flex items-center justify-center group-hover:bg-error group-hover:text-white transition-all duration-500">
+              <div className="w-12 h-12 bg-primary/10 text-primary rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
                 <ShieldCheck className="w-6 h-6" />
               </div>
               <div>
@@ -329,16 +329,17 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
                     <label className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60 ml-1">Full Name</label>
-                    <input className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none font-bold" placeholder="John Doe" type="text" />
+                    <input className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none font-bold" type="text" />
                   </div>
                   <div className="space-y-3">
                     <label className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60 ml-1">Email Address</label>
-                    <input className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none font-bold" placeholder="john@bank.com" type="email" />
+                    <input className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none font-bold" type="email" />
                   </div>
                 </div>
                 <div className="space-y-3">
                   <label className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60 ml-1">Service Interest</label>
-                  <select className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none appearance-none font-bold">
+                  <select className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none appearance-none font-bold" defaultValue="">
+                    <option value="" disabled>Select an option</option>
                     <option>Retail Banking Testing</option>
                     <option>Regulatory Compliance Audit</option>
                     <option>Security & Penetration Testing</option>
@@ -348,7 +349,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-3">
                   <label className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60 ml-1">How can we help?</label>
-                  <textarea className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none font-bold" placeholder="Briefly describe your testing needs..." rows={4}></textarea>
+                  <textarea className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none font-bold" rows={4}></textarea>
                 </div>
                 <button className="w-full orange-gradient text-white py-6 rounded-2xl font-black text-xl shadow-2xl shadow-primary/40 hover:scale-[1.02] active:scale-[0.98] transition-all" type="submit">
                   Initiate Consultation

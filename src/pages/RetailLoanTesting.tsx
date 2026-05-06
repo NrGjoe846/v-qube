@@ -39,7 +39,8 @@ import {
   Globe,
   Calculator,
   Car,
-  UserPlus
+  UserPlus,
+  ArrowRight
 } from "lucide-react";
 
 
@@ -196,7 +197,8 @@ export default function RetailLoanTesting() {
                 </div>
               </div>
             </motion.div>
-          </section>
+          </div>
+        </section>
 
           {/* Detailed Testing Workflow */}
           <section className="mb-20">
@@ -255,8 +257,6 @@ export default function RetailLoanTesting() {
               </div>
             </div>
           </section>
-          </motion.div>
-        </div>
 
         {/* CTA Section */}
         <div className="container-max w-full mx-auto mt-20">
@@ -281,6 +281,8 @@ export default function RetailLoanTesting() {
                 </Link>
               </div>
             </motion.div>
+          </div>
+        </div>
       </main>
     </div>
   );

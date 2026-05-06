@@ -21,7 +21,8 @@ import {
   MapPin,
   Share2,
   Cpu,
-  ShieldCheck
+  ShieldCheck,
+  ChevronRight
 } from "lucide-react";
 
 

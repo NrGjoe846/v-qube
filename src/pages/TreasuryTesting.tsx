@@ -36,7 +36,8 @@ import {
   Settings,
   Code2,
   Waves,
-  Globe
+  Globe,
+  ArrowRight
 } from "lucide-react";
 
 
@@ -65,11 +66,12 @@ export default function TreasuryTesting() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   <TrendingUp className="w-3 h-3 mr-2" /> Strategic Treasury Assurance
                 </span>
-                <h1 className="text-5xl md:text-8xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8">
-                  Precision testing for <span className="text-gradient italic">high-velocity</span> liquidity.
+                <h1 className="text-5xl md:text-7xl font-black text-on-surface tracking-tighter leading-[1.2] mb-8">
+                  Precision testing for <br />
+                  <span className="text-gradient italic">high-velocity liquidity.</span>
                 </h1>
                 <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-12">
                   V Qube Enterprises provides industrial-grade validation for treasury management systems, focusing on real-time FX risk, automated liquidity buffers, and global SWIFT standard adoption.
@@ -169,7 +171,7 @@ export default function TreasuryTesting() {
           <div className="container-max w-full">
             <div className="flex flex-col lg:flex-row gap-20">
               <div className="lg:w-1/3">
-                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter leading-none mb-8">
+                <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter leading-tight mb-8">
                   The Testing <br /><span className="text-primary italic">Architecture.</span>
                 </h2>
                 <p className="text-slate-600 text-lg leading-relaxed mb-10 font-medium">
@@ -212,19 +214,16 @@ export default function TreasuryTesting() {
               <div className="absolute inset-0 bg-grid-white/5 opacity-20"></div>
               <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
                 <div className="flex-1">
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-blue-400 mb-6 block">Global Standards</span>
-                  <h2 className="text-4xl lg:text-6xl font-black tracking-tighter mb-8 leading-none">
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary/60 mb-6 block">Global Standards</span>
+                  <h2 className="text-4xl lg:text-6xl font-black tracking-tighter mb-8 leading-tight">
                     ISO 20022 <span className="text-primary italic">Readiness.</span>
                   </h2>
                   <p className="text-slate-300 text-lg leading-relaxed mb-10 font-medium">
                     Validated for multi-currency settlement systems with 99.99% data integrity. We ensure your treasury systems are ready for the next generation of global financial messaging.
                   </p>
                   <div className="flex flex-wrap gap-4">
-                    <Link to="/contact?type=iso20022" className="px-8 py-4 bg-primary text-white rounded-xl font-black hover:bg-blue-600 transition-all">
-                      View Protocol Spec
-                    </Link>
-                    <Link to="/contact?type=migration" className="px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-black hover:bg-white/20 transition-all">
-                      Migration Guide
+                    <Link to="/contact?type=iso20022" className="px-8 py-4 orange-gradient text-white rounded-xl font-black hover:scale-105 transition-all flex justify-center items-center">
+                      For More Details<ArrowRight className="ml-2" />
                     </Link>
                   </div>
                 </div>
@@ -238,8 +237,8 @@ export default function TreasuryTesting() {
                     </div>
                   </div>
                   <div className="space-y-4 mt-8">
-                    <div className="h-60 bg-blue-500/20 rounded-3xl border border-blue-400/30 flex items-center justify-center">
-                      <Zap className="w-16 h-16 text-blue-400" />
+                    <div className="h-60 bg-primary/10 rounded-3xl border border-primary/20 flex items-center justify-center">
+                      <Zap className="w-16 h-16 text-primary" />
                     </div>
                     <div className="h-40 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center">
                       <Lock className="w-12 h-12 text-slate-400" />

@@ -123,9 +123,6 @@ export default function UserTraining() {
                     Beyond simple instructions. We produce high-fidelity documentation featuring visual workflows, interactive logic maps, and BFSI-specific regulatory compliance context.
                   </p>
                 </div>
-                <div className="mt-12 flex items-center text-primary font-black group-hover:gap-6 transition-all gap-3 cursor-pointer">
-                  Explore Documentation Framework <ArrowRight className="w-6 h-6" />
-                </div>
               </motion.div>
 
               {/* Pulse Support */}
