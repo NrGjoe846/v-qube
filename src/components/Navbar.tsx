@@ -72,8 +72,8 @@ export default function Navbar() {
     }`}>
       <div className="container-max flex justify-between items-center w-full">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src={logo} alt="V-Qube Logo" className="h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
-          <span className="text-xl font-black tracking-tighter text-slate-900 group-hover:text-primary transition-colors duration-300">V Qube Enterprises</span>
+          <img src={logo} alt="V-Qube Logo" className="h-8 sm:h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
+          <span className="text-lg sm:text-xl font-black tracking-tighter text-slate-900 group-hover:text-primary transition-colors duration-300">V Qube Enterprises</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -63,10 +63,10 @@ export default function BespokeAppsTesting() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-blue-400 text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
+                <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   <CheckCircle2 className="w-3 h-3 mr-2" /> Precision QA Laboratory
                 </span>
-                <h1 className="text-5xl md:text-8xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8">
+                <h1 className="text-3xl md:text-8xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8">
                   Bespoke <span className="text-gradient italic">Applications</span> Testing.
                 </h1>
                 <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-12">

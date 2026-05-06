@@ -81,7 +81,7 @@ export default function BankingServices() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 QA Framework Module 01-A
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
                 Retail Banking <br /><span className="text-gradient">Testing Suite.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -190,7 +190,7 @@ export default function BankingServices() {
                 </div>
                 <div className="flex items-center justify-between p-4 bg-white rounded-xl shadow-sm">
                   <div className="flex items-center gap-4">
-                    <div className="w-1.5 h-10 bg-blue-300 rounded-full"></div>
+                    <div className="w-1.5 h-10 bg-primary/30 rounded-full"></div>
                     <div>
                       <p className="text-xs font-bold uppercase tracking-tighter">Tax Compliance</p>
                       <p className="text-sm text-on-surface-variant">TDS/Withholding Audit</p>
@@ -293,7 +293,7 @@ export default function BankingServices() {
           <section className="mb-20">
             <div className="bg-primary p-12 md:p-20 rounded-[3rem] text-white text-center relative overflow-hidden">
               <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Ready to audit your core?</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 relative z-10">Ready to audit your core?</h2>
               <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto relative z-10">Deploy our specialized retail banking laboratory for your next implementation or migration.</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                 <Link to="/contact" className="bg-white text-primary px-10 py-4 rounded-xl font-bold hover:bg-blue-50 transition-all">

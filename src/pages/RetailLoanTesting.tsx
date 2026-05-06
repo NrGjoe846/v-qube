@@ -81,7 +81,7 @@ export default function RetailLoanTesting() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 QA Framework Module 04-B
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl sm:text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.1]">
                 Retail Loan <br /><span className="text-gradient">Validation Framework.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -98,7 +98,7 @@ export default function RetailLoanTesting() {
         </header>
 
         {/* Bento Grid: Loan Type Specialized Testing */}
-        <section className="px-8 md:px-16 py-24 bg-surface">
+        <section className="px-5 md:px-16 py-20 bg-surface">
           <div className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6">
             <motion.div 
               whileHover={{ y: -5 }}
@@ -187,7 +187,7 @@ export default function RetailLoanTesting() {
                 </div>
                 <div className="flex items-center justify-between p-4 bg-white rounded-xl shadow-sm">
                   <div className="flex items-center gap-4">
-                    <div className="w-1.5 h-10 bg-blue-300 rounded-full"></div>
+                    <div className="w-1.5 h-10 bg-primary/30 rounded-full"></div>
                     <div>
                       <p className="text-xs font-bold uppercase tracking-tighter">Interest Accuracy</p>
                       <p className="text-sm text-on-surface-variant">Day-count Convention Check</p>
@@ -268,7 +268,7 @@ export default function RetailLoanTesting() {
               viewport={{ once: true }}
               className="relative z-10 max-w-3xl"
             >
-              <h3 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter">Ready to Validate Your Loan Lifecycle?</h3>
+              <h3 className="text-3xl md:text-6xl font-black mb-8 tracking-tighter">Ready to Validate Your Loan Lifecycle?</h3>
               <p className="text-xl text-white/80 max-w-2xl mb-12 font-medium leading-relaxed">
                 Partner with V Qube's specialist loan testing team to ensure zero-error amortization, regulatory compliance, and seamless customer journeys.
               </p>

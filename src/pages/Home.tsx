@@ -67,7 +67,7 @@ export default function Home() {
             opacity: [0.03, 0.06, 0.03]
           }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-secondary rounded-full blur-[120px] pointer-events-none"
+          className="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-primary rounded-full blur-[120px] pointer-events-none"
         ></motion.div>
 
         <div className="container-max relative z-20 grid lg:grid-cols-12 gap-16 items-center w-full">
@@ -81,12 +81,12 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8"
+              className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30"
             >
               <ShieldCheck className="w-4 h-4" /> Trusted BFSI Testing Partner
             </motion.div>
-            <h1 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.05] mb-8">
-              Where Financial Systems Meet <span className="text-gradient">Flawless Quality</span>
+            <h1 className="font-headline text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.2] mb-8">
+              Where Financial Systems Meet <br className="sm:hidden" /><span className="text-gradient">Flawless Quality</span>
             </h1>
             <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12 font-medium">
               V Qube Enterprises provides precision-engineered testing for Banking, Financial Services & Insurance — ensuring every transaction is secure and every customer experience is seamless.
@@ -110,19 +110,19 @@ export default function Home() {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
           >
             {[
-              { label: "Cost of Banking Downtime", value: "$300K+", sub: "Per Hour", color: "primary", icon: <TrendingDown className="w-6 h-6" /> },
-              { label: "Avg Annual Loss from Disruptions", value: "$152M", sub: "For Institutions", color: "primary", icon: <ShieldAlert className="w-6 h-6" /> },
-              { label: "Test Time Reduction via AI", value: "50-70%", sub: "Efficiency Gain", color: "secondary", icon: <Rocket className="w-6 h-6" /> }
+              { label: "Cost of Banking Downtime", value: "₹25L+", sub: "Per Hour", color: "primary", icon: <TrendingDown className="w-6 h-6" /> },
+              { label: "Avg Annual Loss from Disruptions", value: "₹1200Cr", sub: "For Institutions", color: "primary", icon: <ShieldAlert className="w-6 h-6" /> },
+              { label: "Recovery Speed Increase", value: "65%", sub: "With V Qube Labs", color: "primary", icon: <Rocket className="w-6 h-6" /> }
             ].map((stat, i) => (
               <motion.div
                 key={i}
                 whileHover={{ scale: 1.02, x: i % 2 === 0 ? 10 : -10 }}
-                className="glass-card p-8 rounded-3xl relative overflow-hidden group"
+                className="glass-card p-6 sm:p-8 rounded-3xl relative overflow-hidden group"
               >
                 <div className={`absolute top-0 right-0 w-32 h-32 bg-${stat.color}/5 rounded-bl-[100px] -mr-8 -mt-8 group-hover:bg-${stat.color}/10 transition-all duration-500`}></div>
                 <div className="flex items-start justify-between relative z-10">
                   <div>
-                    <p className={`text-4xl font-black text-${stat.color} mb-1 tracking-tighter`}>{stat.value}</p>
+                    <p className={`text-3xl sm:text-4xl font-black text-${stat.color} mb-1 tracking-tighter`}>{stat.value}</p>
                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">{stat.label}</p>
                   </div>
                   <div className={`p-3 rounded-2xl bg-${stat.color}/10 text-${stat.color} group-hover:scale-110 transition-transform`}>
@@ -179,10 +179,10 @@ export default function Home() {
             viewport={{ once: true }}
           >
             {[
-              { icon: <TrendingDown />, title: "Financial Impact", desc: "Critical systems failure can cost $1M+ per hour in operational losses and customer churn.", value: "$1M+/hr", color: "primary" },
-              { icon: <Gavel />, title: "Regulatory Shield", desc: "Non-compliance penalties average $22M annually for global financial institutions.", value: "$22M/yr", color: "primary", offset: true },
-              { icon: <Building2 />, title: "Domain Mastery", desc: "Generic QA misses nuanced BFSI logic. Our domain-first approach ensures functional integrity.", value: "Domain-First", color: "secondary" },
-              { icon: <Rocket />, title: "Automation ROI", desc: "Accelerate release cycles while maintaining ironclad security through AI-driven automation.", value: "$2.2M saved", color: "primary", offset: true }
+              { icon: <TrendingDown />, title: "Financial Impact", desc: "Critical systems failure can cost ₹8Cr+ per hour in operational losses and customer churn.", value: "₹8Cr+/hr", color: "primary" },
+              { icon: <Gavel />, title: "Regulatory Shield", desc: "Non-compliance penalties average ₹180Cr annually for global financial institutions.", value: "₹180Cr/yr", color: "primary", offset: true },
+              { icon: <Building2 />, title: "Domain Mastery", desc: "Generic QA misses nuanced BFSI logic. Our domain-first approach ensures functional integrity.", value: "Domain-First", color: "primary" },
+              { icon: <Rocket />, title: "Automation ROI", desc: "Accelerate release cycles while maintaining ironclad security through AI-driven automation.", value: "₹18Cr saved", color: "primary", offset: true }
             ].map((card, i) => (
               <motion.div
                 key={i}
@@ -243,7 +243,7 @@ export default function Home() {
             </Link>
             {/* Insurance */}
             <Link to="/testing/insurance" className="glass-card rounded-3xl p-10 flex flex-col justify-between hover:bg-white hover:shadow-2xl transition-all cursor-pointer group">
-              <div className="w-12 h-12 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-500">
+              <div className="w-12 h-12 bg-primary/10 text-primary rounded-2xl flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all duration-500">
                 <Shield className="w-6 h-6" />
               </div>
               <div>
@@ -294,7 +294,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <h2 className="text-5xl md:text-6xl font-black text-on-surface mb-8 leading-[1.1]">Ready to Secure Your <span className="text-gradient">BFSI Future?</span></h2>
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-on-surface mb-8 leading-[1.1]">Ready to Secure Your <span className="text-gradient">BFSI Future?</span></h2>
                 <p className="text-xl text-on-surface-variant mb-12 font-medium leading-relaxed">Connect with our domain experts to architect a precision-testing framework tailored to your compliance and scale requirements.</p>
               </motion.div>
               <div className="space-y-8">
@@ -304,16 +304,16 @@ export default function Home() {
                   </div>
                   <div>
                     <p className="text-xs font-black uppercase tracking-widest text-primary mb-1">Expert Consultation</p>
-                    <p className="text-xl font-bold text-on-surface">consult@vqubeenterprises.com</p>
+                    <p className="text-sm sm:text-xl font-bold text-on-surface break-all">consult@vqubeenterprises.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6 group">
-                  <div className="bg-secondary/10 p-4 rounded-2xl text-secondary group-hover:bg-secondary group-hover:text-white transition-all duration-500">
+                  <div className="bg-primary/10 p-4 rounded-2xl text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500">
                     <Headset className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs font-black uppercase tracking-widest text-secondary mb-1">Direct Support</p>
-                    <p className="text-xl font-bold text-on-surface">+91 70108 52807</p>
+                    <p className="text-xs font-black uppercase tracking-widest text-primary mb-1">Direct Support</p>
+                    <p className="text-sm sm:text-xl font-bold text-on-surface break-all">+91 70108 52807</p>
                   </div>
                 </div>
               </div>
@@ -339,7 +339,7 @@ export default function Home() {
                 <div className="space-y-3">
                   <label className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60 ml-1">Service Interest</label>
                   <select className="w-full bg-surface-container-low border border-outline-variant/20 rounded-2xl p-5 focus:ring-2 focus:ring-primary/20 focus:border-primary/30 transition-all outline-none appearance-none font-bold" defaultValue="">
-                    <option value="" disabled>Select an option</option>
+                    <option value="" disabled>Select a option</option>
                     <option>Retail Banking Testing</option>
                     <option>Regulatory Compliance Audit</option>
                     <option>Security & Penetration Testing</option>

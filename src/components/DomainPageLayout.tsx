@@ -73,7 +73,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase mb-10">
                 {hero.badge}
               </div>
-              <h1 className="text-6xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10"
+              <h1 className="text-3xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10"
                 dangerouslySetInnerHTML={{ __html: hero.title }}>
               </h1>
               <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-3xl font-medium opacity-80 mb-16">
@@ -128,7 +128,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
             <div className="lg:w-1/3">
               <div className="sticky top-40">
                 <div className="w-20 h-2 orange-gradient rounded-full mb-8"></div>
-                <h2 className="text-5xl md:text-7xl font-black tracking-tight text-on-surface mb-10 leading-[1]">{pillars.title}</h2>
+                <h2 className="text-3xl md:text-7xl font-black tracking-tight text-on-surface mb-10 leading-[1]">{pillars.title}</h2>
                 <p className="text-xl text-on-surface-variant mb-12 font-medium opacity-70 leading-relaxed">{pillars.description}</p>
                 <div className="flex items-center gap-4 text-primary font-black uppercase text-xs tracking-widest">
                   <span className="w-12 h-[1px] bg-primary/30"></span>
@@ -183,7 +183,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               viewport={{ once: true }}
               className="relative z-10 max-w-4xl mx-auto"
             >
-              <h2 className="text-5xl md:text-[7rem] font-black mb-12 tracking-tight leading-[1]" dangerouslySetInnerHTML={{ __html: cta.title }}></h2>
+              <h2 className="text-3xl md:text-[7rem] font-black mb-12 tracking-tight leading-[1]" dangerouslySetInnerHTML={{ __html: cta.title }}></h2>
               <p className="text-xl md:text-2xl text-white/80 mb-16 font-medium leading-relaxed">{cta.description}</p>
               <div className="flex flex-col sm:flex-row gap-8 justify-center">
                 <Link to="/contact?type=consultation" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">

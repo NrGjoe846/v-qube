@@ -60,8 +60,8 @@ export default function IslamicBankingTesting() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Shariah-Compliant Assurance
                 </span>
-                <h1 className="text-5xl md:text-6xl font-black text-on-surface tracking-tighter leading-[1.1] mb-8">
-                  Shariah-Compliant <br /><span className="text-gradient italic">Precision Testing.</span>
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-on-surface tracking-tighter leading-[1.2] mb-8">
+                  Shariah-Compliant <br className="hidden sm:block" /><span className="text-gradient italic">Precision Testing.</span>
                 </h1>
                 <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-12">
                   End-to-end quality assurance for Islamic financial ecosystems. We validate the intricate logic of Murabaha financing, Ijarah leasing, and Shariah governance frameworks with surgical precision.
@@ -77,11 +77,11 @@ export default function IslamicBankingTesting() {
         </section>
 
         {/* Core Pillars - Bento Style */}
-        <section className="px-8 md:px-16 py-24 lg:py-32 bg-surface">
+        <section className="px-5 md:px-16 py-20 lg:py-32 bg-surface">
           <div className="container-max w-full">
             <div className="mb-20">
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Domain Expertise</h2>
-              <h3 className="text-4xl font-black text-slate-900 tracking-tight">Shariah-Compliant Frameworks</h3>
+              <h3 className="text-4xl font-black text-primary tracking-tight">Shariah-Compliant Frameworks</h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
@@ -176,7 +176,7 @@ export default function IslamicBankingTesting() {
         </section>
 
         {/* Workflow Section */}
-        <section className="px-8 md:px-16 py-24 lg:py-32 bg-slate-900 text-white overflow-hidden relative">
+        <section className="px-5 md:px-16 py-20 lg:py-32 bg-slate-900 text-white overflow-hidden relative">
           <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
           <div className="container-max w-full relative z-10">
             <div className="text-center mb-24">
@@ -230,10 +230,10 @@ export default function IslamicBankingTesting() {
         </section>
 
         {/* Final CTA */}
-        <section className="px-8 md:px-16 py-32 bg-white">
+        <section className="px-5 md:px-16 py-20 bg-white">
           <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
-            <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Secure Your Shariah Framework</h3>
+            <h3 className="text-3xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Secure Your Shariah Framework</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Deploy our dedicated Islamic Banking testing laboratory for your next implementation or audit cycle.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
               <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">

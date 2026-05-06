@@ -52,7 +52,7 @@ export default function DevTeamSupport() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Engineering Excellence
                 </span>
-                <h1 className="text-5xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-8">
+                <h1 className="text-3xl md:text-8xl font-black text-slate-900 tracking-tighter leading-[0.9] mb-8">
                   Dev Team <span className="text-primary">QA Support.</span>
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-2xl font-medium mb-12">
@@ -334,7 +334,7 @@ export default function DevTeamSupport() {
         <section className="px-8 md:px-16 py-32 bg-white">
           <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
-            <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Pipeline?</h3>
+            <h3 className="text-3xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Pipeline?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join over 40+ financial institutions leveraging V Qube's specialized QA support services.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
               <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">

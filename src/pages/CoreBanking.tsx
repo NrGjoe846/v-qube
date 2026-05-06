@@ -67,7 +67,7 @@ export default function CoreBanking() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 Precision Testing for Global Banking
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl sm:text-6xl md:text-7xl font-black tracking-tight text-on-surface mb-8 leading-[1.1]">
                 Core Banking <br /><span className="text-gradient">Testing Solutions.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -124,8 +124,8 @@ export default function CoreBanking() {
                       <div className="text-5xl font-black text-primary mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">99.9%</div>
                       <div className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">Uptime Benchmark</div>
                     </div>
-                    <div className="glass-card p-10 rounded-[2.5rem] border-l-8 border-secondary group">
-                      <div className="text-5xl font-black text-secondary mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">Real-time</div>
+                    <div className="glass-card p-10 rounded-[2.5rem] border-l-8 border-primary group">
+                      <div className="text-5xl font-black text-primary mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">Real-time</div>
                       <div className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">Ledger Accuracy</div>
                     </div>
                   </div>
@@ -192,7 +192,7 @@ export default function CoreBanking() {
                 transition={{ delay: 0.2 }}
                 className="glass-card p-14 rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="w-14 h-14 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mb-10 group-hover:bg-secondary group-hover:text-white transition-all duration-500">
+                <div className="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                   <Wallet className="w-7 h-7" />
                 </div>
                 <h3 className="text-2xl font-black mb-6 tracking-tight">Ledger Integrity</h3>
@@ -250,9 +250,9 @@ export default function CoreBanking() {
               <div className="lg:w-2/3 space-y-10">
                 {[
                   { id: "01", color: "primary", title: "Functional Testing", desc: "Validating core banking modules including Savings, Current Accounts, Loans, Deposits, and Fixed Deposits for business logic accuracy." },
-                  { id: "02", color: "secondary", title: "Integration Testing", desc: "Ensuring seamless data flow between Core Banking, Mobile Apps, ATM Controllers, and SWIFT payment gateways." },
+                  { id: "02", color: "primary", title: "Integration Testing", desc: "Ensuring seamless data flow between Core Banking, Mobile Apps, ATM Controllers, and SWIFT payment gateways." },
                   { id: "03", color: "primary", title: "Performance Engineering", desc: "Stress testing the central server to handle millions of concurrent transactions during month-end or festive peaks." },
-                  { id: "04", color: "red-500", title: "Security & VAPT", desc: "Vulnerability Assessment and Penetration Testing specifically tuned for financial data protection and fraud prevention." },
+                  { id: "04", color: "primary", title: "Security & VAPT", desc: "Vulnerability Assessment and Penetration Testing specifically tuned for financial data protection and fraud prevention." },
                   { id: "05", color: "slate-900", title: "User Acceptance (UAT)", desc: "Testing from the banker's perspective to ensure the interface facilitates fast, error-free operations at the teller desk." }
                 ].map((area, index) => (
                   <motion.div
@@ -303,7 +303,7 @@ export default function CoreBanking() {
                 <tbody className="divide-y divide-white/5">
                   {[
                     { type: "Regression Testing", obj: "Validating existing features after core upgrades.", deliverable: "Stability Certificate", status: "Mission Critical", color: "primary" },
-                    { type: "Data Migration", obj: "Integrity checks when moving legacy data.", deliverable: "Mapping Audit Report", status: "High Precision", color: "secondary" },
+                    { type: "Data Migration", obj: "Integrity checks when moving legacy data.", deliverable: "Mapping Audit Report", status: "High Precision", color: "primary" },
                     { type: "DR / Failover", obj: "Ensuring Disaster Recovery takes over.", deliverable: "RTO/RPO Validation", status: "Resilience", color: "primary" },
                     { type: "Globalization", obj: "Multi-currency and local compliance.", deliverable: "Localized Compliance", status: "Scalability", color: "primary" }
                   ].map((row, i) => (
@@ -335,7 +335,7 @@ export default function CoreBanking() {
                 viewport={{ once: true }}
                 className="relative z-10 max-w-4xl mx-auto"
               >
-                <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tight leading-[1]">Ready to Secure Your <br />Core Banking?</h2>
+                <h2 className="text-3xl md:text-8xl font-black mb-10 tracking-tight leading-[1]">Ready to Secure Your <br />Core Banking?</h2>
                 <p className="text-xl md:text-2xl text-white/80 mb-16 font-medium leading-relaxed">Partner with V Qube Enterprises to architect a precision-testing framework that grows with your institution.</p>
                 <Link to="/contact" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-[2rem] font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
                   Initiate Strategy Session

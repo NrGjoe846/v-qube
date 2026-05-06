@@ -88,7 +88,7 @@ export default function SelfServiceBanking() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 Strategic QA Center
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
                 Self-Service Banking <br /><span className="text-gradient">Testing Solutions.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -139,7 +139,7 @@ export default function SelfServiceBanking() {
         <section className="py-32 bg-white">
           <div className="container-max w-full">
             <div className="mb-20 text-center max-w-3xl mx-auto">
-              <h2 className="text-5xl font-black tracking-tighter mb-6">Omni-Channel Excellence</h2>
+              <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-6">Omni-Channel Excellence</h2>
               <p className="text-on-surface-variant text-xl font-medium">Specialized testing domains designed for the unique hardware and software requirements of global financial services.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -200,7 +200,7 @@ export default function SelfServiceBanking() {
                 className="bg-slate-900 text-white rounded-[3.5rem] p-12 flex flex-col justify-between group overflow-hidden relative"
               >
                 <div className="relative z-10">
-                  <span className="text-blue-400 font-bold tracking-widest uppercase text-[10px] block mb-4">Web Presence</span>
+                  <span className="text-primary font-bold tracking-widest uppercase text-[10px] block mb-4">Web Presence</span>
                   <h3 className="text-3xl font-black mt-2 mb-6 tracking-tight">Internet Portals</h3>
                   <p className="text-slate-400 leading-relaxed font-medium mb-10 text-sm">Browser compatibility, high-load transaction stress testing, and seamless dashboard responsiveness.</p>
                 </div>
@@ -259,7 +259,7 @@ export default function SelfServiceBanking() {
           <div className="orange-gradient rounded-[4rem] p-16 md:p-24 text-center text-white relative overflow-hidden shadow-[0px_32px_128px_rgba(0,64,223,0.3)] mx-auto">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-7xl font-black tracking-tighter mb-10 leading-[1.1]">Ready to Secure Your Digital Channels?</h2>
+              <h2 className="text-3xl md:text-7xl font-black tracking-tighter mb-10 leading-[1.1]">Ready to Secure Your Digital Channels?</h2>
               <p className="text-xl text-blue-50 max-w-2xl mx-auto mb-16 font-medium opacity-90">
                 Join the world's leading financial institutions in delivering a pristine, secure, and rapid self-service banking experience.
               </p>

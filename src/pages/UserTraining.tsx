@@ -62,7 +62,7 @@ export default function UserTraining() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30 whitespace-nowrap">
                   Critical Mission
                 </span>
-                <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">
+                <h1 className="font-headline text-3xl sm:text-6xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.15]">
                   User Training & <br />Rollout <span className="text-primary">Support.</span>
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-xl mb-12 font-medium">
@@ -274,7 +274,7 @@ export default function UserTraining() {
           <div className="absolute inset-0 bg-grid-orange opacity-10"></div>
           <div className="max-w-5xl mx-auto px-6 md:px-16 relative z-10 text-center">
             <div className="bg-white rounded-[3rem] p-16 md:p-24 shadow-2xl shadow-black/10 relative overflow-hidden">
-              <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter leading-tight text-slate-900">Ready for a Flawless Rollout?</h2>
+              <h2 className="text-3xl md:text-6xl font-black mb-8 tracking-tighter leading-tight text-slate-900">Ready for a Flawless Rollout?</h2>
               <p className="text-slate-600 text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
                 Ensure your users are empowered from Day 1. Partner with V Qube for end-to-end training and support services.
               </p>

@@ -74,7 +74,7 @@ export default function InvestmentBanking() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 Investment Banking Suite
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
                 High-Trust Validation for <br /><span className="text-gradient italic">Global Capital.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -254,7 +254,7 @@ export default function InvestmentBanking() {
         {/* CTA Section */}
         <section className="container-max w-full bg-slate-900 text-white rounded-[3rem] p-12 md:p-24 relative overflow-hidden">
           <div className="relative z-10 max-w-2xl">
-            <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">
+            <h2 className="text-3xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">
               Secure your investment banking infrastructure today.
             </h2>
             <p className="text-slate-400 text-xl mb-12 leading-relaxed font-medium">

@@ -111,7 +111,7 @@ export default function Footer() {
           <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10 opacity-50">Connect</h4>
           <ul className="space-y-6 text-sm font-medium">
             <li className="flex items-center gap-4 group">
-              <a href="mailto:consult@vqube.com" className="flex items-center gap-4 w-full">
+              <a href="mailto:consult@vqubeenterprises.com" className="flex items-center gap-4 w-full">
                 <div className="w-16 h-16 flex-shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Mail className="w-5 h-5" /></div>
                 <span className="text-slate-400 group-hover:text-white transition-colors">consult@vqubeenterprises.com</span>
               </a>

@@ -52,7 +52,7 @@ export default function DataWarehouse() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 Enterprise Data Intelligence
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
                 Data Warehouse <br /><span className="text-gradient italic">&amp; ETL Validation.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -107,8 +107,8 @@ export default function DataWarehouse() {
                       <div className="text-4xl font-black text-primary mb-2 tracking-tighter">Zero</div>
                       <div className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Data Loss Tolerance</div>
                     </div>
-                    <div className="bg-surface-container-low p-8 rounded-[2.5rem] border-l-8 border-secondary shadow-sm hover:shadow-md transition-shadow">
-                      <div className="text-4xl font-black text-secondary mb-2 tracking-tighter">100%</div>
+                    <div className="bg-surface-container-low p-8 rounded-[2.5rem] border-l-8 border-primary shadow-sm hover:shadow-md transition-shadow">
+                      <div className="text-4xl font-black text-primary mb-2 tracking-tighter">100%</div>
                       <div className="text-[10px] font-black uppercase tracking-widest text-on-surface-variant">Schema Alignment</div>
                     </div>
                   </div>
@@ -172,7 +172,7 @@ export default function DataWarehouse() {
                 transition={{ delay: 0.2 }}
                 className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-outline-variant/10 hover:shadow-xl transition-all group"
               >
-                <Layers className="w-12 h-12 text-secondary mb-8 group-hover:scale-110 transition-transform" />
+                <Layers className="w-12 h-12 text-primary mb-8 group-hover:scale-110 transition-transform" />
                 <h3 className="text-2xl font-black mb-4 tracking-tight">Metadata Validation</h3>
                 <p className="text-on-surface-variant leading-relaxed font-medium">Ensuring data dictionary consistency and schema versioning across multiple environments.</p>
               </motion.div>
@@ -185,7 +185,7 @@ export default function DataWarehouse() {
                 transition={{ delay: 0.3 }}
                 className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-outline-variant/10 hover:shadow-xl transition-all group"
               >
-                <RefreshCw className="w-12 h-12 text-blue-400 mb-8 group-hover:scale-110 transition-transform" />
+                <RefreshCw className="w-12 h-12 text-primary mb-8 group-hover:scale-110 transition-transform" />
                 <h3 className="text-2xl font-black mb-4 tracking-tight">Automated Regression</h3>
                 <p className="text-on-surface-variant leading-relaxed font-medium">Continuous testing of data pipelines during system upgrades or source system changes.</p>
               </motion.div>
@@ -220,9 +220,9 @@ export default function DataWarehouse() {
               <div className="lg:w-2/3 space-y-8">
                 {[
                   { id: "01", color: "primary", title: "Data Completeness", desc: "Ensuring all expected data from source systems is loaded into the target and identifying any orphan records or missing segments." },
-                  { id: "02", color: "secondary", title: "Data Transformation", desc: "Validating complex business logic and calculations applied during the ETL process, such as currency conversion or risk score calculation." },
-                  { id: "03", color: "blue-400", title: "Data Quality", desc: "Checking for null values, duplicates, and invalid data formats that could contaminate analytical reports." },
-                  { id: "04", color: "red-500", title: "Regression & Scalability", desc: "Verifying that the warehouse performance remains consistent as data volume grows from gigabytes to petabytes." },
+                  { id: "02", color: "primary", title: "Data Transformation", desc: "Validating complex business logic and calculations applied during the ETL process, such as currency conversion or risk score calculation." },
+                  { id: "03", color: "primary", title: "Data Quality", desc: "Checking for null values, duplicates, and invalid data formats that could contaminate analytical reports." },
+                  { id: "04", color: "primary", title: "Regression & Scalability", desc: "Verifying that the warehouse performance remains consistent as data volume grows from gigabytes to petabytes." },
                   { id: "05", color: "slate-900", title: "Incremental Load Testing", desc: "Testing the integrity of daily or hourly delta loads without affecting the existing historical data." }
                 ].map((area, index) => (
                   <motion.div
@@ -295,7 +295,7 @@ export default function DataWarehouse() {
           <div className="orange-gradient p-16 md:p-24 rounded-[4rem] text-center text-white relative overflow-hidden shadow-2xl mx-auto container-max w-full">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <div className="relative z-10 max-w-3xl mx-auto">
-              <h2 className="text-4xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Ready to Secure Your Data Assets?</h2>
+              <h2 className="text-3xl md:text-7xl font-black mb-8 tracking-tighter leading-[1.1]">Ready to Secure Your Data Assets?</h2>
               <p className="text-xl text-white/80 mb-12 font-medium">Partner with V Qube Enterprises to build a robust, validated data warehouse for your financial institution.</p>
               <Link to="/contact" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl hover:-translate-y-1 inline-block">
                 Consult a Data Specialist

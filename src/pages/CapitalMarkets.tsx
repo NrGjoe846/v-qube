@@ -63,7 +63,7 @@ export default function CapitalMarkets() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 Capital Markets Precision
               </div>
-              <h1 className="text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.05]">
+              <h1 className="text-3xl sm:text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.1]">
                 The Strategic<br /><span className="text-gradient italic">Trading Vault.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
@@ -155,8 +155,8 @@ export default function CapitalMarkets() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-2">
-                  <div className="w-10 h-10 rounded-full bg-secondary-fixed-dim border-2 border-white dark:border-slate-800 shadow-sm"></div>
-                  <div className="w-10 h-10 rounded-full bg-primary-fixed-dim border-2 border-white dark:border-slate-800 shadow-sm"></div>
+                  <div className="w-10 h-10 rounded-full bg-primary/30 border-2 border-white dark:border-slate-800 shadow-sm"></div>
+                  <div className="w-10 h-10 rounded-full bg-primary/40 border-2 border-white dark:border-slate-800 shadow-sm"></div>
                   <div className="w-10 h-10 rounded-full bg-surface-container-high border-2 border-white dark:border-slate-800 shadow-sm"></div>
                 </div>
                 <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Used by Tier-1 Banks</span>
@@ -178,8 +178,8 @@ export default function CapitalMarkets() {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
-              <div className="hidden sm:flex w-32 h-32 bg-secondary-fixed rounded-2xl items-center justify-center shrink-0">
-                <Gavel className="w-12 h-12 text-on-secondary-fixed" />
+              <div className="hidden sm:flex w-32 h-32 bg-primary/10 rounded-2xl items-center justify-center shrink-0">
+                <Gavel className="w-12 h-12 text-primary" />
               </div>
             </motion.div>
           </div>

@@ -86,7 +86,7 @@ End of Request
                 <ShieldCheck className="w-3 h-3" />
                 Global Availability 24/7
               </div>
-              <h1 className="text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[0.9]">
+              <h1 className="text-3xl sm:text-6xl lg:text-8xl font-black tracking-tighter text-on-surface mb-8 leading-[1.1]">
                 Connect with the <br/>
                 <span className="text-primary italic">BFSI QA Architects.</span>
               </h1>
@@ -170,7 +170,7 @@ End of Request
                         type="text" 
                         name="name"
                         required
-                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold" 
                       />
                     </div>
                     <div className="space-y-3">
@@ -179,7 +179,7 @@ End of Request
                         type="text" 
                         name="organization"
                         required
-                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold" 
                       />
                     </div>
                   </div>
@@ -190,7 +190,7 @@ End of Request
                         type="email" 
                         name="email"
                         required
-                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold" 
                       />
                     </div>
                     <div className="space-y-3">
@@ -198,7 +198,7 @@ End of Request
                       <input 
                         type="tel" 
                         name="phone"
-                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300" 
+                        className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold" 
                       />
                     </div>
                   </div>
@@ -212,7 +212,7 @@ End of Request
                         className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer"
                         required
                       >
-                        <option value="" disabled>Select an option</option>
+                        <option value="" disabled>Select a option</option>
                         <option>Compliance Audit</option>
                         <option>QA Automation Lab</option>
                         <option>Security Simulation</option>
@@ -222,7 +222,7 @@ End of Request
                     <div className="space-y-3">
                       <label className="block text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 ml-2">Target Domain</label>
                       <select name="domain" className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold appearance-none bg-no-repeat bg-[right_1.5rem_center] cursor-pointer" required defaultValue="">
-                        <option value="" disabled>Select an option</option>
+                        <option value="" disabled>Select a option</option>
                         <option>Banking & Retail</option>
                         <option>Insurance Systems</option>
                         <option>Capital Markets</option>
@@ -235,7 +235,7 @@ End of Request
                     <textarea 
                       name="description"
                       required
-                      className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold placeholder:text-slate-300 resize-none" 
+                      className="w-full px-6 py-5 rounded-2xl bg-slate-50 border-2 border-transparent focus:border-primary/20 focus:bg-white transition-all outline-none font-bold resize-none" 
                       rows={4}
                     ></textarea>
                   </div>

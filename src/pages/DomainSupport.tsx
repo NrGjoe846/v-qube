@@ -48,8 +48,8 @@ export default function DomainSupport() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Enterprise Infrastructure
                 </span>
-                <h1 className="text-5xl lg:text-7xl font-black text-slate-900 tracking-tighter leading-[1.1] mb-8">
-                  IT Domain Support for <span className="text-primary">Financial Institutions.</span>
+                <h1 className="text-3xl lg:text-7xl font-black text-slate-900 tracking-tighter leading-[1.1] mb-8">
+                  IT Domain Support for <br className="hidden sm:block" /> <span className="text-primary">Financial Institutions.</span>
                 </h1>
                 <p className="text-lg lg:text-xl text-slate-600 leading-relaxed mb-10 font-medium">
                   Secure, compliant, and highly available domain infrastructure tailored for the rigorous demands of BFSI operations. Precision testing meets <span className="whitespace-nowrap">mission-critical</span> administration.
@@ -254,7 +254,7 @@ export default function DomainSupport() {
             >
               <div className="flex items-center justify-between mb-8">
                 <div className="flex gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-slate-300"></div>
                   <div className="w-3 h-3 rounded-full bg-amber-500"></div>
                   <div className="w-3 h-3 rounded-full bg-emerald-500"></div>
                 </div>
@@ -299,7 +299,7 @@ export default function DomainSupport() {
         <section className="px-8 md:px-16 py-32 bg-white">
           <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
-            <h3 className="text-4xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Domain?</h3>
+            <h3 className="text-3xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Domain?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the leading financial institutions that trust V Qube for <span className="whitespace-nowrap">mission-critical</span> infrastructure administration.</p>
             <div className="flex flex-col sm:flex-row gap-6 z-10">
               <Link to="/contact?type=consultation" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">

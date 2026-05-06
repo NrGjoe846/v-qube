@@ -76,7 +76,7 @@ export default function About() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-10">
               The Architects of BFSI Quality
             </div>
-            <h1 className="text-6xl md:text-8xl lg:text-[10rem] font-black text-on-surface tracking-tighter leading-[0.9] mb-12">
+            <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black text-on-surface tracking-tighter leading-[1.1] mb-12">
               Engineering <br/><span className="text-gradient">Absolute Trust.</span>
             </h1>
             <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-3xl font-medium opacity-80">
@@ -256,7 +256,7 @@ export default function About() {
           <div className="orange-gradient rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl shadow-primary/20">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
             <div className="relative z-10 max-w-5xl mx-auto">
-              <h2 className="text-5xl md:text-8xl font-black text-white leading-[1] mb-12 tracking-tight">Secure your digital future with the laboratory of <span className="italic">BFSI testing.</span></h2>
+              <h2 className="text-3xl sm:text-6xl md:text-8xl font-black text-white leading-tight mb-12 tracking-tight">Secure your digital future with the laboratory of <span className="italic">BFSI testing.</span></h2>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
                 <Link to="/contact" className="bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/10 inline-block w-full sm:w-auto">Initiate Consultation</Link>
                 <Link to="/contact" className="border-2 border-white/30 text-white px-14 py-6 rounded-2xl font-black text-xl hover:bg-white/10 transition-all w-full sm:w-auto inline-block text-center">Request Portfolio</Link>

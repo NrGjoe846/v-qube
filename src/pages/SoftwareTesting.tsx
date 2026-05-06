@@ -63,7 +63,7 @@ export default function SoftwareTesting() {
                 <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/20 text-primary text-[10px] font-black tracking-widest uppercase mb-8 border border-primary/30">
                   Enterprise Infrastructure
                 </span>
-                <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">
+                <h1 className="font-headline text-3xl md:text-7xl font-black tracking-tighter text-slate-900 mb-8 leading-[1.1]">
                   Software Testing <br />Services for <span className="text-primary">Banking.</span>
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-xl mb-12 font-medium">
@@ -275,7 +275,7 @@ export default function SoftwareTesting() {
             <div className="orange-gradient rounded-[3rem] p-12 lg:p-24 relative overflow-hidden shadow-2xl shadow-primary/30">
               <div className="absolute inset-0 bg-grid-orange opacity-10"></div>
               <div className="relative z-10 max-w-3xl">
-                <h2 className="font-headline text-4xl lg:text-6xl font-black text-white mb-8 tracking-tighter leading-tight">
+                <h2 className="font-headline text-3xl lg:text-6xl font-black text-white mb-8 tracking-tighter leading-tight">
                   Ready to secure your banking infrastructure?
                 </h2>
                 <p className="text-white/80 text-xl mb-12 leading-relaxed">

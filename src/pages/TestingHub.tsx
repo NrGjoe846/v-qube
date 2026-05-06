@@ -79,7 +79,7 @@ export default function TestingHub() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase mb-10">
                 Global QA Standards
               </div>
-              <h1 className="text-6xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10">
+              <h1 className="text-3xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10">
                 Testing <br /><span className="text-gradient">Domains.</span>
               </h1>
               <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-2xl font-medium opacity-80 mb-16">
@@ -125,7 +125,7 @@ export default function TestingHub() {
             className="mb-24"
           >
             <div className="w-16 h-1.5 orange-gradient rounded-full mb-8"></div>
-            <h2 className="text-5xl md:text-7xl font-black text-on-surface mb-8 tracking-tight leading-[1]">Specialized <br />Laboratories.</h2>
+            <h2 className="text-3xl md:text-7xl font-black text-on-surface mb-8 tracking-tight leading-[1]">Specialized <br />Laboratories.</h2>
             <p className="text-on-surface-variant text-xl max-w-2xl leading-relaxed font-medium opacity-60">Our testing hub is organized into specialized domain laboratories, each equipped with bespoke tools and expert personnel.</p>
           </motion.div>
 
@@ -186,7 +186,7 @@ export default function TestingHub() {
               viewport={{ once: true }}
               className="relative z-10 max-w-4xl"
             >
-              <h3 className="text-5xl md:text-8xl font-black mb-12 z-10 tracking-tight leading-[1]">Need a Custom <br />QA Strategy?</h3>
+              <h3 className="text-3xl md:text-8xl font-black mb-12 z-10 tracking-tight leading-[1]">Need a Custom <br />QA Strategy?</h3>
               <p className="text-xl md:text-2xl text-white/80 max-w-2xl mb-16 z-10 font-medium leading-relaxed">Our domain experts are ready to architect a precision-testing framework tailored to your unique requirements.</p>
               <div className="flex flex-col sm:flex-row gap-8 z-10">
                 <Link to="/contact" className="bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/10">
