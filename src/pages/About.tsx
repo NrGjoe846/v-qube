@@ -66,7 +66,7 @@ export default function About() {
             src="/assets/images/office_skyscrapers.png"
           />
         </div>
-        <div className="container-max relative z-10 w-full pt-20">
+        <div className="container-max relative z-10 w-full pt-16">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export default function About() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-10">
               The Architects of BFSI Quality
             </div>
-            <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-[10rem] font-black text-on-surface tracking-tighter leading-[1.1] mb-12">
+            <h1 className="text-3xl sm:text-6xl md:text-8xl lg:text-[8rem] font-black text-on-surface tracking-tighter leading-[1.1] mb-8">
               Engineering <br/><span className="text-gradient">Absolute Trust.</span>
             </h1>
             <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-3xl font-medium opacity-80">
@@ -91,7 +91,7 @@ export default function About() {
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
             <div className="lg:col-span-7">
-              <h2 className="text-5xl md:text-7xl font-black tracking-tight mb-12 leading-[1.1]">Empowering Financial Innovation through <span className="text-gradient">Absolute Precision.</span></h2>
+              <h2 className="text-5xl md:text-7xl font-black tracking-tight mb-8 leading-[1.1]">Empowering Financial Innovation through <span className="text-gradient">Absolute Precision.</span></h2>
               <div className="space-y-10 text-xl text-on-surface-variant leading-relaxed font-medium opacity-80">
                 <p>We operate on the principle that in the high-stakes world of BFSI, there is no margin for error. Our mission is to provide the surgical clarity needed to secure digital assets and ensure operational resilience.</p>
                 <p>By blending deep domain expertise in core banking with cutting-edge AI-driven validation, we transform quality assurance from a final check into a strategic advantage.</p>
@@ -109,9 +109,9 @@ export default function About() {
       </section>
 
       {/* Legacy Timeline */}
-      <section className="py-32 bg-white overflow-hidden">
+      <section className="py-16 bg-white overflow-hidden">
         <div className="container-max w-full">
-          <div className="mb-24">
+          <div className="mb-12">
             <label className="text-[10px] sm:text-xs font-black tracking-[0.3em] uppercase text-primary mb-4 block">Our Journey</label>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tighter">Legacy of Innovation</h2>
           </div>
@@ -229,7 +229,7 @@ export default function About() {
       )}
 
       {/* Trust Bar */}
-      <section className="py-20 bg-surface-container-lowest border-y border-outline-variant/10">
+      <section className="py-12 bg-surface-container-lowest border-y border-outline-variant/10">
         <div className="container-max">
           <div className="flex flex-wrap items-center justify-center lg:justify-between gap-12 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-1000">
             {[
@@ -253,7 +253,7 @@ export default function About() {
       {/* Final CTA */}
       <section className="section-padding bg-surface">
         <div className="container-max">
-          <div className="orange-gradient rounded-[5rem] p-16 md:p-32 text-center relative overflow-hidden shadow-2xl shadow-primary/20">
+          <div className="orange-gradient rounded-[5rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl shadow-primary/20">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
             <div className="relative z-10 max-w-5xl mx-auto">
               <h2 className="text-3xl sm:text-6xl md:text-8xl font-black text-white leading-tight mb-12 tracking-tight">Secure your digital future with the laboratory of <span className="italic">BFSI testing.</span></h2>

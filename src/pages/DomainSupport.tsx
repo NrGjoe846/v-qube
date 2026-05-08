@@ -26,7 +26,7 @@ export default function DomainSupport() {
       {/* Main Content */}
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-24 pb-32 bg-white border-b border-slate-100">
+        <section className="relative overflow-hidden pt-20 pb-20 bg-white border-b border-slate-100">
           <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
           <div className="container-max w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
             <motion.div
@@ -84,7 +84,7 @@ export default function DomainSupport() {
         </section>
 
         {/* Trust Metrics */}
-        <section className="bg-white border-b border-slate-100 py-16 px-8 md:px-16">
+        <section className="bg-white border-b border-slate-100 py-10 px-8 md:px-16">
           <div className="container-max w-full mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
               {[
@@ -103,14 +103,14 @@ export default function DomainSupport() {
         </section>
 
         {/* Core Services Bento Grid */}
-        <section className="py-24 lg:py-32 bg-white px-8 md:px-16">
+        <section className="py-12 lg:py-16 bg-white px-8 md:px-16">
           <div className="container-max w-full mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="mb-20 text-center md:text-left"
+              className="mb-12 text-center md:text-left"
             >
               <h2 className="text-[10px] font-black uppercase tracking-widest text-primary mb-4">Precision Domain Operations</h2>
               <h3 className="text-4xl font-black text-slate-900 mb-6 tracking-tight">Infrastructure Laboratory</h3>
@@ -124,14 +124,14 @@ export default function DomainSupport() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="md:col-span-8 bg-white p-12 rounded-[2.5rem] shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all group"
+                className="md:col-span-8 bg-white p-10 rounded-[2.5rem] shadow-sm border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-all group"
               >
                 <div>
                   <div className="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-8 border border-blue-100">
                     <Lock className="text-primary w-8 h-8" />
                   </div>
                   <h4 className="text-3xl font-black text-slate-900 mb-6 tracking-tight">Security & Regulatory Compliance</h4>
-                  <p className="text-slate-600 text-lg leading-relaxed mb-12 max-w-xl">
+                  <p className="text-slate-600 text-lg leading-relaxed mb-8 max-w-xl">
                     Real-time monitoring and automated auditing for GLBA, PCI-DSS, and GDPR. We manage your security tokens, encryption protocols, and certificate lifecycle with absolute precision.
                   </p>
                 </div>
@@ -147,7 +147,7 @@ export default function DomainSupport() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="md:col-span-4 bg-primary text-white p-12 rounded-[2.5rem] flex flex-col justify-center shadow-2xl shadow-primary/20"
+                className="md:col-span-4 bg-primary text-white p-10 rounded-[2.5rem] flex flex-col justify-center shadow-2xl shadow-primary/20"
               >
                 <Network className="w-12 h-12 text-white/80 mb-8" />
                 <h4 className="text-2xl font-black mb-4 tracking-tight leading-tight">Network Administration</h4>
@@ -162,7 +162,7 @@ export default function DomainSupport() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="md:col-span-4 bg-white border border-slate-200 rounded-[2.5rem] p-12 flex flex-col justify-center shadow-sm"
+                className="md:col-span-6 bg-white border border-slate-200 rounded-[2.5rem] p-10 flex flex-col justify-center shadow-sm"
               >
                 <Key className="w-12 h-12 text-primary mb-8" />
                 <h4 className="text-2xl font-black mb-4 tracking-tight leading-tight text-slate-900">Access Management</h4>
@@ -177,7 +177,7 @@ export default function DomainSupport() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="md:col-span-4 bg-white border border-slate-200 rounded-[2.5rem] p-12 flex flex-col justify-center relative overflow-hidden shadow-sm"
+                className="md:col-span-6 bg-white border border-slate-200 rounded-[2.5rem] p-10 flex flex-col justify-center relative overflow-hidden shadow-sm"
               >
                 <div className="relative z-10">
                   <Activity className="w-12 h-12 text-primary mb-8" />
@@ -201,7 +201,7 @@ export default function DomainSupport() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="md:col-span-8 bg-slate-900 text-white rounded-[2.5rem] p-12 flex items-center gap-12 overflow-hidden shadow-xl"
+                className="md:col-span-12 bg-slate-900 text-white rounded-[2.5rem] p-10 flex items-center gap-12 overflow-hidden shadow-xl"
               >
                 <div className="hidden sm:block w-1/3 aspect-square rounded-3xl overflow-hidden shadow-lg">
                   <img
@@ -223,11 +223,11 @@ export default function DomainSupport() {
         </section>
 
         {/* Technical Deep-Dive */}
-        <section className="px-8 md:px-16 py-24 bg-white">
+        <section className="px-8 md:px-16 py-12 bg-white">
           <div className="container-max w-full mx-auto grid lg:grid-cols-2 gap-24 items-center">
             <div>
               <h2 className="text-4xl font-black text-slate-900 mb-12 tracking-tighter">The Infrastructure Vault</h2>
-              <div className="space-y-10">
+              <div className="space-y-6">
                 {[
                   { icon: <Server />, title: "Managed Active Directory", desc: "Full lifecycle management of forest and domain structures, including complex trust relationships." },
                   { icon: <ShieldEllipsis />, title: "Group Policy Enforcement", desc: "Strict security hardening through centralized GPO management, ensuring consistent baseline across all endpoints." },
@@ -296,8 +296,8 @@ export default function DomainSupport() {
         </section>
 
         {/* Final CTA */}
-        <section className="px-8 md:px-16 py-32 bg-white">
-          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+        <section className="px-8 md:px-16 py-12 bg-white">
+          <div className="orange-gradient p-12 md:p-16 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
             <h3 className="text-3xl md:text-6xl font-black mb-8 z-10 tracking-tighter">Ready to Fortify Your Domain?</h3>
             <p className="text-xl text-white/80 max-w-2xl mb-12 z-10 font-medium">Join the leading financial institutions that trust V Qube for <span className="whitespace-nowrap">mission-critical</span> infrastructure administration.</p>

@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 bg-surface-container-lowest">
+      <section className="relative min-h-[80vh] flex items-center justify-center pt-24 pb-16 bg-surface-container-lowest">
         {/* Dynamic Background Elements */}
         <div className="absolute inset-0 bg-grid-orange opacity-40"></div>
         <motion.div
@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       {/* Compliance Badges Strip */}
-      <section className="py-10 bg-surface-container-low border-y border-outline-variant/10">
+      <section className="py-8 bg-surface-container-low border-y border-outline-variant/10">
         <div className="container-max flex flex-wrap justify-center gap-8 md:justify-between items-center">
           <span className="text-on-surface-variant font-black text-[10px] tracking-[0.3em] uppercase opacity-40">Global Compliance Standards</span>
           <div className="flex flex-wrap gap-4">
@@ -167,7 +167,7 @@ export default function Home() {
       {/* BFSI Testing Significance */}
       <section className="section-padding bg-surface">
         <div className="container-max">
-          <div className="mb-20">
+          <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-extrabold text-on-surface mb-6">BFSI Testing — The Significance</h2>
             <div className="w-24 h-2 orange-gradient rounded-full"></div>
           </div>
@@ -205,7 +205,7 @@ export default function Home() {
       {/* Testing Areas Overview */}
       <section id="testing-areas" className="section-padding bg-surface-container-low">
         <div className="container-max">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-extrabold text-on-surface mb-6">14 Specialist BFSI Testing Domains</h2>
               <p className="text-on-surface-variant max-w-xl text-lg font-medium">Comprehensive coverage across the entire financial services ecosystem, from legacy core banking to emerging fintech.</p>
@@ -287,7 +287,7 @@ export default function Home() {
       <section id="contact" className="section-padding bg-surface-container-lowest relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[150px] rounded-full pointer-events-none"></div>
         <div className="container-max relative z-10">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

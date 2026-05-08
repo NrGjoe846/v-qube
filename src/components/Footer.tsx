@@ -41,11 +41,11 @@ const testingAreas = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-slate-300 pt-24 pb-12 overflow-hidden relative font-body">
+    <footer className="bg-slate-900 text-slate-300 pt-10 pb-8 overflow-hidden relative font-body">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-orange-500 to-primary opacity-50"></div>
 
       <div className="container-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 relative z-10 w-full">
-        <div className="lg:col-span-3 space-y-8">
+        <div className="lg:col-span-3 space-y-6">
           <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="V-Qube Logo" className="h-12 w-auto" />
             <span className="text-2xl font-black tracking-tighter text-white">V QUBE</span>
@@ -82,8 +82,8 @@ export default function Footer() {
         </div>
 
         <div className="lg:col-span-2">
-          <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10 opacity-50">Expertise</h4>
-          <ul className="space-y-4 text-sm font-medium">
+          <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-5 opacity-50">Expertise</h4>
+          <ul className="space-y-3 text-sm font-medium">
             <li><Link to="/services/software-testing" className="hover:text-primary transition-colors">Software Testing</Link></li>
             <li><Link to="/services/domain-support" className="hover:text-primary transition-colors">Domain Support</Link></li>
             <li><Link to="/services/support-dev-teams" className="hover:text-primary transition-colors">Dev Team Support</Link></li>
@@ -92,7 +92,7 @@ export default function Footer() {
         </div>
 
         <div className="lg:col-span-4">
-          <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10 opacity-50">Testing Areas</h4>
+          <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-5 opacity-50">Testing Areas</h4>
           <div className="grid grid-cols-2 gap-x-8 gap-y-4 text-xs font-bold leading-tight">
             {testingAreas.map((area) => (
               <Link
@@ -108,8 +108,8 @@ export default function Footer() {
         </div>
 
         <div className="lg:col-span-3">
-          <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-10 opacity-50">Connect</h4>
-          <ul className="space-y-6 text-sm font-medium">
+          <h4 className="text-white font-black text-xs uppercase tracking-[0.2em] mb-5 opacity-50">Connect</h4>
+          <ul className="space-y-4 text-sm font-medium">
             <li className="flex items-center gap-4 group">
               <a href="mailto:consult@vqubeenterprises.com" className="flex items-center gap-4 w-full">
                 <div className="w-16 h-16 flex-shrink-0 rounded-2xl bg-primary/10 flex items-center justify-center text-primary border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500"><Mail className="w-5 h-5" /></div>
@@ -126,7 +126,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container-max mt-32 pt-12 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-12 w-full">
+      <div className="container-max mt-8 pt-6 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-12 w-full">
         <div className="flex flex-col gap-4">
           <p className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-600">© 2026 V Qube Enterprises. All rights reserved.</p>
           <div className="flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
