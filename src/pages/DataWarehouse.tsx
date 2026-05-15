@@ -223,7 +223,7 @@ export default function DataWarehouse() {
                   { id: "02", color: "primary", title: "Data Transformation", desc: "Validating complex business logic and calculations applied during the ETL process, such as currency conversion or risk score calculation." },
                   { id: "03", color: "primary", title: "Data Quality", desc: "Checking for null values, duplicates, and invalid data formats that could contaminate analytical reports." },
                   { id: "04", color: "primary", title: "Regression & Scalability", desc: "Verifying that the warehouse performance remains consistent as data volume grows from gigabytes to petabytes." },
-                  { id: "05", color: "slate-900", title: "Incremental Load Testing", desc: "Testing the integrity of daily or hourly delta loads without affecting the existing historical data." }
+                  { id: "05", color: "primary", title: "Incremental Load Testing", desc: "Testing the integrity of daily or hourly delta loads without affecting the existing historical data." }
                 ].map((area, index) => (
                   <motion.div
                     key={area.id}

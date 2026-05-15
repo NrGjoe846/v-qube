@@ -1,18 +1,18 @@
 import { motion } from "motion/react";
 import { Link, useLocation } from "react-router-dom";
-import { 
-  Landmark, 
-  Shield, 
-  TrendingUp, 
-  CreditCard, 
-  Wallet, 
-  Activity, 
-  Network, 
-  ArrowLeftRight, 
-  User, 
-  Briefcase, 
-  Gavel, 
-  RefreshCw, 
+import {
+  Landmark,
+  Shield,
+  TrendingUp,
+  CreditCard,
+  Wallet,
+  Activity,
+  Network,
+  ArrowLeftRight,
+  User,
+  Briefcase,
+  Gavel,
+  RefreshCw,
   Layers,
   ChevronRight,
   Terminal,
@@ -81,8 +81,8 @@ export default function RetailLoanTesting() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 QA Framework Module 04-B
               </div>
-              <h1 className="text-3xl sm:text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.1]">
-                Retail Loan <br /><span className="text-gradient">Validation Framework.</span>
+              <h1 className="text-3xl sm:text-6xl md:text-8xl font-black tracking-tight text-on-surface mb-8 leading-[1.0]">
+                Retail Loan <span className="text-gradient whitespace-nowrap">Validation Framework</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
                 Systematic auditing of personal, home, and vehicle loan lifecycles. Our automated verification engine ensures amortization accuracy and regulatory adherence across every jurisdiction.
@@ -100,7 +100,7 @@ export default function RetailLoanTesting() {
         {/* Bento Grid: Loan Type Specialized Testing */}
         <section className="px-5 md:px-16 py-20 bg-surface">
           <div className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6">
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="md:col-span-8 bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden group"
             >
@@ -126,7 +126,7 @@ export default function RetailLoanTesting() {
             </motion.div>
 
             {/* Personal Loans */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="md:col-span-4 bg-primary text-white p-8 rounded-2xl shadow-lg flex flex-col justify-between"
             >
@@ -143,7 +143,7 @@ export default function RetailLoanTesting() {
             </motion.div>
 
             {/* Vehicle Loans */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="md:col-span-5 bg-white p-8 rounded-2xl shadow-sm border border-slate-100"
             >
@@ -163,7 +163,7 @@ export default function RetailLoanTesting() {
             </motion.div>
 
             {/* Amortization Module */}
-            <motion.div 
+            <motion.div
               whileHover={{ y: -5 }}
               className="md:col-span-7 bg-slate-50 p-8 rounded-2xl relative overflow-hidden"
             >
@@ -200,89 +200,91 @@ export default function RetailLoanTesting() {
           </div>
         </section>
 
-          {/* Detailed Testing Workflow */}
-          <section className="mb-20">
-            <div className="flex flex-col md:flex-row gap-16 items-center">
-              <div className="flex-1">
-                <h2 className="text-3xl font-bold mb-8">Precision-Grade <br />Verification Cycle</h2>
-                <div className="space-y-12">
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-bold">01</div>
-                    <div>
-                      <h4 className="font-bold mb-2 text-lg">Ingestion Layer</h4>
-                      <p className="text-on-surface-variant text-sm leading-relaxed">Mapping disparate loan formats into the V Qube Lab unified data schema.</p>
-                    </div>
+        {/* Detailed Testing Workflow */}
+        <section className="mb-20">
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="flex-1">
+              <h2 className="text-3xl font-bold mb-8">Precision-Grade <br />Verification Cycle</h2>
+              <div className="space-y-12">
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center font-bold">01</div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-lg">Ingestion Layer</h4>
+                    <p className="text-on-surface-variant text-sm leading-relaxed">Mapping disparate loan formats into the V Qube Lab unified data schema.</p>
                   </div>
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-on-surface flex items-center justify-center font-bold">02</div>
-                    <div>
-                      <h4 className="font-bold mb-2 text-lg">Shadow Amortization</h4>
-                      <p className="text-on-surface-variant text-sm leading-relaxed">Running parallel calculations to detect penny-variance in core banking legacy systems.</p>
-                    </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-on-surface flex items-center justify-center font-bold">02</div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-lg">Shadow Amortization</h4>
+                    <p className="text-on-surface-variant text-sm leading-relaxed">Running parallel calculations to detect penny-variance in core banking legacy systems.</p>
                   </div>
-                  <div className="flex gap-6">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-on-surface flex items-center justify-center font-bold">03</div>
-                    <div>
-                      <h4 className="font-bold mb-2 text-lg">Stress Sensitivity</h4>
-                      <p className="text-on-surface-variant text-sm leading-relaxed">Simulating rate hikes and prepayment shocks to verify system resilience.</p>
-                    </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-100 text-on-surface flex items-center justify-center font-bold">03</div>
+                  <div>
+                    <h4 className="font-bold mb-2 text-lg">Stress Sensitivity</h4>
+                    <p className="text-on-surface-variant text-sm leading-relaxed">Simulating rate hikes and prepayment shocks to verify system resilience.</p>
                   </div>
                 </div>
               </div>
-              <div className="flex-1 w-full">
-                <div className="aspect-square rounded-3xl bg-slate-50 overflow-hidden relative border border-slate-200 p-12">
-                  <div className="absolute inset-0 opacity-20 pointer-events-none">
-                    <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
-                  </div>
-                  <div className="h-full w-full rounded-2xl bg-white shadow-2xl p-8 flex flex-col justify-between">
-                    <div className="space-y-6">
-                      <div className="h-4 w-3/4 bg-slate-100 rounded-full"></div>
-                      <div className="h-4 w-1/2 bg-slate-100 rounded-full"></div>
-                      <div className="h-40 w-full bg-slate-50 rounded-2xl flex items-end p-6 gap-3">
-                        <div className="flex-1 bg-primary/20 h-1/2 rounded-t-lg"></div>
-                        <div className="flex-1 bg-primary/40 h-3/4 rounded-t-lg"></div>
-                        <div className="flex-1 bg-primary h-full rounded-t-lg"></div>
-                        <div className="flex-1 bg-primary/60 h-2/3 rounded-t-lg"></div>
-                      </div>
+            </div>
+            <div className="flex-1 w-full">
+              <div className="aspect-square rounded-3xl bg-slate-50 overflow-hidden relative border border-slate-200 p-12">
+                <div className="absolute inset-0 opacity-20 pointer-events-none">
+                  <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
+                </div>
+                <div className="h-full w-full rounded-2xl bg-white shadow-2xl p-8 flex flex-col justify-between">
+                  <div className="space-y-6">
+                    <div className="h-4 w-3/4 bg-slate-100 rounded-full"></div>
+                    <div className="h-4 w-1/2 bg-slate-100 rounded-full"></div>
+                    <div className="h-40 w-full bg-slate-50 rounded-2xl flex items-end p-6 gap-3">
+                      <div className="flex-1 bg-primary/20 h-1/2 rounded-t-lg"></div>
+                      <div className="flex-1 bg-primary/40 h-3/4 rounded-t-lg"></div>
+                      <div className="flex-1 bg-primary h-full rounded-t-lg"></div>
+                      <div className="flex-1 bg-primary/60 h-2/3 rounded-t-lg"></div>
                     </div>
-                    <div className="flex items-center justify-between pt-8 border-t border-slate-50">
-                      <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">STATUS: CALIBRATED</span>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></div>
-                        <span className="text-[10px] font-black text-slate-800 uppercase tracking-widest">SYSTEM READY</span>
-                      </div>
+                  </div>
+                  <div className="flex items-center justify-between pt-8 border-t border-slate-50">
+                    <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">STATUS: CALIBRATED</span>
+                    <div className="flex items-center gap-3">
+                      <div className="w-2.5 h-2.5 bg-green-500 rounded-full animate-pulse"></div>
+                      <span className="text-[10px] font-black text-slate-800 uppercase tracking-widest">SYSTEM READY</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
         {/* CTA Section */}
-        <div className="container-max w-full mx-auto mt-20">
-          <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              className="relative z-10 max-w-3xl"
-            >
-              <h3 className="text-3xl md:text-6xl font-black mb-8 tracking-tighter">Ready to Validate Your Loan Lifecycle?</h3>
-              <p className="text-xl text-white/80 max-w-2xl mb-12 font-medium leading-relaxed">
-                Partner with V Qube's specialist loan testing team to ensure zero-error amortization, regulatory compliance, and seamless customer journeys.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Link to="/contact?type=audit" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
-                  Request Free Audit
-                </Link>
-                <Link to="/testing" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
-                  Explore All Domains
-                </Link>
-              </div>
-            </motion.div>
+        <section className="py-20">
+          <div className="container-max w-full mx-auto">
+            <div className="orange-gradient p-16 md:p-24 rounded-[3rem] flex flex-col items-center text-center text-white relative overflow-hidden shadow-2xl shadow-primary/30">
+              <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-orange"></div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="relative z-10 max-w-3xl"
+              >
+                <h3 className="text-3xl md:text-6xl font-black mb-8 tracking-tighter">Ready to Validate Your Loan Lifecycle?</h3>
+                <p className="text-xl text-white/80 max-w-2xl mb-12 font-medium leading-relaxed">
+                  Partner with V Qube's specialist loan testing team to ensure zero-error amortization, regulatory compliance, and seamless customer journeys.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                  <Link to="/contact?type=audit" className="bg-white text-primary px-12 py-5 rounded-2xl font-black text-lg hover:bg-slate-50 transition-all shadow-xl">
+                    Request Free Audit
+                  </Link>
+                  <Link to="/testing" className="border-2 border-white/30 text-white px-12 py-5 rounded-2xl font-black text-lg hover:bg-white/10 transition-all">
+                    Explore All Domains
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );

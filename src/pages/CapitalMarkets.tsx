@@ -79,98 +79,100 @@ export default function CapitalMarkets() {
           </div>
         </header>
 
-          {/* Bento Grid - Testing Specializations */}
+        {/* Bento Grid - Testing Specializations */}
+        <div className="container-max w-full">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
             {/* Card 1: Trading Platform */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="md:col-span-8 group relative overflow-hidden bg-white dark:bg-slate-900 rounded-3xl p-10 shadow-sm border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all duration-500"
+              className="md:col-span-8 group relative overflow-hidden bg-slate-900 rounded-3xl p-10 shadow-xl border border-white/5 hover:shadow-primary/10 transition-all duration-500"
             >
-              <div className="flex justify-between items-start mb-12">
+              <div className="flex justify-between items-start mb-12 relative z-10">
                 <div>
-                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 border border-primary/20">
                     <LineChart className="text-primary w-8 h-8" />
                   </div>
-                  <h3 className="text-3xl font-bold tracking-tight text-on-surface">Trading Platform Validation</h3>
+                  <h3 className="text-3xl font-bold tracking-tight text-white">Trading Platform Validation</h3>
                 </div>
-                <span className="bg-primary-container text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">CORE MODULE</span>
+                <span className="bg-primary text-white px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">CORE MODULE</span>
               </div>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-8 relative z-10">
                 <ul className="space-y-4">
-                  <li className="flex items-center gap-3 text-on-surface-variant font-medium">
+                  <li className="flex items-center gap-3 text-slate-300 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
                     Order Management System (OMS)
                   </li>
-                  <li className="flex items-center gap-3 text-on-surface-variant font-medium">
+                  <li className="flex items-center gap-3 text-slate-300 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
                     Latency Sensitivity Analysis
                   </li>
-                  <li className="flex items-center gap-3 text-on-surface-variant font-medium">
+                  <li className="flex items-center gap-3 text-slate-300 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-primary" />
                     Execution Algorithm Testing
                   </li>
                 </ul>
-                <div className="bg-surface-container-low dark:bg-slate-800/50 rounded-2xl p-4 overflow-hidden border border-slate-100 dark:border-white/5">
+                <div className="bg-white/5 rounded-2xl p-6 md:p-8 overflow-hidden border border-white/10 backdrop-blur-sm">
                   <img 
-                    className="w-full h-40 object-cover rounded-xl shadow-sm opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" 
+                    className="w-full h-32 object-cover rounded-xl shadow-sm opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0" 
                     src="/assets/images/trading_dashboard.png" 
                     alt="Trading dashboard visualization"
                     referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
             </motion.div>
-
+    
             {/* Card 2: Market Data */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="md:col-span-4 bg-primary text-white rounded-3xl p-10 orange-gradient flex flex-col justify-between shadow-xl shadow-primary/20"
+              className="md:col-span-4 bg-slate-900 rounded-3xl p-10 flex flex-col justify-between border border-white/5 shadow-xl hover:shadow-primary/10 transition-all duration-500 group"
             >
               <div>
-                <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
-                  <Database className="text-white w-8 h-8" />
+                <div className="w-16 h-16 bg-primary/20 rounded-2xl flex items-center justify-center mb-6 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <Database className="text-primary group-hover:text-white w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold leading-tight mb-4 tracking-tight">Market Data Feeds</h3>
-                <p className="text-primary-fixed text-sm leading-relaxed opacity-90 font-medium">
+                <h3 className="text-2xl font-bold leading-tight mb-4 tracking-tight text-white">Market Data Feeds</h3>
+                <p className="text-slate-400 text-sm leading-relaxed font-medium">
                   Continuous validation of real-time exchange feeds, historical data integrity, and multi-asset ticker accuracy.
                 </p>
               </div>
               <div className="mt-8 flex flex-wrap gap-2">
-                <span className="bg-white/10 px-3 py-1.5 rounded-lg text-[10px] font-bold border border-white/20 uppercase tracking-widest">FIX Protocol</span>
-                <span className="bg-white/10 px-3 py-1.5 rounded-lg text-[10px] font-bold border border-white/20 uppercase tracking-widest">WebSocket</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-black text-slate-400 border border-white/10 uppercase tracking-widest">FIX Protocol</span>
+                <span className="bg-white/5 px-3 py-1.5 rounded-lg text-[10px] font-black text-slate-400 border border-white/10 uppercase tracking-widest">WebSocket</span>
               </div>
             </motion.div>
-
+    
             {/* Card 3: Settlement */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="md:col-span-5 bg-surface-container-low dark:bg-slate-900 rounded-3xl p-10 flex flex-col justify-between border border-outline-variant/15 dark:border-slate-800 shadow-sm"
+              className="md:col-span-5 bg-slate-900 rounded-3xl p-10 flex flex-col justify-between border border-white/5 shadow-xl hover:shadow-primary/10 transition-all duration-500 group"
             >
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4">Operational Integrity</h4>
-                <h3 className="text-2xl font-bold mb-4 tracking-tight">Post-Trade Settlement</h3>
-                <p className="text-on-surface-variant text-sm mb-8 leading-relaxed font-medium">
+                <h3 className="text-2xl font-bold mb-4 tracking-tight text-white">Post-Trade Settlement</h3>
+                <p className="text-slate-400 text-sm mb-8 leading-relaxed font-medium">
                   Automated regression for clearing processes, reconciliation engines, and SWIFT messaging compliance.
                 </p>
               </div>
               <div className="flex items-center gap-4">
                 <div className="flex -space-x-2">
-                  <div className="w-10 h-10 rounded-full bg-primary/30 border-2 border-white dark:border-slate-800 shadow-sm"></div>
-                  <div className="w-10 h-10 rounded-full bg-primary/40 border-2 border-white dark:border-slate-800 shadow-sm"></div>
-                  <div className="w-10 h-10 rounded-full bg-surface-container-high border-2 border-white dark:border-slate-800 shadow-sm"></div>
+                  <div className="w-10 h-10 rounded-full bg-primary/30 border-2 border-slate-800 shadow-sm"></div>
+                  <div className="w-10 h-10 rounded-full bg-primary/40 border-2 border-slate-800 shadow-sm"></div>
+                  <div className="w-10 h-10 rounded-full bg-white/10 border-2 border-slate-800 shadow-sm"></div>
                 </div>
-                <span className="text-xs font-bold text-on-surface-variant uppercase tracking-widest">Used by Tier-1 Banks</span>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Used by Tier-1 Banks</span>
               </div>
             </motion.div>
-
+    
             {/* Card 4: Compliance */}
             <motion.div 
               whileHover={{ y: -5 }}
-              className="md:col-span-7 bg-white dark:bg-slate-900 rounded-3xl p-10 shadow-sm border border-slate-100 dark:border-slate-800 flex items-center gap-8 group"
+              className="md:col-span-7 bg-slate-900 rounded-3xl p-10 shadow-xl border border-white/5 hover:shadow-primary/10 transition-all duration-500 group flex items-center gap-8"
             >
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-4 tracking-tight">Regulatory Conformance</h3>
-                <p className="text-on-surface-variant text-sm leading-relaxed mb-6 font-medium">
+                <h3 className="text-2xl font-bold mb-4 tracking-tight text-white">Regulatory Conformance</h3>
+                <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
                   MiFID II, EMIR, and Dodd-Frank reporting validation integrated into the CI/CD pipeline.
                 </p>
                 <Link to="/contact" className="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
@@ -178,11 +180,12 @@ export default function CapitalMarkets() {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
-              <div className="hidden sm:flex w-32 h-32 bg-primary/10 rounded-2xl items-center justify-center shrink-0">
-                <Gavel className="w-12 h-12 text-primary" />
+              <div className="hidden sm:flex w-32 h-32 bg-primary/10 rounded-2xl items-center justify-center shrink-0 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                <Gavel className="w-12 h-12 text-primary group-hover:text-white" />
               </div>
             </motion.div>
           </div>
+        </div>
 
           {/* Precision Metric Section */}
           <section className="mb-24 py-20 border-y border-outline-variant/15 flex flex-col md:flex-row gap-16 items-center">
