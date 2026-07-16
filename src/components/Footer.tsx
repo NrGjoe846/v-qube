@@ -4,8 +4,7 @@ import {
   Mail,
   Headset,
   Instagram,
-  Linkedin,
-  ArrowUpRight
+  Linkedin
 } from "lucide-react";
 
 const XIcon = ({ size = 20, color = "currentColor", ...props }) => (
@@ -44,7 +43,7 @@ export default function Footer() {
     <footer className="bg-slate-900 text-slate-300 pt-10 pb-8 overflow-hidden relative font-body">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-orange-500 to-primary opacity-50"></div>
 
-      <div className="container-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 relative z-10 w-full">
+      <div className="container-max grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-16 relative z-10 w-full">
         <div className="lg:col-span-3 space-y-6">
           <Link to="/" className="flex items-center gap-3">
             <img src={logo} alt="V-Qube Logo" className="h-12 w-auto" />
@@ -126,7 +125,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="container-max mt-8 pt-6 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-12 w-full">
+      <div className="container-max mt-8 pt-6 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6 md:gap-12 w-full">
         <div className="flex flex-col gap-4">
           <p className="text-[10px] font-black tracking-[0.3em] uppercase text-slate-600">© 2026 V Qube Enterprises. All rights reserved.</p>
           <div className="flex gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500">
@@ -136,29 +135,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Partnership Badge */}
-        <div className="order-1 lg:order-2">
-          <a
-            href="https://unaitech.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-3 px-6 py-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm transition-all duration-500 hover:bg-white/10 hover:border-primary/50 hover:shadow-[0_0_20px_rgba(249,115,22,0.2)]"
-          >
-            <div className="flex flex-col items-start leading-none">
-              <span className="text-[9px] uppercase tracking-[0.3em] text-slate-500 font-black group-hover:text-primary/70 transition-colors mb-1">
-                Crafted By
-              </span>
-              <span className="text-xl font-black tracking-tighter text-primary group-hover:scale-105 transition-transform duration-500 origin-left">
-                UNAI <span className="text-slate-200">TECH</span>
-              </span>
-            </div>
-            <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors duration-500">
-              <ArrowUpRight className="w-4 h-4 text-primary group-hover:text-white transition-colors" />
-            </div>
-            {/* Subtle animated glow effect */}
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/50 to-orange-500/50 rounded-2xl blur opacity-0 group-hover:opacity-20 transition-opacity duration-500" />
-          </a>
-        </div>
+
       </div>
     </footer >
   );

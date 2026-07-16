@@ -77,10 +77,10 @@ export default function DataWarehouse() {
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white"
+                  className="relative rounded-[1.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white"
                 >
                   <img
-                    className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-48 md:h-80 lg:h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                     alt="Data center infrastructure"
                     src="/assets/images/data_center.png"
                   />
@@ -209,7 +209,7 @@ export default function DataWarehouse() {
         {/* Specialized Focus Areas */}
         <section className="px-8 md:px-16 py-32 bg-surface overflow-hidden">
           <div className="container-max w-full">
-            <div className="flex flex-col lg:flex-row gap-20">
+            <div className="flex flex-col lg:flex-row gap-8 md:gap-20">
               <div className="lg:w-1/3">
                 <div className="sticky top-32">
                   <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-on-surface mb-8 leading-[1]">Specialized Focus Areas.</h2>

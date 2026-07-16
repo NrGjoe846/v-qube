@@ -88,14 +88,14 @@ export default function Home() {
             <h1 className="font-headline text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.2] mb-8">
               Where Financial Systems Meet <br className="sm:hidden" /><span className="text-gradient">Flawless Quality</span>
             </h1>
-            <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-12 font-medium">
+            <p className="text-base md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mb-10 md:mb-12 font-medium">
               V Qube Enterprises provides precision-engineered testing for Banking, Financial Services & Insurance — ensuring every transaction is secure and every customer experience is seamless.
             </p>
-            <div className="flex flex-wrap gap-6">
-              <Link to="/testing" className="orange-gradient text-white px-10 py-5 rounded-2xl font-black text-lg shadow-2xl shadow-primary/30 hover:scale-105 hover:shadow-primary/50 transition-all active:scale-95">
+            <div className="flex flex-col xs:flex-row flex-wrap gap-4">
+              <Link to="/testing" className="orange-gradient text-white px-8 py-4 rounded-2xl font-black text-base md:text-lg shadow-2xl shadow-primary/30 hover:scale-105 hover:shadow-primary/50 transition-all active:scale-95 text-center">
                 Explore All Domains
               </Link>
-              <Link to="/contact?type=consultation" className="bg-white text-on-surface border border-outline-variant/30 px-10 py-5 rounded-2xl font-black text-lg hover:bg-surface-container-low transition-all shadow-xl shadow-slate-200/50 active:scale-95">
+              <Link to="/contact?type=consultation" className="bg-white text-on-surface border border-outline-variant/30 px-8 py-4 rounded-2xl font-black text-base md:text-lg hover:bg-surface-container-low transition-all shadow-xl shadow-slate-200/50 active:scale-95 text-center">
                 Talk to an Expert
               </Link>
             </div>
@@ -188,7 +188,7 @@ export default function Home() {
                 key={i}
                 variants={fadeIn}
                 whileHover={{ y: -10 }}
-                className={`glass-card p-10 rounded-3xl border border-outline-variant/10 transition-all group ${card.offset ? 'lg:translate-y-8' : ''}`}
+                className={`glass-card p-6 md:p-10 rounded-3xl border border-outline-variant/10 transition-all group ${card.offset ? 'lg:translate-y-8' : ''}`}
               >
                 <div className={`w-14 h-14 bg-${card.color}/10 text-${card.color} rounded-2xl flex items-center justify-center mb-8 group-hover:bg-${card.color} group-hover:text-white transition-all duration-500`}>
                   {card.icon}
@@ -214,7 +214,7 @@ export default function Home() {
               View All Domains <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 auto-rows-[280px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 auto-rows-auto md:auto-rows-[280px]">
             {/* Retail Banking */}
             <Link to="/testing/retail-banking" className="md:col-span-2 bg-surface-container-lowest rounded-3xl p-10 relative overflow-hidden flex flex-col justify-end group cursor-pointer border border-white/40 shadow-xl hover:shadow-2xl transition-all duration-500">
               <img
@@ -319,7 +319,7 @@ export default function Home() {
               </div>
             </div>
             <motion.div
-              className="glass-card p-12 rounded-[40px] shadow-2xl shadow-primary/5"
+              className="glass-card p-6 md:p-12 rounded-[40px] shadow-2xl shadow-primary/5"
               initial={{ opacity: 0, scale: 0.95, x: 20 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}

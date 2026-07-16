@@ -98,7 +98,7 @@ export default function RetailLoanTesting() {
         </header>
 
         {/* Bento Grid: Loan Type Specialized Testing */}
-        <section className="px-5 md:px-16 py-20 bg-surface">
+        <section className="py-20 bg-surface">
           <div className="container-max w-full grid grid-cols-1 md:grid-cols-12 gap-6">
             <motion.div
               whileHover={{ y: -5 }}

@@ -73,10 +73,10 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black tracking-[0.3em] uppercase mb-10">
                 {hero.badge}
               </div>
-              <h1 className="text-3xl md:text-9xl font-black text-on-surface tracking-tighter leading-[0.9] mb-10"
+              <h1 className="text-3xl md:text-9xl font-black text-on-surface tracking-tighter leading-[1.1] md:leading-[0.9] mb-8 md:mb-10"
                 dangerouslySetInnerHTML={{ __html: hero.title }}>
               </h1>
-              <p className="text-xl md:text-2xl text-on-surface-variant leading-relaxed max-w-3xl font-medium opacity-80 mb-16">
+              <p className="text-lg md:text-2xl text-on-surface-variant leading-relaxed max-w-3xl font-medium opacity-80 mb-12 md:mb-16">
                 {hero.description}
               </p>
               <div className="flex flex-wrap gap-6">
@@ -101,15 +101,15 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                 className={`${comp.span === 'wide' ? 'md:col-span-8' : 'md:col-span-4'} 
-                  group relative overflow-hidden p-12 rounded-[4rem] border border-outline-variant/10 shadow-2xl shadow-primary/5 hover:shadow-primary/10 transition-all duration-500 glass-card`}
+                  group relative overflow-hidden p-8 md:p-12 rounded-[2rem] md:rounded-[4rem] border border-outline-variant/10 shadow-2xl shadow-primary/5 hover:shadow-primary/10 transition-all duration-500 glass-card`}
               >
                 <div className="relative z-10 h-full flex flex-col justify-between">
                   <div>
-                    <div className="w-20 h-20 bg-primary/10 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-lg shadow-primary/5">
-                      <comp.icon className="w-10 h-10" />
+                    <div className="w-14 h-14 md:w-20 md:h-20 bg-primary/10 rounded-2xl md:rounded-3xl flex items-center justify-center mb-8 md:mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-lg shadow-primary/5">
+                      <comp.icon className="w-8 h-8 md:w-10 md:h-10" />
                     </div>
-                    <h3 className="text-3xl font-black mb-6 tracking-tight text-on-surface group-hover:text-primary transition-colors">{comp.title}</h3>
-                    <p className="text-on-surface-variant text-lg leading-relaxed font-medium opacity-70 group-hover:opacity-100 transition-opacity">
+                    <h3 className="text-2xl md:text-3xl font-black mb-4 md:mb-6 tracking-tight text-on-surface group-hover:text-primary transition-colors">{comp.title}</h3>
+                    <p className="text-on-surface-variant text-base md:text-lg leading-relaxed font-medium opacity-70 group-hover:opacity-100 transition-opacity">
                       {comp.desc}
                     </p>
                   </div>
@@ -124,9 +124,9 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
       {/* Pillars Section */}
       <section className="section-padding bg-surface-container-low overflow-hidden">
         <div className="container-max">
-          <div className="flex flex-col lg:flex-row gap-24 mb-20">
+          <div className="flex flex-col lg:flex-row gap-12 md:gap-24 mb-20">
             <div className="lg:w-1/3">
-              <div className="sticky top-40">
+              <div className="lg:sticky lg:top-40">
                 <div className="w-20 h-2 orange-gradient rounded-full mb-8"></div>
                 <h2 className="text-3xl md:text-7xl font-black tracking-tight text-on-surface mb-10 leading-[1]">{pillars.title}</h2>
                 <p className="text-xl text-on-surface-variant mb-12 font-medium opacity-70 leading-relaxed">{pillars.description}</p>
@@ -136,34 +136,34 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
                 </div>
               </div>
             </div>
-            <div className="lg:w-2/3 space-y-10">
-              {pillars.items.map((pillar, index) => (
-                <motion.div
-                  key={pillar.id}
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className={`group glass-card p-12 rounded-[4rem] transition-all duration-500 hover:shadow-2xl border-l-[16px] border-primary/20 hover:border-primary`}
-                >
+              <div className="lg:w-2/3 space-y-6 md:space-y-10">
+                {pillars.items.map((pillar, index) => (
+                  <motion.div
+                    key={pillar.id}
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                    className={`group glass-card p-8 md:p-12 rounded-[2rem] md:rounded-[4rem] transition-all duration-500 hover:shadow-2xl border-l-8 md:border-l-[16px] border-primary/20 hover:border-primary`}
+                  >
                   <div className="flex justify-between items-start cursor-pointer">
-                    <div className="flex items-center gap-10">
-                      <span className={`text-6xl font-black text-on-surface/5 group-hover:text-primary/10 transition-colors duration-500`}>{pillar.id}</span>
+                    <div className="flex items-center gap-6 md:gap-10">
+                      <span className={`text-4xl md:text-6xl font-black text-on-surface/5 group-hover:text-primary/10 transition-colors duration-500 shrink-0`}>{pillar.id}</span>
                       <div>
-                        <h3 className="text-3xl font-black tracking-tight mb-4 group-hover:text-primary transition-colors">{pillar.title}</h3>
-                        <p className="text-on-surface-variant text-lg font-medium leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity">
+                        <h3 className="text-xl md:text-3xl font-black tracking-tight mb-3 md:mb-4 group-hover:text-primary transition-colors">{pillar.title}</h3>
+                        <p className="text-on-surface-variant text-base md:text-lg font-medium leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity">
                           {pillar.desc}
                         </p>
-                        <div className="flex gap-3 mt-8">
+                        <div className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8">
                           {pillar.tags.map(tag => (
-                            <span key={tag} className="px-5 py-2 bg-primary/5 text-primary text-[10px] font-black rounded-full uppercase tracking-widest border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                            <span key={tag} className="px-4 md:px-5 py-1.5 md:py-2 bg-primary/5 text-primary text-[8px] md:text-[10px] font-black rounded-full uppercase tracking-widest border border-primary/10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
                               {tag}
                             </span>
                           ))}
                         </div>
                       </div>
                     </div>
-                    <ArrowUpRight className={`w-10 h-10 text-on-surface/10 group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500 flex-shrink-0 mt-2`} />
+                    <ArrowUpRight className={`w-8 h-8 md:w-10 md:h-10 text-on-surface/10 group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-500 flex-shrink-0 mt-1 md:mt-2`} />
                   </div>
                 </motion.div>
               ))}
@@ -175,7 +175,7 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
       {/* CTA Section */}
       <section className="section-padding bg-surface">
         <div className="container-max">
-          <div className="orange-gradient p-20 md:p-32 rounded-[5rem] text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
+          <div className="orange-gradient p-10 md:p-32 rounded-[2.5rem] md:rounded-[5rem] text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
             <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
@@ -183,12 +183,12 @@ export default function DomainPageLayout({ hero, competencies, pillars, cta }: D
               viewport={{ once: true }}
               className="relative z-10 max-w-4xl mx-auto"
             >
-              <h2 className="text-3xl md:text-[7rem] font-black mb-12 tracking-tight leading-[1]" dangerouslySetInnerHTML={{ __html: cta.title }}></h2>
-              <p className="text-xl md:text-2xl text-white/80 mb-16 font-medium leading-relaxed">{cta.description}</p>
-              <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                <Link to="/contact?type=consultation" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
+              <h2 className="text-2xl md:text-[7rem] font-black mb-8 md:mb-12 tracking-tight leading-[1.1] md:leading-[1]" dangerouslySetInnerHTML={{ __html: cta.title }}></h2>
+              <p className="text-lg md:text-2xl text-white/80 mb-10 md:mb-16 font-medium leading-relaxed">{cta.description}</p>
+              <div className="flex flex-col sm:flex-row gap-6 md:gap-8 justify-center">
+                <Link to="/contact?type=consultation" className="inline-flex items-center gap-3 md:gap-4 bg-white text-primary px-8 md:px-14 py-4 md:py-6 rounded-2xl font-black text-base md:text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
                   Initiate Consultation
-                  <ArrowRight className="w-6 h-6" />
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
                 </Link>
               </div>
             </motion.div>

@@ -67,8 +67,8 @@ export default function CoreBanking() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-black tracking-[0.2em] uppercase mb-8">
                 Precision Testing for Global Banking
               </div>
-              <h1 className="text-3xl sm:text-6xl md:text-7xl font-black tracking-tight text-on-surface mb-8 leading-[1.1]">
-                Core Banking <br /><span className="text-gradient">Testing Solutions.</span>
+              <h1 className="text-xl sm:text-5xl md:text-7xl font-black tracking-tight text-on-surface mb-6 md:mb-8 leading-[1.3] md:leading-[1.1]">
+                Core Banking <br className="hidden sm:block" /><span className="text-gradient">Testing Solutions.</span>
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed mb-12 font-medium max-w-2xl">
                 Ensuring absolute precision, security, and performance for the heartbeat of your financial institution through specialized BFSI quality engineering.
@@ -86,17 +86,17 @@ export default function CoreBanking() {
         {/* Educational Section */}
         <section className="section-padding bg-surface">
           <div className="container-max">
-            <div className="grid lg:grid-cols-12 gap-20 items-center">
+            <div className="grid lg:grid-cols-12 gap-8 md:gap-12 lg:gap-20 items-center">
               <div className="lg:col-span-5">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-                  className="relative rounded-[3rem] overflow-hidden shadow-2xl border-2 border-white/20"
+                  className="relative rounded-[1.5rem] md:rounded-[3rem] overflow-hidden shadow-2xl border-2 border-white/20"
                 >
                   <img
-                    className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-[2s]"
+                    className="w-full h-48 md:h-80 lg:h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-[2s]"
                     alt="Core banking server center"
                     src="/assets/images/data_center.png"
                   />
@@ -110,8 +110,8 @@ export default function CoreBanking() {
                   viewport={{ once: true }}
                   transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
                 >
-                  <h2 className="text-4xl md:text-6xl font-black tracking-tight text-on-surface mb-10 leading-tight">What defines <span className="text-gradient">Core Banking?</span></h2>
-                  <div className="space-y-8 text-lg text-on-surface-variant leading-relaxed font-medium opacity-80">
+                  <h2 className="text-xl sm:text-4xl md:text-6xl font-black tracking-tight text-on-surface mb-6 md:mb-10 leading-tight">What defines <span className="text-gradient">Core Banking?</span></h2>
+                  <div className="space-y-6 md:space-y-8 text-base md:text-lg text-on-surface-variant leading-relaxed font-medium opacity-80">
                     <p>
                       Core banking is the operational nucleus of a financial institution, managing the most critical transactions and data. It connects branches, digital channels, and payment systems into a single synchronized ledger.
                     </p>
@@ -119,14 +119,14 @@ export default function CoreBanking() {
                       Given its critical nature, any regression or vulnerability in core modules can result in catastrophic financial and reputational loss.
                     </p>
                   </div>
-                  <div className="mt-16 grid grid-cols-2 gap-8">
-                    <div className="glass-card p-10 rounded-[2.5rem] border-l-8 border-primary group">
-                      <div className="text-5xl font-black text-primary mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">99.9%</div>
-                      <div className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">Uptime Benchmark</div>
+                  <div className="mt-10 md:mt-16 grid grid-cols-2 gap-4 md:gap-8">
+                    <div className="glass-card p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-l-4 md:border-l-8 border-primary group">
+                      <div className="text-3xl md:text-5xl font-black text-primary mb-2 md:mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">99.9%</div>
+                      <div className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">Uptime Benchmark</div>
                     </div>
-                    <div className="glass-card p-10 rounded-[2.5rem] border-l-8 border-primary group">
-                      <div className="text-5xl font-black text-primary mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">Real-time</div>
-                      <div className="text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">Ledger Accuracy</div>
+                    <div className="glass-card p-6 md:p-10 rounded-[2rem] md:rounded-[2.5rem] border-l-4 md:border-l-8 border-primary group">
+                      <div className="text-3xl md:text-5xl font-black text-primary mb-2 md:mb-3 tracking-tighter group-hover:scale-105 transition-transform origin-left">Real-time</div>
+                      <div className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.2em] text-on-surface-variant/60">Ledger Accuracy</div>
                     </div>
                   </div>
                 </motion.div>
@@ -139,9 +139,9 @@ export default function CoreBanking() {
         <section className="section-padding bg-surface-container-low relative">
           <div className="absolute inset-0 opacity-10 bg-grid-orange"></div>
           <div className="container-max relative z-10">
-            <div className="mb-24 text-center max-w-3xl mx-auto">
-              <h2 className="text-5xl font-black tracking-tight text-on-surface mb-8 leading-tight">Strategic Testing Features</h2>
-              <p className="text-on-surface-variant font-medium text-xl opacity-75 leading-relaxed">Precision-engineered tools and frameworks designed for the complexity of global banking architectures.</p>
+            <div className="mb-16 md:mb-24 text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl md:text-5xl font-black tracking-tight text-on-surface mb-6 md:mb-8 leading-tight">Strategic Testing Features</h2>
+              <p className="text-on-surface-variant font-medium text-lg md:text-xl opacity-75 leading-relaxed">Precision-engineered tools and frameworks designed for the complexity of global banking architectures.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-10">
               {/* Large Feature */}
@@ -150,18 +150,18 @@ export default function CoreBanking() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                className="md:col-span-2 glass-card p-14 rounded-[3.5rem] flex flex-col justify-between group hover:shadow-2xl transition-all duration-500"
+                className="md:col-span-2 glass-card p-6 md:p-14 rounded-[1.5rem] md:rounded-[3.5rem] flex flex-col justify-between group hover:shadow-2xl transition-all duration-500"
               >
                 <div>
-                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 border border-primary/10">
-                    <Shield className="w-8 h-8" />
+                  <div className="w-12 h-12 md:w-16 md:h-16 bg-primary/10 rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-500 border border-primary/10">
+                    <Shield className="w-5 h-5 md:w-8 md:h-8" />
                   </div>
-                  <h3 className="text-4xl font-black mb-8 tracking-tight leading-tight">End-to-End <br />Security Validation</h3>
-                  <p className="text-on-surface-variant leading-relaxed mb-12 text-lg font-medium opacity-80">We perform deep-layer penetration testing and protocol validation across the entire core infrastructure to prevent unauthorized access and data breaches.</p>
+                  <h3 className="text-xl sm:text-2xl md:text-4xl font-black mb-4 md:mb-8 tracking-tight leading-tight">End-to-End <br className="hidden md:block" />Security Validation</h3>
+                  <p className="text-on-surface-variant leading-relaxed mb-8 md:mb-12 text-sm md:text-lg font-medium opacity-80">We perform deep-layer penetration testing and protocol validation across the entire core infrastructure to prevent unauthorized access and data breaches.</p>
                 </div>
-                <div className="flex flex-wrap gap-4 pt-10 border-t border-outline-variant/10">
+                <div className="flex flex-wrap gap-3 md:gap-4 pt-8 md:pt-10 border-t border-outline-variant/10">
                   {["Encryption Check", "Auth Protocols", "Zero Trust"].map((tag) => (
-                    <span key={tag} className="px-6 py-2.5 bg-white border border-outline-variant/20 rounded-full text-[10px] font-black text-primary uppercase tracking-[0.2em]">{tag}</span>
+                    <span key={tag} className="px-4 md:px-6 py-2 md:py-2.5 bg-white border border-outline-variant/20 rounded-full text-[8px] md:text-[10px] font-black text-primary uppercase tracking-[0.2em]">{tag}</span>
                   ))}
                 </div>
               </motion.div>
@@ -172,15 +172,15 @@ export default function CoreBanking() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
-                className="orange-gradient text-white p-14 rounded-[3.5rem] flex flex-col justify-between group relative overflow-hidden shadow-2xl shadow-primary/30 active:scale-95 transition-all"
+                className="orange-gradient text-white p-6 md:p-14 rounded-[1.5rem] md:rounded-[3.5rem] flex flex-col justify-between group relative overflow-hidden shadow-2xl shadow-primary/30 active:scale-95 transition-all"
               >
                 <div className="absolute inset-0 bg-grid-white/10 opacity-20 group-hover:scale-110 transition-transform duration-1000"></div>
                 <div className="relative z-10">
-                  <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-10">
-                    <Zap className="w-8 h-8" />
+                  <div className="w-10 h-10 md:w-14 md:h-14 bg-white/20 rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10">
+                    <Zap className="w-6 h-6 md:w-8 md:h-8" />
                   </div>
-                  <h3 className="text-3xl font-black mb-6 tracking-tight">High-Velocity Throughput</h3>
-                  <p className="opacity-90 leading-relaxed font-medium text-lg">Simulating peak-hour transaction volumes to ensure the core remains responsive during flash market events.</p>
+                  <h3 className="text-xl md:text-3xl font-black mb-4 md:mb-6 tracking-tight">High-Velocity Throughput</h3>
+                  <p className="opacity-90 leading-relaxed font-medium text-sm md:text-lg">Simulating peak-hour transaction volumes to ensure the core remains responsive during flash market events.</p>
                 </div>
               </motion.div>
 
@@ -190,13 +190,13 @@ export default function CoreBanking() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="glass-card p-14 rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
+                className="glass-card p-6 md:p-14 rounded-[1.5rem] md:rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                  <Wallet className="w-7 h-7" />
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-primary/10 text-primary rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <Wallet className="w-5 h-5 md:w-7 md:h-7" />
                 </div>
-                <h3 className="text-2xl font-black mb-6 tracking-tight">Ledger Integrity</h3>
-                <p className="text-on-surface-variant leading-relaxed font-medium opacity-80">Automated reconciliation testing ensuring every cent is accounted for across distributed branches.</p>
+                <h3 className="text-lg md:text-2xl font-black mb-4 md:mb-6 tracking-tight">Ledger Integrity</h3>
+                <p className="text-on-surface-variant leading-relaxed font-medium opacity-80 text-xs md:text-base">Automated reconciliation testing ensuring every cent is accounted for across distributed branches.</p>
               </motion.div>
 
               {/* API Interoperability */}
@@ -205,13 +205,13 @@ export default function CoreBanking() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.3 }}
-                className="glass-card p-14 rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
+                className="glass-card p-6 md:p-14 rounded-[1.5rem] md:rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                  <Cpu className="w-7 h-7" />
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-primary/10 text-primary rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <Cpu className="w-5 h-5 md:w-7 md:h-7" />
                 </div>
-                <h3 className="text-2xl font-black mb-6 tracking-tight">API Inbound/Outbound</h3>
-                <p className="text-on-surface-variant leading-relaxed font-medium opacity-80">Validating third-party integrations and open banking endpoints for seamless external connectivity.</p>
+                <h3 className="text-lg md:text-2xl font-black mb-4 md:mb-6 tracking-tight">API Inbound/Outbound</h3>
+                <p className="text-on-surface-variant leading-relaxed font-medium opacity-80 text-xs md:text-base">Validating third-party integrations and open banking endpoints for seamless external connectivity.</p>
               </motion.div>
 
               {/* Audit Compliance */}
@@ -220,13 +220,13 @@ export default function CoreBanking() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.4 }}
-                className="glass-card p-14 rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
+                className="glass-card p-6 md:p-14 rounded-[1.5rem] md:rounded-[3.5rem] hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
-                  <FileText className="w-7 h-7" />
+                <div className="w-10 h-10 md:w-14 md:h-14 bg-primary/10 text-primary rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 group-hover:bg-primary group-hover:text-white transition-all duration-500">
+                  <FileText className="w-5 h-5 md:w-7 md:h-7" />
                 </div>
-                <h3 className="text-2xl font-black mb-6 tracking-tight">Audit Compliance</h3>
-                <p className="text-on-surface-variant leading-relaxed font-medium opacity-80">Generating exhaustive documentation required by regulatory bodies like RBI, FINRA, or GDPR.</p>
+                <h3 className="text-lg md:text-2xl font-black mb-4 md:mb-6 tracking-tight">Audit Compliance</h3>
+                <p className="text-on-surface-variant leading-relaxed font-medium opacity-80 text-xs md:text-base">Generating exhaustive documentation required by regulatory bodies like RBI, FINRA, or GDPR.</p>
               </motion.div>
             </div>
           </div>
@@ -235,19 +235,19 @@ export default function CoreBanking() {
         {/* Specialized Focus Areas */}
         <section className="section-padding bg-surface overflow-hidden">
           <div className="container-max">
-            <div className="flex flex-col lg:flex-row gap-24">
+            <div className="flex flex-col lg:flex-row gap-12 md:gap-24">
               <div className="lg:w-1/3">
                 <div className="sticky top-40">
                   <div className="w-20 h-2 orange-gradient rounded-full mb-8"></div>
-                  <h2 className="text-5xl md:text-7xl font-black tracking-tight text-on-surface mb-10 leading-[1]">Specialized <br />Focus Areas.</h2>
-                  <p className="text-xl text-on-surface-variant mb-12 font-medium opacity-70 leading-relaxed">Our testing methodology is partitioned into five critical pillars to ensure 360-degree coverage of your core banking landscape.</p>
-                  <div className="flex items-center gap-4 text-primary font-black uppercase text-xs tracking-widest">
-                    <span className="w-12 h-[1px] bg-primary/30"></span>
+                  <h2 className="text-xl sm:text-5xl md:text-7xl font-black tracking-tight text-on-surface mb-6 md:mb-10 leading-[1.2] md:leading-[1.1]">Specialized <br className="hidden md:block" />Focus Areas.</h2>
+                  <p className="text-lg md:text-xl text-on-surface-variant mb-8 md:mb-12 font-medium opacity-70 leading-relaxed">Our testing methodology is partitioned into five critical pillars to ensure 360-degree coverage of your core banking landscape.</p>
+                  <div className="flex items-center gap-4 text-primary font-black uppercase text-[10px] md:text-xs tracking-widest">
+                    <span className="w-8 md:w-12 h-[1px] bg-primary/30"></span>
                     Domain Mastery
                   </div>
                 </div>
               </div>
-              <div className="lg:w-2/3 space-y-10">
+              <div className="lg:w-2/3 space-y-6 md:space-y-10">
                 {[
                   { id: "01", color: "primary", title: "Functional Testing", desc: "Validating core banking modules including Savings, Current Accounts, Loans, Deposits, and Fixed Deposits for business logic accuracy." },
                   { id: "02", color: "primary", title: "Integration Testing", desc: "Ensuring seamless data flow between Core Banking, Mobile Apps, ATM Controllers, and SWIFT payment gateways." },
@@ -261,19 +261,19 @@ export default function CoreBanking() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                    className={`group glass-card p-12 rounded-[3.5rem] transition-all duration-500 hover:shadow-2xl border-l-[16px] border-${area.color}`}
+                    className={`group glass-card p-5 md:p-12 rounded-[1.5rem] md:rounded-[3.5rem] transition-all duration-500 hover:shadow-2xl border-l-4 md:border-l-[16px] border-${area.color}`}
                   >
                     <div className="flex justify-between items-start cursor-pointer">
-                      <div className="flex items-center gap-10">
-                        <span className={`text-6xl font-black text-on-surface/5 group-hover:text-${area.color}/10 transition-colors duration-500`}>{area.id}</span>
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-10">
+                        <span className={`text-3xl md:text-6xl font-black text-on-surface/5 group-hover:text-${area.color}/10 transition-colors duration-500 leading-none`}>{area.id}</span>
                         <div>
-                          <h3 className="text-3xl font-black tracking-tight mb-4 group-hover:text-primary transition-colors">{area.title}</h3>
-                          <p className="text-on-surface-variant text-lg font-medium leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity">
+                          <h3 className="text-lg md:text-3xl font-black tracking-tight mb-2 md:mb-4 group-hover:text-primary transition-colors">{area.title}</h3>
+                          <p className="text-on-surface-variant text-sm md:text-lg font-medium leading-relaxed opacity-70 group-hover:opacity-100 transition-opacity">
                             {area.desc}
                           </p>
                         </div>
                       </div>
-                      <PlusCircle className={`w-10 h-10 text-${area.color}/30 group-hover:text-${area.color} group-hover:rotate-90 transition-all duration-500 flex-shrink-0 mt-2`} />
+                      <PlusCircle className={`w-6 h-6 md:w-10 md:h-10 text-${area.color}/30 group-hover:text-${area.color} group-hover:rotate-90 transition-all duration-500 flex-shrink-0 mt-1 md:mt-2`} />
                     </div>
                   </motion.div>
                 ))}
@@ -286,11 +286,11 @@ export default function CoreBanking() {
         <section className="section-padding bg-white text-slate-900 relative overflow-hidden">
           <div className="absolute inset-0 opacity-10 bg-grid-orange"></div>
           <div className="container-max relative z-10">
-            <div className="mb-24 text-center">
-              <h2 className="text-5xl md:text-7xl font-black tracking-tight mb-8 text-slate-900">Detailed Testing Matrix</h2>
-              <p className="text-slate-600 text-xl font-medium max-w-2xl mx-auto">Comprehensive breakdown of tests performed across core modules to ensure zero-defect deployments.</p>
+            <div className="mb-12 md:mb-24 text-center">
+              <h2 className="text-3xl md:text-7xl font-black tracking-tight mb-6 md:mb-8 text-slate-900 leading-tight">Detailed Testing Matrix</h2>
+              <p className="text-slate-600 text-base md:text-xl font-medium max-w-2xl mx-auto opacity-80">Comprehensive breakdown of tests performed across core modules to ensure zero-defect deployments.</p>
             </div>
-            <div className="overflow-x-auto glass-card border border-slate-100 rounded-[4rem] shadow-2xl text-white" style={{ backgroundColor: 'oklch(0.21 0.04 265.75)' }}>
+            <div className="overflow-x-auto glass-card border border-slate-100 rounded-[2rem] md:rounded-[4rem] shadow-2xl text-white" style={{ backgroundColor: 'oklch(0.21 0.04 265.75)' }}>
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="border-b border-white/10">
@@ -327,7 +327,7 @@ export default function CoreBanking() {
         {/* Final CTA */}
         <section className="section-padding bg-surface">
           <div className="container-max">
-            <div className="orange-gradient p-20 md:p-32 rounded-[5rem] text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
+            <div className="orange-gradient p-10 md:p-32 rounded-[2.5rem] md:rounded-[5rem] text-center text-white relative overflow-hidden shadow-2xl shadow-primary/20">
               <div className="absolute inset-0 opacity-10 pointer-events-none bg-grid-white"></div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -335,11 +335,11 @@ export default function CoreBanking() {
                 viewport={{ once: true }}
                 className="relative z-10 max-w-4xl mx-auto"
               >
-                <h2 className="text-3xl md:text-8xl font-black mb-10 tracking-tight leading-[1]">Ready to Secure Your <br />Core Banking?</h2>
-                <p className="text-xl md:text-2xl text-white/80 mb-16 font-medium leading-relaxed">Partner with V Qube Enterprises to architect a precision-testing framework that grows with your institution.</p>
-                <Link to="/contact" className="inline-flex items-center gap-4 bg-white text-primary px-14 py-6 rounded-[2rem] font-black text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
+                <h2 className="text-2xl md:text-8xl font-black mb-8 md:mb-10 tracking-tight leading-[1.1] md:leading-[1]">Ready to Secure Your <br />Core Banking?</h2>
+                <p className="text-lg md:text-2xl text-white/80 mb-10 md:mb-16 font-medium leading-relaxed">Partner with V Qube Enterprises to architect a precision-testing framework that grows with your institution.</p>
+                <Link to="/contact" className="inline-flex items-center gap-3 md:gap-4 bg-white text-primary px-8 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-[2rem] font-black text-base md:text-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-black/10">
                   Initiate Strategy Session
-                  <ArrowRight className="w-6 h-6" />
+                  <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
                 </Link>
               </motion.div>
             </div>

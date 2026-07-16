@@ -4,6 +4,7 @@
   --font-headline: "Manrope", sans-serif;
   --font-body: "Manrope", sans-serif;
   --font-label: "Manrope", sans-serif;
+  --breakpoint-xs: 480px;
 
   --color-tertiary-fixed-dim: #ffb59b;
   --color-on-error: #ffffff;
@@ -92,7 +93,7 @@
     @apply py-16 md:py-20;
   }
   .container-max {
-    @apply max-w-7xl mx-auto px-5 md:px-16;
+    @apply max-w-7xl mx-auto px-4 md:px-16;
   }
 }
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
-import { useSearchParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { 
   Mail, 
   Phone, 
@@ -17,30 +17,7 @@ import {
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [searchParams] = useSearchParams();
   const [selectedService, setSelectedService] = useState("");
-
-  // Map URL type params to service options
-  useEffect(() => {
-    const type = searchParams.get("type");
-    const typeMap: Record<string, string> = {
-      audit: "Compliance Audit",
-      consultation: "QA Automation Lab",
-      "case-study": "Compliance Audit",
-      deck: "QA Automation Lab",
-      framework: "Compliance Audit",
-      brief: "QA Automation Lab",
-      assessment: "Compliance Audit",
-      specs: "DevOps Integration",
-      protocol: "DevOps Integration",
-      iso20022: "DevOps Integration",
-      migration: "DevOps Integration",
-      docs: "QA Automation Lab",
-    };
-    if (type && typeMap[type]) {
-      setSelectedService(typeMap[type]);
-    }
-  }, [searchParams]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -74,7 +51,7 @@ End of Request
     <div className="bg-surface font-body text-on-surface antialiased tech-grid min-h-screen pt-32 pb-20 selection:bg-primary-fixed selection:text-on-primary-fixed">
       <div className="container-max w-full">
         {/* Hero & Contact Split Section */}
-        <div className="flex flex-col lg:flex-row gap-20 items-start">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-20 items-start">
           {/* Content Side */}
           <div className="lg:w-1/2 lg:sticky lg:top-32">
             <motion.div

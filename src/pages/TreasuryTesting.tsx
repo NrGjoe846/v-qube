@@ -87,7 +87,7 @@ export default function TreasuryTesting() {
         </section>
 
         {/* Bento Grid - Core Competencies */}
-        <section className="px-5 md:px-16 py-20 lg:py-32 bg-white">
+        <section className="py-20 lg:py-32 bg-white">
           <div className="container-max w-full">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
               {/* FX Engine Card */}
@@ -167,9 +167,9 @@ export default function TreasuryTesting() {
         </section>
 
         {/* Technical Detail Section */}
-        <section className="px-5 md:px-16 py-20 lg:py-32 bg-slate-50">
+        <section className="py-20 lg:py-32 bg-slate-50">
           <div className="container-max w-full">
-            <div className="flex flex-col lg:flex-row gap-20">
+            <div className="flex flex-col lg:flex-row gap-8 md:gap-20">
               <div className="lg:w-1/3">
                 <h2 className="text-4xl lg:text-5xl font-black text-slate-900 tracking-tighter leading-tight mb-8">
                   The Testing <br /><span className="text-primary italic">Architecture.</span>
@@ -208,17 +208,17 @@ export default function TreasuryTesting() {
         </section>
 
         {/* Global Standards Section */}
-        <section className="px-5 md:px-16 py-20 lg:py-32 bg-white">
+        <section className="py-20 lg:py-32 bg-white">
           <div className="container-max w-full">
-            <div className="bg-slate-900 rounded-[4rem] p-12 lg:p-24 text-white relative overflow-hidden">
+            <div className="bg-slate-900 rounded-[2rem] md:rounded-[4rem] p-8 md:p-12 lg:p-24 text-white relative overflow-hidden">
               <div className="absolute inset-0 bg-grid-white/5 opacity-20"></div>
-              <div className="relative z-10 flex flex-col lg:flex-row items-center gap-16">
+              <div className="relative z-10 flex flex-col lg:flex-row items-center gap-10 md:gap-16">
                 <div className="flex-1">
                   <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary/60 mb-6 block">Global Standards</span>
-                    <h2 className="text-3xl lg:text-6xl font-black tracking-tighter mb-8 leading-tight">
+                    <h2 className="text-2xl md:text-4xl lg:text-6xl font-black tracking-tighter mb-6 md:mb-8 leading-tight">
                       ISO 20022 <span className="text-primary italic">Readiness.</span>
                     </h2>
-                  <p className="text-slate-300 text-lg leading-relaxed mb-10 font-medium">
+                  <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-8 md:mb-10 font-medium">
                     Validated for multi-currency settlement systems with 99.99% data integrity. We ensure your treasury systems are ready for the next generation of global financial messaging.
                   </p>
                   <div className="flex flex-wrap gap-4">
@@ -227,7 +227,7 @@ export default function TreasuryTesting() {
                     </Link>
                   </div>
                 </div>
-                <div className="flex-1 grid grid-cols-2 gap-4">
+                <div className="hidden lg:flex flex-1 grid grid-cols-2 gap-4">
                   <div className="space-y-4">
                     <div className="h-40 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center">
                       <ShieldCheck className="w-12 h-12 text-primary" />

@@ -71,9 +71,11 @@ export default function Navbar() {
       scrolled ? "bg-white/80 backdrop-blur-xl shadow-lg py-3" : "bg-transparent py-5"
     }`}>
       <div className="container-max flex justify-between items-center w-full">
-        <Link to="/" className="flex items-center gap-2 group">
-          <img src={logo} alt="V-Qube Logo" className="h-8 sm:h-10 w-auto group-hover:scale-105 transition-transform duration-300" />
-          <span className="text-lg sm:text-xl font-black tracking-tighter text-slate-900 group-hover:text-primary transition-colors duration-300">V Qube Enterprises</span>
+        <Link to="/" className="flex items-center gap-2 group flex-shrink-0 min-w-0">
+          <img src={logo} alt="V-Qube Logo" className="h-8 sm:h-10 w-auto flex-shrink-0 group-hover:scale-105 transition-transform duration-300" />
+          <span className="text-base sm:text-lg font-black tracking-tighter text-slate-900 group-hover:text-primary transition-colors duration-300 truncate">
+            <span className="hidden xs:inline">V Qube </span><span className="xs:hidden">VQ </span><span className="hidden sm:inline">Enterprises</span>
+          </span>
         </Link>
 
         {/* Desktop Nav */}
